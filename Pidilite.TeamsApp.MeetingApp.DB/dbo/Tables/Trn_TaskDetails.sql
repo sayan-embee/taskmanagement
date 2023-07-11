@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[Trn_TaskDetails]
+(
+	[TaskId] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
+    [MeetingId] BIGINT NOT NULL, 
+    [TaskContext] NVARCHAR(250) NULL, 
+    [TaskActionPlan] NVARCHAR(500) NULL, 
+    [TaskPriority] NVARCHAR(50) NULL, 
+    [ActionTakenBy] NVARCHAR(100) NULL, 
+    [ActionTakenByEmail] NVARCHAR(100) NULL, 
+    [ActionTakenByADID] NVARCHAR(50) NULL, 
+    [TaskClosureDate] DATETIME NULL, 
+    [CreatedOn] DATETIME NULL, 
+    [CreatedBy] NVARCHAR(100) NULL, 
+    [CreatedByADID] NVARCHAR(100) NULL, 
+    [UpdatedOn] DATETIME NULL, 
+    [UpdatedBy] NVARCHAR(100) NULL, 
+    [UpdatedByADID] NVARCHAR(100) NULL, 
+    [TaskStatus] NVARCHAR(50) NULL, 
+    [TaskReferenceNo] UNIQUEIDENTIFIER NOT NULL, 
+    [CreatedByEmail] NVARCHAR(100) NULL, 
+    [UpdatedByEmail] NVARCHAR(100) NULL, 
+    [AssignedTo] NVARCHAR(100) NULL, 
+    [AssignedToEmail] NVARCHAR(100) NULL, 
+    [AssignedToADID] NVARCHAR(50) NULL, 
+    [TaskRemarks] NVARCHAR(250) NULL, 
+    [OldAssignedToADID] NVARCHAR(50) NULL, 
+    [SortOrder] BIGINT NULL 
+)

@@ -1,0 +1,761 @@
+.createMeetingDiv {
+  flex: 1;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+
+.meeting-card {
+  background-color: #fff;
+  border-radius: 4px;
+  border-top: 2px solid #6264A7;
+  box-shadow: 0px 1px 3px #0000001a;
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+.meeting-card-header {
+  background-color: #E9EAF6;
+  padding: 6px 2px 6px 10px;
+}
+
+.meeting-card-body {
+  padding: 10px;
+}
+
+
+.menuTab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px #0000001a;
+  border-radius: 4px;
+  width: max-content;
+  overflow: hidden;
+}
+
+.menuTab ul li {
+  display: inline-block;
+  line-height: 32px;
+  height: 32px;
+  font-size: 14px;
+  color: #616161;
+  padding: 0 13px;
+}
+
+.menuTab ul li.active {
+  background-color: #5b5fc7;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pikdate {
+  width: 100%;
+
+  [data-aa-class="Datepicker__input"] {
+    width: calc(100% - 32px);
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    box-shadow: none;
+  }
+}
+
+.inline-date {
+  [data-aa-class="Datepicker__input"] {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    padding: 5px 10px;
+    width: 100%;
+  }
+}
+
+.ui-dropdown__selected-items {
+  span {
+    font-weight: 400;
+  }
+}
+
+.create_meeting_card {
+  padding: 32px;
+  width: 1208px;
+  height: 700px;
+}
+
+.rdw-editor-toolbar {
+  border-radius: 4px;
+}
+
+.rdw-editor-main {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  min-height: 140px;
+  padding: 12px;
+}
+
+.public-DraftStyleDefault-block {
+  margin: 0 !important;
+}
+
+.rdw-option-wrapper {
+  padding: 14px 7px !important;
+}
+
+.rdw-dropdown-wrapper {
+  font-size: 13px !important;
+
+}
+
+.rdw-dropdown-wrapper span {
+  color: #000;
+}
+
+.rdw-dropdown-selectedtext {
+  text-decoration: none;
+}
+
+/* LIST */
+/* ================== */
+
+.files-dropzone-list {
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+  border: 2px dashed #a3a4c9;
+  cursor: pointer;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  color: #6264A7;
+  font-weight: 600;
+  transition: ease all 0.3s;
+
+  &:hover {
+    background-color: #E9EAF6;
+  }
+}
+
+.files-buttons {
+  border-top: 1px solid #D3D3D3;
+  cursor: pointer;
+}
+
+.files-button-submit {
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  box-sizing: border-box;
+  border-right: 1px solid #D3D3D3;
+}
+
+.files-button-submit:before {
+  content: "Submit"
+}
+
+.files-button-clear {
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.files-button-clear:before {
+  content: "Clear"
+}
+
+.files-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.files-list li:last-child {
+  border: none;
+}
+
+.files-list-item {
+  background-color: #f5f5f5;
+  margin-bottom: 3px;
+  padding: 5px;
+  border-radius: 4px;
+
+  .files-list-item-content {
+    float: left;
+    padding-left: 10px;
+    width: calc(100% - 130px);
+
+    .files-list-item-content-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      &.files-list-item-content-item-1 {
+        font-size: 12px;
+        font-weight: 600;
+        color: #616161;
+      }
+
+      &.files-list-item-content-item-2 {
+        font-size: 10px;
+        font-weight: 400;
+        color: #616161;
+      }
+    }
+  }
+
+  .files-list-item-preview {
+    width: 32px;
+    float: left;
+
+    .files-list-item-preview-image {
+      height: 100%;
+      width: 100%;
+    }
+
+    .files-list-item-preview-extension {
+      text-align: center;
+      line-height: 32px;
+      color: #FFF;
+      background-color: #D3D3D3;
+      font-size: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding-left: 5px;
+      padding-right: 5px;
+      box-sizing: border-box;
+    }
+  }
+
+  .files-list-item-remove {
+    height: 32px;
+    width: 20px;
+    float: right;
+    cursor: pointer;
+    // background: url(../src/images/times-solid.svg) no-repeat center center;
+  }
+}
+
+
+
+
+
+
+
+.files-list-item-remove-image {
+  height: 30px;
+  width: 30px;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: right;
+}
+
+
+
+/* GALLERY */
+/* ================== */
+
+.files-dropzone-gallery {
+  padding: 10px;
+  border: 1px dashed #D3D3D3;
+  min-height: 300px;
+  width: 500px;
+}
+
+.files-gallery-item {
+  height: 80px;
+  margin: 5px;
+}
+
+
+.files-dropzone-active {
+  border: 1px solid lightgreen;
+  color: lightgreen;
+}
+
+.meeting_view_card {
+  padding: 25px;
+}
+
+.create_task_card {
+  padding: 32px;
+  width: 600px;
+  height: 494px;
+}
+
+
+.meetingDetailsDiv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 865px) {
+  .meetingDetailsDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .meeting-card {
+    width: 100%;
+  }
+
+  .meetingSearchDiv {
+    display: flex;
+    flex-direction: column;
+gap:10px;
+
+  }
+
+  .meetingDashboardDropDown {
+    width: 100% !important;
+    margin-top: 10px;
+    // margin-bottom: 10px;
+  }
+
+  .meetingDashboardSearchBtn {
+    width: 100% !important;
+    margin-right: 10px;
+  }
+
+  .meetingDashboardDatepicker {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .meetingDashboardSearchInput{
+    width: 100% !important;
+    margin-top: 10px;
+    
+    .ui-input__input{
+      width: 100%;
+    }
+    
+  }
+
+}
+
+
+.meetingDashboardDatepicker {
+  .ui-input {
+    width: 100%
+  }
+
+  input {
+    width: 100%;
+    box-shadow: rgba(157, 150, 150, 0.15) 0px 2px 0px 0px;
+  }
+}
+
+.meetingDashboardDatepicker button {
+  display: none !important;
+}
+
+.meetingDashboardDatepicker svg {
+  cursor: pointer !important;
+}
+
+@media (max-width: 680px) {
+  .meetingDetailsDiv {
+    display: flex;
+    flex-direction: column !important;
+    gap: 15px;
+  }
+}
+
+.meetingDashboardDropDown {
+  width: 20%;
+  box-shadow: rgba(95, 92, 92, 0.15) 2px 2px 2px 0px;
+}
+
+.meetingDashboardSearchBtn {
+  width: 10%;
+}
+
+.datepickerBoxShadow {
+  box-shadow: rgba(95, 92, 92, 0.15) 2px 2px 2px 0px;
+}
+
+.meetingSearchDiv {
+  justify-content: flex-end;
+}
+
+.meeetingCreationHeader {
+  margin-inline-start: 3.2rem;
+  margin-bottom: 10px;
+}
+
+
+.taskModule {
+
+  .formContainer {
+    position: absolute;
+    // top: 0rem;
+    // bottom: 8.4rem;
+    width: 100%;
+    background-color: transparent !important;
+
+    .scrollableContent {
+      overflow: auto;
+      height: 100%;
+      min-height: 100%;
+      margin-inline-start: 3.2rem;
+
+      h3 {
+        font-size: 1.6rem;
+        margin: 2rem 0 0 0;
+      }
+
+      h4 {
+        margin: 0.6rem 3.2rem 1rem 3.2rem;
+        font-size: 1.4rem;
+        font-weight: 100;
+      }
+
+      .formContentContainer {
+        margin-inline-end: 3.5rem;
+
+        .inputField {
+
+          label {
+            font-size: 1.2rem;
+            display: block;
+            margin: 0.8rem 0rem 0.4rem 0rem;
+          }
+
+          input {
+            height: 3.2rem;
+            padding: 0.6rem 1.2rem;
+            font-size: 1.4rem;
+            margin: auto 0;
+          }
+
+          i {
+            bottom: 0.5rem;
+          }
+        }
+
+        .textArea {
+
+          span {
+            font-size: 1.2rem;
+            display: block;
+            margin: 0.8rem 0rem 0.4rem 0rem;
+
+            &:nth-child(2) {
+              color: #C4314B;
+            }
+          }
+
+          textarea {
+            height: 9.6rem;
+            padding: 0.6rem 1.2rem;
+            font-size: 1.4rem;
+            margin: auto 0;
+          }
+
+          i {
+            bottom: 2.5rem;
+          }
+        }
+
+        .hide {
+          display: none;
+        }
+
+        .show {
+          display: inline;
+        }
+
+        .radioBtns {
+          width: 70%;
+
+          p {
+            margin: 1.5rem 0rem;
+          }
+
+          .ui-dropdown {
+            margin: 0.6rem 0rem 0.6rem 2.5rem;
+            width: 30rem;
+          }
+
+          .noteText {
+            margin: 1rem 0rem 1rem 2.5rem;
+          }
+
+          .hide {
+            display: none;
+          }
+
+          .hideToggle {
+
+            .ui-dropdown__toggle-indicator {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+
+      .adaptiveCardContainer {
+        margin: 0 2rem;
+      }
+    }
+
+    .footerContainer {
+      position: fixed;
+      bottom: -35px;
+      left: 0;
+      padding: 2rem 0rem 3.2rem 0rem;
+      width: 100%;
+
+      .buttonContainer {
+        margin-inline-end: 3.2rem;
+
+        #saveBtn {
+          margin-inline-start: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+
+.ui-popup__content {
+  left: -85px !important;
+}
+
+.gap_10 {
+  gap: 10px !important;
+}
+
+.taskmoduleButtonDiv {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  margin: 5%
+}
+.taskmoduleButtonDiv2 {
+  bottom: 0;
+  position: relative;
+  right: 0;
+  margin: 5%;
+  float: right;
+}
+
+.taskmoduleButtonDiv3{
+  bottom: 0;
+    position: relative;
+    right: 0;
+    margin: 5%;
+    top: 14px;
+}
+
+
+.view_meeting_participants_view {
+  height: 350px;
+}
+
+
+.createMeetingDate {
+  .ui-popup__content {
+    left: 0px !important;
+  }
+
+  .ui-popup__content__content {
+    margin-left: 50px !important;
+  }
+}
+
+
+.meetingDetailsView {
+  .rdw-editor-wrapper {
+    height: 50px
+  }
+
+  .rdw-editor-main {
+    background-color: transparent !important;
+    border-radius: 4px;
+    min-height: auto !important;
+    padding: 0px !important;
+  }
+}
+
+.searchBox {
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.searchList {
+  text-align: left;
+  width: 100%;
+  max-height: 150px;
+  height: auto;
+  box-shadow: 0px 6px 10px 0px #9e9999;
+  overflow-y: scroll;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.searchList::-webkit-scrollbar {
+  display: none;
+}
+
+.searchBox:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  // padding: 15px;
+}
+
+.searchResultList {
+  padding: 5px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.showSelectedEmployee {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+}
+
+.searchResultListEmployeeName {
+  font-size: 14px;
+}
+
+.personalChatMember {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileImage {
+  height: 34px;
+  width: 34px;
+  margin-right: 5px;
+}
+
+.showSelectedEmployeeDiv {
+  max-height: 420px;
+  overflow-y: auto;
+  //scrollbar-width: thin;
+  scrollbar-color: rgb(161, 160, 160) #f1f1f1;
+  width: 85%;
+  padding-right: 10px;
+}
+
+.showSelectedEmployeeDiv::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+.showSelectedEmployeeDiv::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+.showSelectedEmployeeDiv::-webkit-scrollbar-thumb {
+  background: #888 !important;
+}
+
+.showSelectedEmployeeDiv::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+
+.cancelMeetingsRemarks {
+  height: 150px;
+
+  .ui-textarea {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.ui-popup__content {
+  margin-left: 50px !important;
+}
+
+.createMeetingFileUpload {
+  margin-top: 5px !important;
+  font-size: 14px;
+  width: 100% !important;
+  border: 1px dashed #250268 !important;
+  float: right;
+  border-radius: 5px !important;
+  color: #250268 !important;
+  justify-content: center !important;
+  display: flex !important;
+  padding: 5px;
+  background-color: #f9f7f7;
+}
+
+.createMeetingTimePicker {
+  margin-left: 10px;
+  width: 130Px !important;
+
+  .ui-dropdown__container {
+    width: auto !important;
+  }
+}
+
+
+.leftSidePart {
+  max-width: 50%;
+
+  .leftSidePartDropDown {
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+  .createMeetingDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meetingDashboardPageHeader {
+    display: flex !important;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.colorBlack{
+  color: black !important;
+}
+
+
+.createMeetingTemplateUpload {
+  margin-top: 5px !important;
+  font-size: 14px;
+  width: 100% !important;
+  float: right;
+  border-radius: 5px !important;
+  color: #250268 !important;
+  justify-content: center !important;
+  display: flex !important;
+  padding: 5px;
+  background-color: #f9f7f7;
+}
