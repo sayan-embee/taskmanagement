@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="ab269ee5-77d4-4449-b843-c71c9be193be" ChangeDateTime="02/01/2022 06:29:19" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Mst_Division].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Mst_Division]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DivisionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="60591831-6d92-49ac-b5fa-feb219aa8322" ChangeDateTime="02/02/2022 05:00:15" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Mst_MeetingTitle].[DivisionID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Mst_MeetingTitle]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DivisionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="027a6ddd-454c-450c-a487-e283f84ab280" ChangeDateTime="02/02/2022 15:28:55" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Mst_FeedbackQuestions].[QuesstionFor]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Mst_FeedbackQuestions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestionFor" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b4a2c708-cbee-4303-8f60-8fc7700ec68b" ChangeDateTime="02/16/2022 06:57:34" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_Conversations].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_Conversations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ConversationId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="39ef697e-d253-4c58-9965-ed55f6cb8a7a" ChangeDateTime="02/21/2022 07:32:36" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MeetingId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c38466b1-3760-4e9f-9f13-5f115de48066" ChangeDateTime="02/21/2022 07:33:54" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingDetails].[MeetingTypeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MeetingtypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ef588393-794e-463a-83a2-c07932d77235" ChangeDateTime="02/21/2022 07:34:29" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingDetails].[MeetingtypeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MeetingTypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a74e10bb-4ad3-4984-b53c-402c92c22051" ChangeDateTime="02/21/2022 08:12:51" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingRepeatDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingRepeatDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RepeatId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1c6e9f1d-ce2d-4605-8118-532cedc5c1b6" ChangeDateTime="02/21/2022 08:36:22" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingRepeatDetails].[Frequecy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingRepeatDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Frequency" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1359e57b-eeec-4a51-ace0-5c3919218851" ChangeDateTime="02/21/2022 08:46:56" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingParticipants].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingParticipants]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParticipantId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1b89b6ba-d1c4-4c1a-b88c-aec5dc5a20e9" ChangeDateTime="02/22/2022 05:59:42" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingRepeatDetails].[StartDateTimeUTC]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingRepeatDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StartDateUTC" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c28a4961-2230-475a-939e-0c68b1d9188e" ChangeDateTime="02/23/2022 06:35:16" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingParticipants].[IsActive]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingParticipants]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Active" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e9c7ced6-2703-4f74-b2f3-e23dc078b667" ChangeDateTime="03/14/2022 12:06:08" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingFileUpload].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingFileUpload]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FileId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="036d75f9-c507-457c-a49f-6e05313697ec" ChangeDateTime="03/21/2022 09:36:47" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaskId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b347f834-cb41-435a-aa06-8189ba050339" ChangeDateTime="03/21/2022 16:37:58" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskDetails].[TaskGUID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaskRefNo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="401d7706-65c1-4067-8daf-effe5c81ac5c" ChangeDateTime="03/21/2022 16:51:50" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskDetails].[TaskRefNo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaskReferenceNo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5637f9a6-8045-4489-9fe6-212218606802" ChangeDateTime="03/24/2022 11:05:27" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskFileUpload].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskFileUpload]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FileId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="400fac0a-0c10-4cfe-a049-0c076b697d63" ChangeDateTime="03/24/2022 11:07:56" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskFileUpload].[FileId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskFileUpload]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaskFileId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f40e99e7-395b-4cd4-800e-876d55c6a438" ChangeDateTime="03/24/2022 15:49:36" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TasklogDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TasklogDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaskLogId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4d0b895e-ace6-480f-8273-46abaa3c2270" ChangeDateTime="03/28/2022 06:41:12" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingFeedbackDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingFeedbackDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FeedbackId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="88a6f64b-943c-446d-a290-ebb940fb374c" ChangeDateTime="03/28/2022 09:00:32" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_MeetingQuestionAnswer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_MeetingQuestionAnswer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QtnAnsId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4032a944-8192-4564-b05e-c46426411ba7" ChangeDateTime="04/03/2022 07:49:29" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TasklogDetails].[CreatedOn]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TasklogDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaskCreatedOn" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f498a3dd-d923-4ad9-9431-926a25afba44" ChangeDateTime="04/09/2022 10:18:27" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskChecklist].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskChecklist]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChecklistId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6c7acd17-4003-4f9e-80db-179899322200" ChangeDateTime="04/09/2022 10:22:24" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskChecklist].[ChecklistClosureDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskChecklist]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChecklistCompletionDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="75075f3e-9fa6-4f1c-80e6-615baf9c1f43" ChangeDateTime="04/09/2022 10:22:56" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskChecklist].[Checklist]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskChecklist]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChecklistStatus" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c8b3ff8c-a66e-4188-9a2d-1ccf06f9d4b2" ChangeDateTime="04/09/2022 11:38:18" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskActionHistory].[TaskRemark]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskActionHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TaskRemarks" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5e7e9c2c-2912-4478-9d80-a27cf3167a58" ChangeDateTime="04/14/2022 19:01:51" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[TaskNotificationResponseDetails].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskNotificationResponseDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NotificationId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0eb3cd09-578c-4c34-bbc6-4e1c40871b64" ChangeDateTime="07/19/2022 07:19:26" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_CallRecordParticipants].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_CallRecordParticipants]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CallRecordParticipantsId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="26ee3c0a-248c-42fb-8b56-6d5176dbc5f7" ChangeDateTime="09/13/2023 10:40:11" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskDetails].[RevisedTargetDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CurrentTargetDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1690e3a-7402-497d-b12a-60cf7bc14873" ChangeDateTime="09/13/2023 10:40:28" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_TaskHistoryDetails].[RevisedTargetDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_TaskHistoryDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CurrentTargetDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="85f58ac6-9d26-4e5e-8bdd-f737c0488e36" ChangeDateTime="09/14/2023 03:44:05" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[TaskAssignmentDetails].[Assignment]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskAssignmentDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AssignmentType" />
+  </Operation>
+</Operations>

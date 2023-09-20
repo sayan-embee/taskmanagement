@@ -1,0 +1,461 @@
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\Notification\newTaskNotificationCard.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\Notification\reassignTaskNotificationCard.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\Notification\updatedTaskNotificationCard.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\WelcomeCard\welcome-card.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\new-rg-parameters.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\preexisting-rg-parameters.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\template-with-new-rg.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\template-with-preexisting-rg.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.staticwebassets.runtime.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.exe
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\appsettings.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.runtimeconfig.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.Templating.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveExpressions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Antlr4.Runtime.Standard.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Identity.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Dapper.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.DependencyCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.EventCounterCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.PerfCounterCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.WindowsServer.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.NodeServices.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.Integration.AspNet.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Configuration.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.Streaming.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Schema.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Streaming.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Web.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Recognizers.Text.DataTypes.TimexExpression.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.Contrib.WaitAndRetry.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.TeamsApp.RiseApp.Bot.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.build.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.build.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.development.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\scopedcss\bundle\TeamsApp.RiseApp.Bot.styles.css
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CopyComplete
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\refint\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.genruntimeconfig.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\ref\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\Notification\newTaskNotificationCard.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\Notification\reassignTaskNotificationCard.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\Notification\updatedTaskNotificationCard.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\WelcomeCard\welcome-card.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\new-rg-parameters.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\preexisting-rg-parameters.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\template-with-new-rg.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\DeploymentTemplates\template-with-preexisting-rg.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.staticwebassets.runtime.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.exe
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\appsettings.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.runtimeconfig.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.Templating.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveExpressions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Antlr4.Runtime.Standard.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Identity.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Dapper.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.DependencyCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.EventCounterCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.PerfCounterCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.WindowsServer.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.NodeServices.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.Integration.AspNet.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Configuration.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.Streaming.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Schema.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Streaming.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Web.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Recognizers.Text.DataTypes.TimexExpression.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.Contrib.WaitAndRetry.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.TeamsApp.RiseApp.Bot.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.build.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.build.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.development.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\scopedcss\bundle\TeamsApp.RiseApp.Bot.styles.css
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CopyComplete
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\refint\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.genruntimeconfig.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\ref\TeamsApp.RiseApp.Bot.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\WelcomeCard\welcome-card.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.staticwebassets.runtime.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.exe
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\appsettings.Development.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\appsettings.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.deps.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.runtimeconfig.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.Templating.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveExpressions.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Antlr4.Runtime.Standard.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Core.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Identity.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Dapper.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\HtmlAgilityPack.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.AspNetCore.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.DependencyCollector.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.EventCounterCollector.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.PerfCounterCollector.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.WindowsServer.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.ServerTelemetryChannel.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.NodeServices.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.Integration.AspNet.Core.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Configuration.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.Streaming.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Schema.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Streaming.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.ApplicationInsights.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Web.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Recognizers.Text.DataTypes.TimexExpression.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.Contrib.WaitAndRetry.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Memory.Data.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.AssemblyReference.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfoInputs.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfo.cs
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CoreCompileInputs.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cs
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.TeamsApp.RiseApp.Bot.Microsoft.AspNetCore.StaticWebAssets.props
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.build.TeamsApp.RiseApp.Bot.props
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TeamsApp.RiseApp.Bot.props
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TeamsApp.RiseApp.Bot.props
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.pack.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.build.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.development.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\scopedcss\bundle\TeamsApp.RiseApp.Bot.styles.css
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CopyComplete
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\refint\TeamsApp.RiseApp.Bot.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.genruntimeconfig.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\ref\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Cards\WelcomeCard\welcome-card.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.staticwebassets.runtime.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.exe
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\appsettings.Development.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\appsettings.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.runtimeconfig.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveCards.Templating.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AdaptiveExpressions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Antlr4.Runtime.Standard.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Identity.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Azure.Storage.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Dapper.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.DependencyCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.EventCounterCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.PerfCounterCollector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.WindowsServer.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.NodeServices.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Builder.Integration.AspNet.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Configuration.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Connector.Streaming.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Schema.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Bot.Streaming.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Identity.Web.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Recognizers.Text.DataTypes.TimexExpression.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Polly.Contrib.WaitAndRetry.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.MvcApplicationPartsAssemblyInfo.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.TeamsApp.RiseApp.Bot.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.build.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TeamsApp.RiseApp.Bot.props
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.build.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\staticwebassets.development.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\scopedcss\bundle\TeamsApp.RiseApp.Bot.styles.css
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.csproj.CopyComplete
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\refint\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\TeamsApp.RiseApp.Bot.genruntimeconfig.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\obj\Debug\net6.0\ref\TeamsApp.RiseApp.Bot.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Bot\bin\Debug\net6.0\System.IO.Hashing.dll

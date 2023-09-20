@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.activeTab {
+  background-color: #5b5fc7;
+  color: #fff;
+  font-weight: 600;
+}
+
+.inActiveTab {
+  border-bottom: transparent;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+
+.tabButton {
+  line-height: 32px;
+  font-size: 14px;
+  color: #616161;
+  width: 300px;
+  box-shadow: rgba(157, 150, 150, 0.15) 2px 2px 2px 0px; //0px 1px 3px rgb(0 0 0 / 10%);
+}
+
+.tabButtonFont {
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center !important;
+}
+
+.bottomButton {
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
+
+
+.pagination-style {
+  right: 0;
+  margin-top: 15px;
+  position: absolute;
+
+  // bottom: 0;
+  .page-item.active {
+    a {
+      background-color: #4285f4 !important;
+    }
+  }
+}
+
+.textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // max-width: 250px;
+  display: inline-block;
+}
+
+.primaryText-111 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #5b5fc7 !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.ms-Persona{
+  color: #393ed3 !important;
+}
+
+.ms-Persona-details{
+  color: #393ed3 !important;
+}
+
+.ms-Persona-primaryText{
+  color: #393ed3 !important;
+}
+
+.primaryText-99 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #5b5fc7 !important;
+  font-weight: 400;
+  font-size: 14px;
+}

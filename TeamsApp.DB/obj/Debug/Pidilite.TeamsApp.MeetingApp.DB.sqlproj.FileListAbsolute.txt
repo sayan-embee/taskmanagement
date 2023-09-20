@@ -1,0 +1,10 @@
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dacpac
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.sqlproj.AssemblyReference.cache
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\obj\Debug\Model.xml
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\obj\Debug\refactor.xml
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\obj\Debug\postdeploy.sql
+C:\Teams Project\Pidilite\Phase2_Development\Phase1_Testing Updated + Phase2_Testing\Pidilite.TeamsApp.MeetingApp\Pidilite.TeamsApp.MeetingApp.DB\obj\Debug\predeploy.sql

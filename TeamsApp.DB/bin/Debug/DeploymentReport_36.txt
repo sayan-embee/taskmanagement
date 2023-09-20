@@ -1,0 +1,27 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Mst_TimeZone] (Table)
+       [dbo].[Trn_Conversations] (Table)
+       [dbo].[Trn_ConversationsTeams] (Table)
+       Default Constraint: unnamed constraint on [dbo].[Trn_Conversations] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Trn_ConversationsTeams] (Default Constraint)
+       [dbo].[usp_Conversation_Get] (Procedure)
+       [dbo].[usp_Conversation_Insert] (Procedure)
+       [dbo].[usp_Conversation_Remove] (Procedure)
+       [dbo].[usp_Conversation_Update] (Procedure)
+       [dbo].[usp_ConversationTeams_Get] (Procedure)
+       [dbo].[usp_ConversationTeams_Insert] (Procedure)
+       [dbo].[usp_ConversationTeams_Remove] (Procedure)
+       [dbo].[usp_ConversationTeams_Update] (Procedure)
+
+** Supporting actions

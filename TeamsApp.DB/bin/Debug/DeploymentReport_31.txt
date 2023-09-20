@@ -1,0 +1,53 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Trn_CallRecordParticipants]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Trn_CallRecordParticipants].[CallRecordParticipantsId] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Trn_CallRecordParticipants].[CallRecordParticipantsId] (Column)
+     Table rebuild
+       [dbo].[Trn_CallRecordParticipants] (Table)
+     Alter
+       [dbo].[usp_Dashboard_Personal_MeetingDetails] (Procedure)
+       [dbo].[usp_Check_MeetingDetailsBeforeCancel] (Procedure)
+       [dbo].[usp_Check_MeetingDetailsBeforeUpdate2] (Procedure)
+       [dbo].[usp_Check_TaskDetailsByMeetingId] (Procedure)
+       [dbo].[usp_Dashboard_Conf_Room_Details] (Procedure)
+       [dbo].[usp_Dashboard_DivisionHead_TaskDetails_UserWise] (Procedure)
+       [dbo].[usp_Dashboard_FeedBack_Details] (Procedure)
+       [dbo].[usp_Dashboard_Personal_TaskDetails_ByMeetingID] (Procedure)
+       [dbo].[usp_Dashboard_Personal_TaskDetailsByUser] (Procedure)
+       [dbo].[usp_Dashboard_ReportingManager_MeetingDetails] (Procedure)
+       [dbo].[usp_Dashboard_ReportingManager_TaskDetails] (Procedure)
+       [dbo].[usp_MeetingDetails_GetForAttachmentNotification] (Procedure)
+       [dbo].[usp_MeetingDetails_GetSeriesMeetingId] (Procedure)
+       [dbo].[usp_MeetingDetails_GetSeriesMeetingIdAfterMeetingUpdate] (Procedure)
+       [dbo].[usp_MeetingDetails_Insert] (Procedure)
+       [dbo].[usp_MeetingDetails_Partially] (Procedure)
+       [dbo].[usp_MeetingDetails_ParticipantsUpdate] (Procedure)
+       [dbo].[usp_MeetingDetails_SendMail] (Procedure)
+       [dbo].[usp_MeetingDetails_Update] (Procedure)
+       [dbo].[usp_MeetingFileUpload_AnchorUpdate2] (Procedure)
+       [dbo].[usp_MeetingFileUpload_Insert] (Procedure)
+       [dbo].[usp_MeetingTitle_Insert] (Procedure)
+       [dbo].[usp_MeetingTitle_Update] (Procedure)
+       [dbo].[usp_MeetingTitleFileUploadResponse_Update] (Procedure)
+       [dbo].[usp_NoFeedbackParticipants_Get] (Procedure)
+       [dbo].[usp_TaskDetails_GetAll] (Procedure)
+       [dbo].[usp_TaskDetails_GetAllPrev] (Procedure)
+       [dbo].[usp_TaskDetails_Insert] (Procedure)
+       [dbo].[usp_TaskDetails_Reassign] (Procedure)
+       [dbo].[usp_TaskSortOrder_Update] (Procedure)
+
+** Supporting actions
+     Refresh
+       [dbo].[usp_CallRecord_Insert] (Procedure)
+
+The column [dbo].[Trn_CallRecordParticipants].[CallRecordParticipantsId] is being dropped, data loss could occur.
+

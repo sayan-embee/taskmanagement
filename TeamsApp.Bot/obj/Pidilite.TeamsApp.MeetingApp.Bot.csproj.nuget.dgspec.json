@@ -1,0 +1,300 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Bot\\Pidilite.TeamsApp.MeetingApp.Bot.csproj": {}
+  },
+  "projects": {
+    "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Bot\\Pidilite.TeamsApp.MeetingApp.Bot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Bot\\Pidilite.TeamsApp.MeetingApp.Bot.csproj",
+        "projectName": "Pidilite.TeamsApp.MeetingApp.Bot",
+        "projectPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Bot\\Pidilite.TeamsApp.MeetingApp.Bot.csproj",
+        "packagesPath": "C:\\Users\\012047\\.nuget\\packages\\",
+        "outputPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Bot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\012047\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\Pidilite.TeamsApp.MeetingApp.Common.csproj": {
+                "projectPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\Pidilite.TeamsApp.MeetingApp.Common.csproj"
+              },
+              "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.DataAccess\\Pidilite.TeamsApp.MeetingApp.DataAccess.csproj": {
+                "projectPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.DataAccess\\Pidilite.TeamsApp.MeetingApp.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AdaptiveCards": {
+              "target": "Package",
+              "version": "[2.7.3, )"
+            },
+            "AdaptiveCards.Templating": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Azure.Security.KeyVault.Secrets": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.10.0, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.42, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.20.0, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.20.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.AzureAD.UI": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.Core": {
+              "target": "Package",
+              "version": "[4.15.0, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[3.32.0, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[0.1.3-preview, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.25, 3.1.25]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\Pidilite.TeamsApp.MeetingApp.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\Pidilite.TeamsApp.MeetingApp.Common.csproj",
+        "projectName": "Pidilite.TeamsApp.MeetingApp.Common",
+        "projectPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\Pidilite.TeamsApp.MeetingApp.Common.csproj",
+        "packagesPath": "C:\\Users\\012047\\.nuget\\packages\\",
+        "outputPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\012047\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.Core": {
+              "target": "Package",
+              "version": "[4.9.4, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
+            "Polly.Contrib.WaitAndRetry": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.DataAccess\\Pidilite.TeamsApp.MeetingApp.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.DataAccess\\Pidilite.TeamsApp.MeetingApp.DataAccess.csproj",
+        "projectName": "Pidilite.TeamsApp.MeetingApp.DataAccess",
+        "projectPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.DataAccess\\Pidilite.TeamsApp.MeetingApp.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\012047\\.nuget\\packages\\",
+        "outputPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\012047\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\Pidilite.TeamsApp.MeetingApp.Common.csproj": {
+                "projectPath": "C:\\Teams Project\\Pidilite\\Phase2_Development\\Phase1_Testing Updated + Phase2_Testing\\Pidilite.TeamsApp.MeetingApp\\Pidilite.TeamsApp.MeetingApp.Common\\Pidilite.TeamsApp.MeetingApp.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

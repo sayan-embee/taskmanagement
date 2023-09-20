@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[udt_TaskAssignee] (User-Defined Table Type)
+       [dbo].[Trn_TaskAdditionalDetails] (Table)
+       [dbo].[Trn_TaskDetails] (Table)
+       [dbo].[Trn_TaskHistoryDetails] (Table)
+       [dbo].[Trn_TaskProgressDetails] (Table)
+       [dbo].[usp_Task_Insert] (Procedure)
+
+** Supporting actions

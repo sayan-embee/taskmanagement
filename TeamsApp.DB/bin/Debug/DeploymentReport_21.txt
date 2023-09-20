@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[usp_MeetingTitle_Get] (Procedure)
+       [dbo].[usp_MeetingTitle_GetAll] (Procedure)
+       [dbo].[usp_MeetingTitle_Update] (Procedure)
+       [dbo].[usp_MeetingTitleFileUploadResponse_Insert] (Procedure)
+     Create
+       [dbo].[usp_MeetingFileUpload_AnchorUpdate2] (Procedure)
+       [dbo].[usp_MeetingTitleFileUploadResponse_Update] (Procedure)
+
+** Supporting actions

@@ -1,0 +1,18 @@
+.assignTaskShow{
+    box-shadow:  #4d4c4c 2px 2px 2px 0px !important ;
+}
+
+.assignTaskBlock{
+    // background-color: #f9f6f6;
+    padding: 4px;
+    // box-shadow:  #d6d5d5 2px 2px 2px 0px !important ;
+    max-height: 255px;
+    overflow-y: auto;
+    // scrollbar-width: thin;
+    // scrollbar-color: rgb(182, 180, 180) #f1f1f1;
+
+    ::-webkit-scrollbar {
+        width: 12px !important;
+    }
+}
+

@@ -1,0 +1,26 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[UDT_MeetingSPOFileUpload] (User-Defined Table Type)
+     Create
+       [dbo].[UDT_MeetingSPOFileUpload] (User-Defined Table Type)
+     Alter
+       [dbo].[MeetingSPOFileUploadResponse] (Table)
+       [dbo].[MeetingTitleFileUploadResponse] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[usp_MeetingSPOFileUploadResponse_Insert] (Procedure)
+     Create
+       [dbo].[usp_MeetingSPOFileUploadResponse_Insert] (Procedure)
+     Refresh
+       [dbo].[usp_MeetingTitleFileUploadResponse_Insert] (Procedure)

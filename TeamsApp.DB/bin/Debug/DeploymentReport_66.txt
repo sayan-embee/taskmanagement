@@ -1,0 +1,26 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[Trn_TaskAdditionalDetails] (Table)
+       [dbo].[Trn_TaskAssignmentDetails] (Table)
+       [dbo].[Trn_TaskDetails] (Table)
+       [dbo].[Trn_TaskHistoryDetails] (Table)
+       [dbo].[Trn_TaskProgressDetails] (Table)
+       [dbo].[usp_Task_Insert] (Procedure)
+       [dbo].[usp_Task_Update] (Procedure)
+       [dbo].[usp_Task_InsertComments] (Procedure)
+       [dbo].[usp_Task_GetById] (Procedure)
+     Create
+       [dbo].[usp_Task_CheckRole_ByTaskId] (Procedure)
+       [dbo].[usp_Task_Reassign] (Procedure)
+
+** Supporting actions

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TeamsApp.RiseApp.Bot.props" />
+</Project>

@@ -1,0 +1,65 @@
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CopyComplete
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CopyComplete
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CopyComplete
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.deps.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.AssemblyReference.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfoInputs.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfo.cs
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CoreCompileInputs.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CopyComplete
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.csproj.CopyComplete
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DataAccess\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.DataAccess.pdb

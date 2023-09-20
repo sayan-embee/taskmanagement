@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Mst_Category]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Mst_Category].[CreatedOn] is being dropped, data loss could occur.
+       The column [dbo].[Mst_Category].[UpdatedOn] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Mst_Category] (Default Constraint)
+     Table rebuild
+       [dbo].[Mst_Category] (Table)
+     Alter
+       [dbo].[usp_Category_Insert] (Procedure)
+
+** Supporting actions
+
+The column [dbo].[Mst_Category].[CreatedOn] is being dropped, data loss could occur.
+The column [dbo].[Mst_Category].[UpdatedOn] is being dropped, data loss could occur.
+

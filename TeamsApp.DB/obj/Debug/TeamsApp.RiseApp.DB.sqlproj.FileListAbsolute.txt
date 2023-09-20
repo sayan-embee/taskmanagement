@@ -1,0 +1,50 @@
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\TeamsApp.RiseApp.DB.dacpac
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\TeamsApp.RiseApp.DB.sqlproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Model.xml
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\refactor.xml
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\postdeploy.sql
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\predeploy.sql
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\TeamsApp.RiseApp.DB.dacpac
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\TeamsApp.RiseApp.DB.sqlproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Model.xml
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\refactor.xml
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\postdeploy.sql
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\predeploy.sql
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\TeamsApp.RiseApp.DB.dacpac
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\TeamsApp.RiseApp.DB.sqlproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\Model.xml
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\refactor.xml
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\postdeploy.sql
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.DB\obj\Debug\predeploy.sql
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\bin\Debug\TeamsApp.RiseApp.DB.dacpac
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\TeamsApp.RiseApp.DB.sqlproj.AssemblyReference.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\Model.xml
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\refactor.xml
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\postdeploy.sql
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\predeploy.sql
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\bin\Debug\TeamsApp.RiseApp.DB.dacpac
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\TeamsApp.RiseApp.DB.sqlproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\Model.xml
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\refactor.xml
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\postdeploy.sql
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.DB\obj\Debug\predeploy.sql

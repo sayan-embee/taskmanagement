@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\default.htm",
+      "PackagePath": "staticwebassets\\default.htm"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\Nodata.svg",
+      "PackagePath": "staticwebassets\\images\\Nodata.svg"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\cancel.png",
+      "PackagePath": "staticwebassets\\images\\cancel.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\cancel.svg",
+      "PackagePath": "staticwebassets\\images\\cancel.svg"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\darkThemeCancel.png",
+      "PackagePath": "staticwebassets\\images\\darkThemeCancel.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\deleteIcon.png",
+      "PackagePath": "staticwebassets\\images\\deleteIcon.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\documentIcon.png",
+      "PackagePath": "staticwebassets\\images\\documentIcon.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\downArrow.png",
+      "PackagePath": "staticwebassets\\images\\downArrow.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\edit.svg",
+      "PackagePath": "staticwebassets\\images\\edit.svg"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\editBtn.png",
+      "PackagePath": "staticwebassets\\images\\editBtn.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\export-disable-icon.png",
+      "PackagePath": "staticwebassets\\images\\export-disable-icon.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\export.png",
+      "PackagePath": "staticwebassets\\images\\export.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\left-arrow.svg",
+      "PackagePath": "staticwebassets\\images\\left-arrow.svg"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\menuBtn.png",
+      "PackagePath": "staticwebassets\\images\\menuBtn.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\right_arrow_task.png",
+      "PackagePath": "staticwebassets\\images\\right_arrow_task.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\upArrow.png",
+      "PackagePath": "staticwebassets\\images\\upArrow.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\upload.png",
+      "PackagePath": "staticwebassets\\images\\upload.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\userImage.png",
+      "PackagePath": "staticwebassets\\images\\userImage.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\images\\view.png",
+      "PackagePath": "staticwebassets\\images\\view.png"
+    },
+    {
+      "Id": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\wwwroot\\js\\auth.js",
+      "PackagePath": "staticwebassets\\js\\auth.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TeamsApp.Bot.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TeamsApp.Bot.props",
+      "PackagePath": "build\\TeamsApp.Bot.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TeamsApp.Bot.props",
+      "PackagePath": "buildMultiTargeting\\TeamsApp.Bot.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TeamsApp.Bot.props",
+      "PackagePath": "buildTransitive\\TeamsApp.Bot.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

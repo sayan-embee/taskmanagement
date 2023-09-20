@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[usp_Dashboard_Conf_Room_Details] (Procedure)
+       [dbo].[usp_Dashboard_DivisionHead_MeetingDetails] (Procedure)
+       [dbo].[usp_Dashboard_DivisionHead_TaskDetails] (Procedure)
+       [dbo].[usp_Dashboard_FeedBack_Details] (Procedure)
+       [dbo].[usp_Dashboard_ReportingManager_MeetingDetails] (Procedure)
+       [dbo].[usp_Dashboard_ReportingManager_TaskDetails] (Procedure)
+       [dbo].[usp_MeetingDetails_GetAll] (Procedure)
+
+** Supporting actions

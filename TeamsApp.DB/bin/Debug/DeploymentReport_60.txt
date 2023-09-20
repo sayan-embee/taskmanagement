@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[Trn_TaskHistoryDetails]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Rename
+       [dbo].[Trn_TaskDetails].[CurrentTargetDate] (Column)
+       [dbo].[Trn_TaskHistoryDetails].[CurrentTargetDate] (Column)
+     Recreate table
+       [dbo].[Trn_TaskHistoryDetails] (Table)
+     Alter
+       [dbo].[usp_Task_Insert] (Procedure)
+     Create
+       [dbo].[usp_Task_Update] (Procedure)
+
+** Supporting actions

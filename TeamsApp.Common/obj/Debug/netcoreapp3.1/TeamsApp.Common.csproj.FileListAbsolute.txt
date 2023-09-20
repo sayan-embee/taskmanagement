@@ -1,0 +1,12 @@
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.Common.deps.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.Common.dll
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.Common.pdb
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.csproj.AssemblyReference.cache
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.Resources.Strings.resources
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.csproj.GenerateResource.cache
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.AssemblyInfoInputs.cache
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.AssemblyInfo.cs
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.csproj.CoreCompileInputs.cache
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.dll
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.Common.pdb

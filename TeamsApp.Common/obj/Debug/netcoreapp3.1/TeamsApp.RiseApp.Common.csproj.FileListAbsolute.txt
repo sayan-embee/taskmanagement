@@ -1,0 +1,60 @@
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.Resources.Strings.resources
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.GenerateResource.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\New folder\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.Resources.Strings.resources
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.GenerateResource.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Pidilite Code\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.Resources.Strings.resources
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.GenerateResource.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Phase1_Dev\TeamsApp.RiseApp\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.deps.json
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.AssemblyReference.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.Resources.Strings.resources
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.GenerateResource.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfoInputs.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfo.cs
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.CoreCompileInputs.cache
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+D:\All Projects\Project\Teams App Dev\TechMahindra RiseApp\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.deps.json
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\bin\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.AssemblyReference.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.Resources.Strings.resources
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.GenerateResource.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfoInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.AssemblyInfo.cs
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.csproj.CoreCompileInputs.cache
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.dll
+C:\Teams Project\Tech Mahindra\Rise App\Branches\devlopment\Rise_app\TeamsApp.RiseApp.Common\obj\Debug\netcoreapp3.1\TeamsApp.RiseApp.Common.pdb

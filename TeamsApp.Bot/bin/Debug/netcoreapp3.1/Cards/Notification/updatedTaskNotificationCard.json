@@ -1,0 +1,334 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://img.icons8.com/external-flatarticons-blue-flatarticons/48/000000/external-task-work-from-home-flatarticons-blue-flatarticons.png",
+                  "altText": "task",
+                  "horizontalAlignment": "Left",
+                  "size": "Small",
+                  "height": "25px",
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Large",
+                  "weight": "Bolder",
+                  "text": "Task Updated",
+                  "wrap": true,
+                  "style": "heading",
+                  "gridStyle": "accent",
+                  "fontType": "Default",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://img.icons8.com/office/40/000000/available-updates.png",
+                  "horizontalAlignment": "Right",
+                  "width": "24px",
+                  "height": "24px",
+                  "spacing": "Small"
+                }
+              ],
+              "spacing": "Small",
+              "horizontalAlignment": "Center",
+              "verticalContentAlignment": "Top",
+              "minHeight": "0px"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${formatDateTime(updatedOn, 'dd/MM/yyyy')}",
+                  "wrap": true,
+                  "height": "stretch",
+                  "horizontalAlignment": "Right",
+                  "weight": "Lighter",
+                  "color": "Accent",
+                  "fontType": "Monospace",
+                  "size": "Small"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Container",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "auto",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "size": "Small",
+                      "url": "https://img.icons8.com/fluency/48/000000/calendar.png",
+                      "width": "18px",
+                      "horizontalAlignment": "Right",
+                      "altText": "calendar"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "weight": "Bolder",
+                      "text": "**Closure Date -** ${formatDateTime(taskClosureDate, 'dd/MM/yyyy')}",
+                      "size": "Default",
+                      "color": "Accent",
+                      "fontType": "Default"
+                    }
+                  ],
+                  "width": "stretch",
+                  "horizontalAlignment": "Left",
+                  "spacing": "Small",
+                  "verticalContentAlignment": "Top"
+                }
+              ],
+              "spacing": "None",
+              "style": "accent",
+              "horizontalAlignment": "Left",
+              "minHeight": "0px"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Task Context",
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ],
+              "spacing": "None",
+              "horizontalAlignment": "Left",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${taskContext}",
+                  "wrap": true,
+                  "spacing": "None",
+                  "weight": "Default",
+                  "color": "Accent",
+                  "maxLines": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Priority",
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ],
+              "spacing": "None",
+              "horizontalAlignment": "Left",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${taskPriority}",
+                  "spacing": "None",
+                  "wrap": true,
+                  "weight": "Default",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Meeting Title",
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent"
+                }
+              ],
+              "spacing": "None",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${meetingTitle}",
+                  "wrap": true,
+                  "spacing": "None",
+                  "weight": "Default",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Created By",
+                  "wrap": true,
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ],
+              "spacing": "None",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${actionTakenBy}",
+                  "spacing": "None",
+                  "weight": "Default",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet"
+        }
+      ],
+      "style": "default"
+    },
+    {
+      "type": "Container",
+      "height": "stretch",
+      "style": "default",
+      "bleed": true,
+      "spacing": "Small"
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://img.icons8.com/external-anggara-flat-anggara-putra/32/000000/external-alert-user-interface-anggara-flat-anggara-putra.png",
+                  "altText": "sync",
+                  "spacing": "None",
+                  "horizontalAlignment": "Left",
+                  "width": "20px",
+                  "height": "20px"
+                }
+              ],
+              "backgroundImage": {
+                "verticalAlignment": "Center"
+              }
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "This task has been updated by ${updatedBy}",
+                  "wrap": true,
+                  "size": "Default",
+                  "color": "Accent",
+                  "weight": "Bolder",
+                  "horizontalAlignment": "Left",
+                  "spacing": "None"
+                }
+              ],
+              "spacing": "Small"
+            }
+          ]
+        }
+      ],
+      "style": "accent"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

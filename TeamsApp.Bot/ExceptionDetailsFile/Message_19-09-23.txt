@@ -1,0 +1,552 @@
+
+
+Log Written Date: 19-09-2023 12:16:44
+
+Message : TaskAPIController --> CreateTask() execution started: 19-09-2023 06:46:44
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:16:47
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 06:46:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:16:47
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:18:00
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 06:48:00
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:20:37
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 06:50:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:21:55
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 06:51:55
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:22:10
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 06:52:10
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:28:04
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 06:58:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:28:12
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 06:58:12
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:28:12
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:31:23
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:01:23
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:31:24
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:01:24
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:31:24
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:31:41
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:01:41
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:57:44
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:27:44
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 12:57:44
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:26:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:07:05
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:37:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:09:04
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:39:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:09:14
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:39:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:09:14
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:09
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:10:33
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:40:33
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:10:37
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:40:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:10:37
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:13:48
+
+Message : TaskAPIController --> AddComments() execution started: 19-09-2023 07:43:48
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:13:49
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 07:43:49
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:13:49
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:14:10
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:44:10
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:14:13
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:44:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:14:13
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:16:07
+
+Message : TaskAPIController --> AddComments() execution started: 19-09-2023 07:46:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:16:08
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 07:46:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:16:08
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:16:17
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:46:17
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:16:18
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:46:18
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:16:18
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:18:08
+
+Message : TaskAPIController --> ReassignTask() execution started: 19-09-2023 07:48:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:20:31
+
+Message : TaskAPIController --> ReassignTask() execution started: 19-09-2023 07:50:31
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:21:14
+
+Message : TaskAPIController --> ReassignTask() execution ended: 19-09-2023 07:51:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:21:14
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:43
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:22:51
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:52:51
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:22:52
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:52:52
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:22:52
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:23:12
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 07:53:12
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:23:13
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 07:53:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 13:23:13
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:03:23
+
+Message : TaskAPIController --> CreateTask() execution started: 19-09-2023 09:33:23
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:03:24
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 09:33:24
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:03:24
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:03:35
+
+Message : TaskAPIController --> CreateTask() execution started: 19-09-2023 09:33:35
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:03:36
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 09:33:36
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:03:36
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:25
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 09:37:25
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:26
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 09:37:26
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:26
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:35
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 09:37:35
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:36
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 09:37:36
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:36
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:41
+
+Message : TaskAPIController --> GetTaskById() execution started: 19-09-2023 09:37:41
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:42
+
+Message : TaskAPIController --> GetTaskById() execution ended: 19-09-2023 09:37:42
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:07:42
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:08:59
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 19-09-2023 09:38:59
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:09:58
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 19-09-2023 09:39:58
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:14:05
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 19-09-2023 09:44:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 15:19:22
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 19-09-2023 09:49:22
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:02:10
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 19-09-2023 10:32:10
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:02:13
+
+Message : TaskAPIController --> ReassignAllTask() execution ended: 19-09-2023 10:32:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:02:13
+
+Message : TaskAPIController --> ReassignAllTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:18
+
+Message : TaskAPIController --> CreateTask() execution started: 19-09-2023 11:12:18
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:20
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 11:12:20
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:20
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:32
+
+Message : TaskAPIController --> CreateTask() execution started: 19-09-2023 11:12:32
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:33
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 11:12:33
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:33
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:46
+
+Message : TaskAPIController --> CreateTask() execution started: 19-09-2023 11:12:46
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:47
+
+Message : TaskAPIController --> CreateTask() execution ended: 19-09-2023 11:12:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:42:47
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:43:39
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 19-09-2023 11:13:39
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:43:42
+
+Message : TaskAPIController --> ReassignAllTask() execution ended: 19-09-2023 11:13:42
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 16:43:42
+
+Message : TaskAPIController --> ReassignAllTask() execution time: 00:00:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:22:14
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 14:52:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:22:38
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 14:52:38
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:22:56
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 14:52:56
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:23:59
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 14:53:59
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:24:30
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 14:54:30
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:25:40
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 14:55:40
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:34:16
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 15:04:16
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:34:57
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 15:04:57
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:35:01
+
+Message : TaskAPIController --> GetTaskByEmail() execution ended: 19-09-2023 15:05:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:35:01
+
+Message : TaskAPIController --> GetTaskByEmail() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:35:17
+
+Message : TaskAPIController --> GetTaskByEmail() execution started: 19-09-2023 15:05:17
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:35:20
+
+Message : TaskAPIController --> GetTaskByEmail() execution ended: 19-09-2023 15:05:20
+-------------------------------------------------------------------------
+
+
+Log Written Date: 19-09-2023 20:35:20
+
+Message : TaskAPIController --> GetTaskByEmail() execution time: 00:00:02
+-------------------------------------------------------------------------

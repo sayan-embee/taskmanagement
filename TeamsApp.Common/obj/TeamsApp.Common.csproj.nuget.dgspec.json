@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj": {}
+  },
+  "projects": {
+    "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj",
+        "projectName": "TeamsApp.Common",
+        "projectPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj",
+        "packagesPath": "C:\\Users\\012047\\.nuget\\packages\\",
+        "outputPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\012047\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AdaptiveCards": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "AdaptiveCards.Templating": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.Core": {
+              "target": "Package",
+              "version": "[4.20.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.4, )"
+            },
+            "Polly.Contrib.WaitAndRetry": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
