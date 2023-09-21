@@ -95,6 +95,11 @@
     <Build Include="dbo\Stored Procedures\usp_Task_GetByIdListView.sql" />
     <Build Include="dbo\Stored Procedures\usp_SubTask_GetAll.sql" />
     <Build Include="dbo\Stored Procedures\usp_Task_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Task_GetByUnqId.sql" />
+    <Build Include="dbo\Types\udt_TaskNotificationResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Task_Insert_NotificationResponse.sql" />
+    <Build Include="dbo\Tables\Trn_TaskNotificationResponse.sql" />
+    <Build Include="dbo\Tables\Trn_TaskEmailNotification.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\PostDeployment\Script.PostDeployment1.sql" />

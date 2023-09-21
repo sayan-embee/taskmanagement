@@ -14,6 +14,8 @@ using Newtonsoft.Json.Linq;
 using System.Linq;
 using TeamsApp.Bot.Helpers;
 using Microsoft.SqlServer.Server;
+using TeamsApp.Bot.Helpers.NotificationHelper;
+using Microsoft.AspNetCore.Mvc.Diagnostics;
 
 namespace TeamsApp.Bot.Controllers.APIController
 {
@@ -26,18 +28,20 @@ namespace TeamsApp.Bot.Controllers.APIController
         private readonly TelemetryClient _telemetryClient;
 
         private readonly ITaskData _taskData;
+        private readonly INotificationHelper _notificationHelper;
 
         public TaskAPIController(
             ILogger<TaskAPIController> logger
             , TelemetryClient telemetryClient
             , ITaskData taskData
-
+            , INotificationHelper notificationHelper
             )
             : base(telemetryClient)
         {
             this._logger = logger;
             this._telemetryClient = telemetryClient;
             this._taskData = taskData;
+            this._notificationHelper = notificationHelper;
         }
 
         #region GET
@@ -219,6 +223,9 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateTask() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> CreateTask() execution time: {formattedTimeDifference}");
+
+                    // SEND NOTIFICATIONS TO STAKEHOLDERS
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_CreateTask(response));
                 }
                 return this.Ok(response);                
             }
@@ -228,6 +235,19 @@ namespace TeamsApp.Bot.Controllers.APIController
                 this._logger.LogError(ex, $"TaskAPIController --> CreateTask() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
                 return this.Ok();
+            }
+        }
+
+        private async Task ProcessOtherActivities_CreateTask(ReturnMessageModel response)
+        {
+            if (response.GuidId != Guid.Empty)
+            {
+                // SEND NOTIFICATIONS TO STAKEHOLDERS
+                var taskListResponse = await this._taskData.GetTaskByUnqId(response.GuidId);
+                if (taskListResponse != null && taskListResponse.Any())
+                {
+                    await this._notificationHelper.ProcesssNotification_CreateTask(taskListResponse);
+                }
             }
         }
 

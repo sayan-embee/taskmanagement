@@ -1,3 +1,5 @@
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\newTaskCard.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\newTaskCard_withActionBtn.json
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\WelcomeCard\welcome-card.json
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\TeamsApp.Bot.staticwebassets.runtime.json
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\TeamsApp.Bot.exe

@@ -2,9 +2,9 @@ D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\bin\Debug\TeamsApp.DB.dacp
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\bin\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\TeamsApp.DB.sqlproj.AssemblyReference.cache
-D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
-D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\Model.xml
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\refactor.xml
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\postdeploy.sql
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\predeploy.sql
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.dll
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.DB\obj\Debug\Pidilite.TeamsApp.MeetingApp.DB.pdb

@@ -23,7 +23,8 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
     public class AdaptiveCardService : IAdaptiveCardService
     {
         private const string WelcomeCardCacheKey = "_welcome-card";
-        private const string TaskCardCacheKey = "_task-card";
+        private const string CreateTask_ActionButton_CacheKey = "_createTask-ActionButton";
+        private const string CreateTask_CacheKey = "_createTask";
         private const string ReassignTaskCardCacheKey = "_task-card-reassign";
         private const string UpdatedTaskCardCacheKey = "_task-card-updated";
 
@@ -116,15 +117,16 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
             return cardPayload;
         }
 
-        /// <summary>
-        /// Get new task created card attachment to be sent in personal scope.
-        /// </summary>
-        /// <returns>New created task card attachment.</returns>
-        public Attachment GetCardOnTaskCreationInPersonalScope(TaskDetailsModel data)
+
+        public Attachment GetCard_CreateTask_ActionButton_PersonalScope(TaskDetailsCardModel data)
         {
-            var cardPayload = this.GetCardPayload(TaskCardCacheKey, "\\Notification\\newTaskNotificationCard.json");
+            var cardPayload = this.GetCardPayload(CreateTask_ActionButton_CacheKey, "\\NotificationCard\\newTaskCard_withActionBtn.json");
             var template = new AdaptiveCardTemplate(cardPayload);
-            //data.TaskClosureDateString = data.TaskClosureDate.Value.Date.Day+"-"+ data.TaskClosureDate.Value.Date.Month+"-"+ data.TaskClosureDate.Value.Date.Year+"T" + data.TaskClosureDate.Value.TimeOfDay+"Z";
+
+            //data.AssignerName = data.AssignerName + $" ({data.AssignerEmail})";
+            //data.CoordinatorName = data.CoordinatorName + $" ({data.CoordinatorEmail})";
+            //data.AssigneeName = data.AssigneeName + $" ({data.AssigneeEmail})";
+
             var cardJson = template.Expand(data);
             AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
 
@@ -135,6 +137,25 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
             };
             return adaptiveCardAttachment;
         }
+
+        public Attachment GetCard_CreateTask_PersonalScope(TaskDetailsCardModel data)
+        {
+            var cardPayload = this.GetCardPayload(CreateTask_CacheKey, "\\NotificationCard\\newTaskCard.json");
+            var template = new AdaptiveCardTemplate(cardPayload);
+
+            //data.CollaboratorName = data.CollaboratorName + $" ({data.CollaboratorEmail})";
+
+            var cardJson = template.Expand(data);
+            AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
+
+            var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = AdaptiveCard.ContentType,
+                Content = card,
+            };
+            return adaptiveCardAttachment;
+        }
+
         public Attachment GetCardOnTaskReassignInPersonalScope(TaskDetailsModel data)
         {
             var cardPayload = this.GetCardPayload(ReassignTaskCardCacheKey, "\\Notification\\reassignTaskNotificationCard.json");
@@ -164,7 +185,6 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
             };
             return adaptiveCardAttachment;
         }
-
         private async Task<bool> getAPIAuthToken(string serviceUrl, string userADID)
         {
             await Task.Delay(0);

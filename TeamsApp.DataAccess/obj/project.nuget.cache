@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vAsGNZD7qNDpnERTt5Eo7r85zWTYzdeKD+qV0cr36PWiKUN0KX9ggrIwQFTmj43tZ80QHd+J6b9SukFBGMgLug==",
+  "dgSpecHash": "6avJf8cwv4wqyF8s/mOXJNlKEbameZJiYFnu/jojMo+4gwo0x67Ke7uhoX5XHpyCzkg/YuGaTjjZXpQsFcKGOw==",
   "success": true,
-  "projectFilePath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj",
+  "projectFilePath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\012047\\.nuget\\packages\\adaptivecards\\3.0.0\\adaptivecards.3.0.0.nupkg.sha512",
     "C:\\Users\\012047\\.nuget\\packages\\adaptivecards.templating\\1.4.0\\adaptivecards.templating.1.4.0.nupkg.sha512",

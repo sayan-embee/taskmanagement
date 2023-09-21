@@ -10095,11 +10095,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Bot\\TeamsApp.Bot.csproj",
+      "projectUniqueName": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\TeamsApp.Bot.csproj",
       "projectName": "TeamsApp.Bot",
-      "projectPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Bot\\TeamsApp.Bot.csproj",
+      "projectPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\TeamsApp.Bot.csproj",
       "packagesPath": "C:\\Users\\012047\\.nuget\\packages\\",
-      "outputPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Bot\\obj\\",
+      "outputPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Bot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\012047\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10116,11 +10116,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj": {
-              "projectPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj"
+            "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\TeamsApp.Common.csproj": {
+              "projectPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\TeamsApp.Common.csproj"
             },
-            "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj": {
-              "projectPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj"
+            "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj": {
+              "projectPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj"
             }
           }
         }

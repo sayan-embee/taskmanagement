@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj": {}
+    "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj": {
+    "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\TeamsApp.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj",
+        "projectUniqueName": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\TeamsApp.Common.csproj",
         "projectName": "TeamsApp.Common",
-        "projectPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj",
+        "projectPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\TeamsApp.Common.csproj",
         "packagesPath": "C:\\Users\\012047\\.nuget\\packages\\",
-        "outputPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\obj\\",
+        "outputPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\012047\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,14 +85,14 @@
         }
       }
     },
-    "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj": {
+    "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj",
+        "projectUniqueName": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj",
         "projectName": "TeamsApp.DataAccess",
-        "projectPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj",
+        "projectPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\TeamsApp.DataAccess.csproj",
         "packagesPath": "C:\\Users\\012047\\.nuget\\packages\\",
-        "outputPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.DataAccess\\obj\\",
+        "outputPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\012047\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,8 +109,8 @@
           "net6.0": {
             "targetAlias": "netcoreapp6.0",
             "projectReferences": {
-              "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj": {
-                "projectPath": "D:\\TeamsProject\\Task Management2\\git\\taskmanagement\\TeamsApp.Common\\TeamsApp.Common.csproj"
+              "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\TeamsApp.Common.csproj": {
+                "projectPath": "D:\\TeamsProject\\Task Management2\\Task_App\\TeamsApp.Common\\TeamsApp.Common.csproj"
               }
             }
           }

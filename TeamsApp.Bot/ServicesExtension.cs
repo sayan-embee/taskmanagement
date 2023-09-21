@@ -29,6 +29,8 @@
     using System.Text;
     using TeamsApp.Bot.Services.MicrosoftGraph.Provider;
     using TeamsApp.Bot.Services.MicrosoftGraph.Users;
+    using TeamsApp.Bot.Services.Notification;
+    using TeamsApp.Bot.Helpers.NotificationHelper;
 
     /// <summary>
     /// Class to extend ServiceCollection.
@@ -118,6 +120,7 @@
         {
             services.AddTransient<IAppLifecycleHandler, AppLifecycleHandler>();
             services.AddTransient<ITokenHelper, TokenHelper>();
+            services.AddTransient<INotificationHelper, NotificationHelper>();
         }
 
         public static void AddCustomJWTAuthentication(this IServiceCollection services, IConfiguration configuration)
@@ -165,7 +168,7 @@
             services.AddSingleton<ISQLDataAccess, SQLDataAccess>();
             services.AddScoped<IConversationData, ConversationData>();
             services.AddSingleton<IAdaptiveCardService, AdaptiveCardService>();
-            services.AddSingleton<IAzureBlobService, AzureBlobService>();
+            services.AddSingleton<IAzureBlobService, AzureBlobService>();            
         }
 
         public static void RegisterDataServices(this IServiceCollection services)
@@ -174,6 +177,7 @@
             services.AddScoped<ICategoryData, CategoryData>();
             services.AddScoped<IMasterAPIData, MasterAPIData>();
             services.AddScoped<ITaskData, TaskData>();
+            services.AddScoped<INotificationService, NotificationService>();
         }
 
         /// <summary>

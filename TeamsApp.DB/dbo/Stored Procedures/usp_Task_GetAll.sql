@@ -41,6 +41,7 @@ DECLARE @temp_table TABLE
         R.[RoleName],
         T.[ParentTaskId],
         T.[IsActive],
+        T.[CreatedOnIST],
         T.[CreatedByName],
         T.[CreatedByEmail],
         T.[TaskSubject],

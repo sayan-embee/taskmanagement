@@ -5,9 +5,8 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
 {
     public interface IAdaptiveCardService
     {
-        Attachment GetCardOnTaskCreationInPersonalScope(TaskDetailsModel data);
         Attachment GetWelcomeCardForPersonalScope();
-        Attachment GetCardOnTaskReassignInPersonalScope(TaskDetailsModel data);
-        Attachment GetCardOnUpdatedTaskInPersonalScope(TaskDetailsModel data);
+        Attachment GetCard_CreateTask_ActionButton_PersonalScope(TaskDetailsCardModel data);
+        Attachment GetCard_CreateTask_PersonalScope(TaskDetailsCardModel data);
     }
 }

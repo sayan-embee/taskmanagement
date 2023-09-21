@@ -1,0 +1,176 @@
+-----------Exception Details on  21-09-2023 14:48:58-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 14:48:58
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  21-09-2023 16:28:33-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 16:28:33
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  21-09-2023 17:22:37-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 17:22:37
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  21-09-2023 17:40:18-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 17:40:18
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  21-09-2023 17:41:31-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 17:41:31
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  21-09-2023 18:05:50-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 18:05:50
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  21-09-2023 18:06:47-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 18:06:47
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  21-09-2023 18:07:13-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 21-09-2023 18:07:13
+
+Error Line No : ine 233
+
+Error Message: DirectoryNotFoundException
+
+Exception Type: System.IO.DirectoryNotFoundException
+
+Error Location : Could not find a part of the path 'D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\Cards\Notification\newTaskCard.json'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+

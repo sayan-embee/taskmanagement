@@ -113,6 +113,29 @@ namespace TeamsApp.DataAccess.Data
         }
 
 
+        public async Task<List<TaskDetailsCardModel>> GetTaskByUnqId(Guid TaskUnqId)
+        {
+            var returnObject = new List<TaskDetailsCardModel>();
+            try
+            {
+                var results = await _db.LoadData<TaskDetailsCardModel, dynamic>("dbo.usp_Task_GetByUnqId",
+                new
+                {
+                    TaskUnqId
+                });
+
+                if (results != null && results.Any()) { returnObject = results.ToList(); }
+
+                return returnObject;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetTaskByUnqId() --> SQL(usp_Task_GetByUnqId) execution failed");
+                return null;
+            }
+        }
+
+
         public async Task<TaskGetByIdListViewModel> GetTaskByIdListView(long Id, string Email)
         {
             try
@@ -164,6 +187,7 @@ namespace TeamsApp.DataAccess.Data
                 return null;
             }
         }
+
 
         public async Task<TaskGetAllViewModel> GetAllTask(TaskGetFilterModel data)
         {
@@ -275,6 +299,7 @@ namespace TeamsApp.DataAccess.Data
             }
         }
 
+
         private DataTable GetTaskAssigneeList_UDT(List<TaskAssigneeListTrnModel> udt)
         {
             var output = new DataTable();
@@ -325,6 +350,7 @@ namespace TeamsApp.DataAccess.Data
                 return null;
             }
         }
+
 
         public async Task<ReturnMessageModel> UpdateTask(TaskHistoryTrnModel data)
         {
@@ -429,6 +455,64 @@ namespace TeamsApp.DataAccess.Data
                 this._logger.LogError(ex, $"TaskData --> ReassignAllTask() --> SQL(usp_Task_ReassignAll) execution failed");
                 return null;
             }
+        }
+
+        #endregion
+
+        #region NOTIFICATION
+
+        public async Task<ReturnMessageModel> InsertTaskNotificationResponse_Multiple(List<NotificationResponseTrnModel> data)
+        {
+            try
+            {
+                var udt = GetTaskNotificationResponse_UDT(data);
+
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_Insert_NotificationResponse",
+                new
+                {
+                    udt_NotificationResponse = udt.AsTableValuedParameter("udt_TaskNotificationResponse")
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> InsertTaskNotificationResponse() --> SQL(usp_Task_Insert_NotificationResponse) execution failed");
+                return null;
+            }
+        }
+
+        private DataTable GetTaskNotificationResponse_UDT(List<NotificationResponseTrnModel> udt)
+        {
+            var output = new DataTable();
+            output.Columns.Add("ReplyToId", typeof(string));
+            output.Columns.Add("ActivityId", typeof(string));
+            output.Columns.Add("ConversationId", typeof(string));
+            output.Columns.Add("ServiceUrl", typeof(string));
+            output.Columns.Add("UserName", typeof(string));
+            output.Columns.Add("UserADID", typeof(string));
+            output.Columns.Add("Status", typeof(string));
+            output.Columns.Add("TaskId", typeof(long));
+
+            if (udt != null)
+            {
+                foreach (var row in udt)
+                {
+                    if (row != null)
+                    {
+                        output.Rows.Add(
+                        row.ReplyToId,
+                        row.ActivityId,
+                        row.ConversationId,
+                        row.ServiceUrl,
+                        row.UserName,
+                        row.UserADID,
+                        row.Status,
+                        row.TaskId
+                        );
+                    }
+                }
+            }
+            return output;
         }
 
         #endregion

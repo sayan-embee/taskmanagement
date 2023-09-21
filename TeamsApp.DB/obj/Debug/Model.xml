@@ -52,7 +52,7 @@
 					<References Name="[dbo].[Trn_ConversationsTeams].[Active]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -68,7 +68,7 @@
 					<References Name="[dbo].[Trn_Conversations].[Active]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -87,7 +87,7 @@
 					<References Name="[dbo].[Trn_ConversationsTeams]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -106,7 +106,7 @@
 					<References Name="[dbo].[Trn_Conversations]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -125,7 +125,7 @@
 					<References Name="[dbo].[Mst_TaskStatus]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -144,7 +144,7 @@
 					<References Name="[dbo].[Mst_TaskPriority]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -163,7 +163,7 @@
 					<References Name="[dbo].[Mst_Role]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -182,7 +182,7 @@
 					<References Name="[dbo].[Trn_TaskDetails]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -201,7 +201,7 @@
 					<References Name="[dbo].[Trn_TaskHistoryDetails]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -220,7 +220,7 @@
 					<References Name="[dbo].[Trn_TaskProgressDetails]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -239,7 +239,7 @@
 					<References Name="[dbo].[Trn_TaskAdditionalDetails]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -258,7 +258,45 @@
 					<References Name="[dbo].[Trn_TaskAssignmentDetails]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Trn_TaskNotificationResponse].[NotificationId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="17" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Trn_TaskEmailNotification].[EmailNotificationId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="18" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[Mst_Role]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -278,7 +316,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="10" />
+						<AttachedAnnotation Disambiguator="11" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -338,7 +376,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="9" />
+						<AttachedAnnotation Disambiguator="10" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -413,7 +451,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="8" />
+						<AttachedAnnotation Disambiguator="9" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -488,7 +526,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="7" />
+						<AttachedAnnotation Disambiguator="8" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -679,7 +717,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="5" />
+						<AttachedAnnotation Disambiguator="6" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -722,7 +760,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="6" />
+						<AttachedAnnotation Disambiguator="7" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -898,7 +936,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="4" />
+						<AttachedAnnotation Disambiguator="5" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -941,7 +979,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="14" />
+						<AttachedAnnotation Disambiguator="15" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -1074,7 +1112,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="15" />
+						<AttachedAnnotation Disambiguator="16" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -1227,7 +1265,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="11" />
+						<AttachedAnnotation Disambiguator="12" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -1770,6 +1808,190 @@
 				</Entry>
 			</Relationship>
 		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Trn_TaskEmailNotification]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[EmailNotificationId]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="18" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[TaskId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[EmailSubject]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[EmailBody]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[ToRecipient]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[CcRecipient]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[FromRecipient]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[Status]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[IsSent]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[CreatedOnIST]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskEmailNotification].[CreatedOnUTC]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
 		<Element Type="SqlTable" Name="[dbo].[Trn_TaskHistoryDetails]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
@@ -1788,7 +2010,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="12" />
+						<AttachedAnnotation Disambiguator="13" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2252,6 +2474,206 @@
 				</Entry>
 			</Relationship>
 		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Trn_TaskNotificationResponse]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[NotificationId]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="17" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[ReplyToId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[ActivityId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[ConversationId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[ServiceUrl]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[UserName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[UserADID]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[Status]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[TaskId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[CreatedOnIST]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[CreatedOnUTC]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskNotificationResponse].[IsActive]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
 		<Element Type="SqlTable" Name="[dbo].[Trn_TaskProgressDetails]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
@@ -2270,7 +2692,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="13" />
+						<AttachedAnnotation Disambiguator="14" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2498,6 +2920,150 @@
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTableType" Name="[dbo].[udt_TaskNotificationResponse]">
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[ReplyToId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[ActivityId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[ConversationId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[ServiceUrl]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[UserName]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[UserADID]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[Status]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskNotificationResponse].[TaskId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -5140,6 +5706,7 @@ DECLARE @temp_table TABLE
         R.[RoleName],
         T.[ParentTaskId],
         T.[IsActive],
+        T.[CreatedOnIST],
         T.[CreatedByName],
         T.[CreatedByEmail],
         T.[TaskSubject],
@@ -5274,6 +5841,9 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskDetails].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedOnIST]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskDetails].[CreatedByName]" />
@@ -5569,7 +6139,7 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="3070" />
+				<Property Name="Length" Value="3097" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_GetAll]&#xD;&#xA;(&#xD;&#xA;    @LoggedInUserEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @StatusId INT = NULL,&#xD;&#xA;    @PriorityId INT = NULL,&#xD;&#xA;    @RoleId INT = NULL,&#xD;&#xA;    @ParentTaskId BIGINT = NULL,&#xD;&#xA;    @TaskSubject NVARCHAR(200) = NULL,&#xD;&#xA;    @FromDate DATETIME = NULL,&#xD;&#xA;    @ToDate DATETIME = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
@@ -6678,6 +7248,235 @@ END]]></Value>
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_GetByIdListView]&#xD;&#xA;(&#xD;&#xA;&#x9;@Id BIGINT = NULL,&#xD;&#xA;    @Email NVARCHAR(100) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_GetByUnqId]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	SELECT
+        [TaskId],
+        [TaskRefNo],
+        [TaskUnqId],
+        T.[StatusId],
+        S.[StatusName],
+        T.[PriorityId],
+        P.[PriorityName],
+        T.[RoleId],
+        R.[RoleName],
+        [ParentTaskId],
+        [IsActive],
+        [CreatedOnIST],
+        [CreatedOnUTC],
+        [CreatedByName],
+        [CreatedByEmail],
+        [CreatedByUPN],
+        [CreatedByADID],
+        [TaskSubject],
+        [TaskDesc],
+        [InitialTargetDate],
+        [CurrentTargetDate],
+        [AssignerName],
+        [AssignerEmail],
+        [AssignerUPN],
+        [AssignerADID],
+        [AssigneeName],
+        [AssigneeEmail],
+        [AssigneeUPN],
+        [AssigneeADID],
+        [CoordinatorName],
+        [CoordinatorEmail],
+        [CoordinatorUPN],
+        [CoordinatorADID],
+        [CollaboratorName],
+        [CollaboratorEmail],
+        [CollaboratorUPN],
+        [CollaboratorADID]
+    FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
+    INNER JOIN [dbo].[Mst_TaskStatus] S ON S.StatusId = T.StatusId
+    INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId
+    INNER JOIN [dbo].[Mst_Role] R ON R.RoleId = T.RoleId
+    WHERE T.TaskUnqId = @TaskUnqId
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskRefNo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskUnqId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus].[StatusName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role].[RoleName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[ParentTaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[InitialTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CurrentTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskUnqId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_GetByUnqId].[@TaskUnqId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_GetByUnqId].[@TaskUnqId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1338" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_GetByUnqId]&#xD;&#xA;(&#xD;&#xA;&#x9;@TaskUnqId UNIQUEIDENTIFIER = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_Insert]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
@@ -6943,13 +7742,212 @@ END
 
 
 
+    -- Declare variables
+    DECLARE @Email_TaskId BIGINT;
+    DECLARE @Email_TargetDate NVARCHAR(100);
+    DECLARE @Email_TaskSubject NVARCHAR(100);
+    DECLARE @Email_Priority NVARCHAR(50);
+    DECLARE @Email_AssignerName NVARCHAR(100);
+    DECLARE @Email_AssignerEmail NVARCHAR(100);
+    DECLARE @Email_CoordinatorName NVARCHAR(100);
+    DECLARE @Email_CoordinatorEmail NVARCHAR(100);
+    DECLARE @Email_AssigneeName NVARCHAR(100);
+    DECLARE @Email_AssigneeEmail NVARCHAR(100);
+    DECLARE @Email_TaskDesc NVARCHAR(MAX);
+    DECLARE @Email_EmailBody NVARCHAR(MAX);
+    DECLARE @Email_EmailSubject NVARCHAR(MAX);
+
+    -- Maximum length for the Task Description to display initially
+    DECLARE @MaxDescLength INT = 200;
+
+    -- Create a table variable to store the results
+    DECLARE @Emails AS TABLE
+    (
+    [TaskId] BIGINT,
+    TargetDate NVARCHAR(100),
+    TaskSubject NVARCHAR(100),
+    [Priority] NVARCHAR(50),
+    AssignerName NVARCHAR(100),
+    AssignerEmail NVARCHAR(100),
+    CoordinatorName NVARCHAR(100),
+    CoordinatorEmail NVARCHAR(100),
+    AssigneeName NVARCHAR(100),
+    AssigneeEmail NVARCHAR(100),
+    TaskDesc NVARCHAR(MAX),
+    [EmailBody] NVARCHAR(MAX),
+    EmailSubject NVARCHAR(MAX)
+    );
+
+    -- Populate the @Emails table variable
+    INSERT INTO @Emails 
+    (
+    [TaskId],
+    TargetDate,
+    TaskSubject,
+    [Priority],
+    AssignerName,
+    AssignerEmail,
+    CoordinatorName,
+    CoordinatorEmail,
+    AssigneeName,
+    AssigneeEmail,
+    TaskDesc,
+    [EmailBody],
+    EmailSubject
+    )
+    SELECT 
+    T.[TaskId],    
+    CurrentTargetDate,
+    T.TaskSubject,
+    P.PriorityName,
+    T.AssignerName,
+    T.AssignerEmail,
+    T.CoordinatorName,
+    T.CoordinatorEmail,
+    T.AssigneeName,
+    T.AssigneeEmail,
+    T.TaskDesc,
+    N'', -- Initialize the EmailSubject with an empty string
+    N'' -- Initialize the EmailBody with an empty string
+    FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
+    INNER JOIN [dbo].[Mst_TaskPriority] P WITH(NOLOCK) ON P.PriorityId = T.PriorityId
+    WHERE TaskUnqId = @TaskUnqId;
+
+    -- Loop through the @Emails table variable
+    DECLARE emailCursor CURSOR FOR
+    SELECT
+    [TaskId],
+    TargetDate,
+    TaskSubject,
+    [Priority],
+    AssignerName,
+    AssignerEmail,
+    CoordinatorName,
+    CoordinatorEmail,
+    AssigneeName,
+    AssigneeEmail,
+    TaskDesc,
+    [EmailBody],
+    EmailSubject
+    FROM @Emails;
+
+    OPEN emailCursor;
+    FETCH NEXT FROM emailCursor INTO 
+    @Email_TaskId, 
+    @Email_TargetDate,
+    @Email_TaskSubject,
+    @Email_Priority,
+    @Email_AssignerName,
+    @Email_AssignerEmail,
+    @Email_CoordinatorName,
+    @Email_CoordinatorEmail,
+    @Email_AssigneeName,
+    @Email_AssigneeEmail,
+    @Email_TaskDesc,
+    @Email_EmailBody,
+    @Email_EmailSubject;
+
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+    -- Construct the email body for each TaskId here
+    -- You can use the @TaskId and @EmailBody variables to create the email content
+
+    -- set the email body as a simple message
+    SET @Email_EmailBody = N'
+                        <html>
+                        <body>
+                            <h1>New Task Created</h1>
+                            <p><strong>Target Date:</strong> ' + @Email_TargetDate + N'</p>
+                            <p><strong>Priority:</strong> ' + @Email_Priority + N'</p>
+                            <p><strong>Task Subject:</strong> ' + @Email_TaskSubject + N'</p>
+                            <p><strong>Task Description:</strong> ' + LEFT(@Email_TaskDesc, @MaxDescLength) + N'</p>';
+
+                        -- Check if the Task Description is longer than the maximum length
+                        IF LEN(@Email_TaskDesc) > @MaxDescLength
+                        BEGIN
+                            SET @Email_EmailBody = @Email_EmailBody + N'
+                            <p>
+                                <span id="taskDescShort">' + LEFT(@Email_TaskDesc, @MaxDescLength) + N'</span>
+                                <span id="taskDescFull" style="display:none;">' + @Email_TaskDesc + N'</span>
+                                <button onclick="showFullDescription()">Read More</button>
+                            </p>
+                            <script>
+                                function showFullDescription() {
+                                    document.getElementById("taskDescShort").style.display = "none";
+                                    document.getElementById("taskDescFull").style.display = "inline";
+                                }
+                            </script>';
+                        END
+
+                        -- Complete the email body
+                        SET @Email_EmailBody = @Email_EmailBody + N'
+                            <h2>Stakeholders</h2>
+                            <p><strong>Assigner:</strong> ' + @Email_AssignerName + N' (' + @Email_AssigneeEmail + N')</p>
+                            <p><strong>Coordinator:</strong> ' + @Email_CoordinatorName + N' (' + @Email_CoordinatorEmail + N')</p>
+                            <p><strong>Assignee:</strong> ' + @Email_AssigneeName + N' (' + @Email_AssigneeEmail + N')</p>
+                        </body>
+                        </html>
+                        ';
+
+    -- Update the @Emails table variable with the generated email body
+    UPDATE @Emails
+    SET [EmailBody] = @Email_EmailBody
+    WHERE [TaskId] = @Email_TaskId;
+
+    -- Fetch the next task
+    FETCH NEXT FROM emailCursor INTO
+    @Email_TaskId, 
+    @Email_TargetDate,
+    @Email_TaskSubject,
+    @Email_Priority,
+    @Email_AssignerName,
+    @Email_AssignerEmail,
+    @Email_CoordinatorName,
+    @Email_CoordinatorEmail,
+    @Email_AssigneeName,
+    @Email_AssigneeEmail,
+    @Email_TaskDesc,
+    @Email_EmailBody,
+    @Email_EmailSubject;
+
+    END;
+
+    CLOSE emailCursor;
+    DEALLOCATE emailCursor;
+
+    -- Now, the @Emails table variable contains the email bodies for each TaskId
+    -- You can retrieve the email bodies for each TaskId as needed
+    INSERT INTO [dbo].[Trn_TaskEmailNotification]
+    (
+        TaskId,
+        EmailBody,
+        ToRecipient,
+        FromRecipient,
+        CreatedOnIST,
+        CreatedOnUTC,
+        [Status]
+    )
+    SELECT 
+    T.[TaskId], 
+    [EmailBody],
+    STRING_AGG(CONCAT(T.AssignerEmail, ', ', T.CoordinatorEmail, ', ', T.AssigneeEmail), ', ') AS ToRecipient,
+    T.AssignerEmail,
+    DATEADD(MINUTE, 330, GETUTCDATE()),
+    GETUTCDATE(),
+    'CREATE-TASK'
+    FROM @Emails E
+    INNER JOIN [dbo].[Trn_TaskDetails] T WITH (NOLOCK) ON T.TaskId = E.[TaskId]
+    GROUP BY T.[TaskId], [EmailBody], T.AssignerEmail
+
+
     COMMIT TRANSACTION
     SELECT 
         'Create task executed'     AS [Message],
         ''						   AS ErrorMessage,
         1					       AS [Status],
         @@IDENTITY				   AS Id,
-        @IdList				       AS ReferenceNo
+        @IdList				       AS ReferenceNo,
+        @TaskUnqId                 AS GuidId
 
 END]]></Value>
 			</Property>
@@ -6966,6 +7964,48 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[bigint]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[usp_Task_Insert].[@udt_TaskAssignee]" />
@@ -7219,8 +8259,347 @@ END]]></Value>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskAssignmentDetails].[TransactionId]" />
 				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[TargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[Priority]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[AssignerName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[CoordinatorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[CoordinatorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[TaskDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[EmailBody]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[EmailSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CurrentTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskUnqId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[EmailBody]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[ToRecipient]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[FromRecipient]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[CreatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[CreatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[Status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert].[@Emails].[EmailBody]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
 			</Relationship>
 			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert].[@Emails]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[TaskId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[bigint]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[TargetDate]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[TaskSubject]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[Priority]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[AssignerName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[AssignerEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[CoordinatorName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[CoordinatorEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[AssigneeName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[AssigneeEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[TaskDesc]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[EmailBody]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@Emails].[EmailSubject]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
 				<Entry>
 					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert].[CTE1].[DATA1]">
 						<Relationship Name="Columns">
@@ -7237,7 +8616,7 @@ END]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert].[@udt_TaskAssignee]" Disambiguator="3">
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert].[@udt_TaskAssignee]" Disambiguator="4">
 						<Relationship Name="Columns">
 							<Entry>
 								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@udt_TaskAssignee].[AssigneeName]">
@@ -7763,10 +9142,526 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="7569" />
+				<Property Name="Length" Value="14399" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Insert]&#xD;&#xA;(&#xD;&#xA;    @StatusId INT = NULL,&#xD;&#xA;    @PriorityId INT = NULL,&#xD;&#xA;    @RoleId INT = NULL,&#xD;&#xA;    @ParentTaskId BIGINT = NULL,&#xD;&#xA;    @CreatedByName NVARCHAR(100) = NULL,&#xD;&#xA;    @CreatedByEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CreatedByUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CreatedByADID NVARCHAR(50) = NULL,&#xD;&#xA;    @TaskSubject NVARCHAR(200) = NULL,&#xD;&#xA;    @TaskDesc NVARCHAR(500) = NULL,&#xD;&#xA;    @InitialTargetDate DATETIME = NULL,&#xD;&#xA;    @AssignerName NVARCHAR(100) = NULL,&#xD;&#xA;    @AssignerEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @AssignerUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @AssignerADID NVARCHAR(50) = NULL,&#xD;&#xA;    --@AssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    --@AssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    --@AssigneeUPN NVARCHAR(50) = NULL,&#xD;&#xA;    --@AssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @CoordinatorName NVARCHAR(100) = NULL,&#xD;&#xA;    @CoordinatorEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CoordinatorUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CoordinatorADID NVARCHAR(50) = NULL,&#xD;&#xA;    @CollaboratorName NVARCHAR(100) = NULL,&#xD;&#xA;    @CollaboratorEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CollaboratorUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CollaboratorADID NVARCHAR(50) = NULL,&#xD;&#xA;&#xD;&#xA;    @udt_TaskAssignee udt_TaskAssignee NULL READONLY&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_Insert_NotificationResponse]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+    BEGIN TRANSACTION
+    IF EXISTS (SELECT TaskId FROM @udt_NotificationResponse)
+    BEGIN
+        
+        UPDATE T
+        SET T.IsActive = 0
+        FROM [dbo].[Trn_TaskNotificationResponse] T,
+        @udt_NotificationResponse udt
+        WHERE T.TaskId = udt.TaskId
+
+        INSERT INTO [dbo].[Trn_TaskNotificationResponse]
+        (
+            [ReplyToId],
+            [ActivityId],
+            [ConversationId],
+            [ServiceUrl],
+            [UserName],
+            [UserADID],
+            [Status],
+            [TaskId],
+            CreatedOnIST,
+            CreatedOnUTC,
+            IsActive
+        )
+        SELECT
+            udt.ReplyToId,
+            udt.ActivityId,
+            udt.ConversationId,
+            udt.ServiceUrl,
+            udt.UserName,
+            udt.UserADID,
+            udt.[Status],
+            udt.TaskId,
+            DATEADD(MINUTE, 330, GETUTCDATE()),
+            GETUTCDATE(),
+            1
+        FROM @udt_NotificationResponse udt
+
+        IF @@ERROR<>0
+        BEGIN
+	        ROLLBACK TRANSACTION
+	        SELECT 
+		        'Insert failed'         AS [Message],
+		        ''					    AS ErrorMessage,
+		        0						AS [Status],
+		        0				        AS Id,
+		        ''						AS ReferenceNo
+	        RETURN
+    END
+    END
+    ELSE
+    BEGIN
+
+        UPDATE T
+        SET T.IsActive = 0
+        FROM [dbo].[Trn_TaskNotificationResponse] T
+        WHERE T.TaskId = @TaskId
+
+        INSERT INTO [dbo].[Trn_TaskNotificationResponse]
+        (
+            [ReplyToId],
+            [ActivityId],
+            [ConversationId],
+            [ServiceUrl],
+            [UserName],
+            [UserADID],
+            [Status],
+            [TaskId]
+        )
+        VALUES
+        (
+            @ReplyToId,
+            @ActivityId,
+            @ConversationId,
+            @ServiceUrl,
+            @UserName,
+            @UserADID,
+            @Status,
+            @TaskId
+        )
+    END
+
+    COMMIT TRANSACTION
+    SELECT 
+        'Insert executed'          AS [Message],
+        ''						   AS ErrorMessage,
+        1					       AS [Status],
+        @@IDENTITY				   AS Id,
+        ''				           AS ReferenceNo
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[ReplyToId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[ActivityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[ConversationId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[ServiceUrl]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[UserADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[Status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[CreatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[CreatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ReplyToId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ActivityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ConversationId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ServiceUrl]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[UserADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[Status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskNotificationResponse].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ReplyToId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ActivityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ConversationId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ServiceUrl]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@UserADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_NotificationResponse].[@Status]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse]" Disambiguator="3">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ReplyToId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ActivityId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ConversationId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="500" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ServiceUrl]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[UserName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[UserADID]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[Status]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[TaskId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[bigint]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ReplyToId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ActivityId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ConversationId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@ServiceUrl]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@UserName]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@UserADID]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@Status]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@TaskId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse]">
+						<Property Name="IsReadOnly" Value="True" />
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References Name="[dbo].[udt_TaskNotificationResponse]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="2709" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Insert_NotificationResponse]&#xD;&#xA;(&#xD;&#xA;    @ReplyToId NVARCHAR(100) = NULL,&#xD;&#xA;    @ActivityId NVARCHAR(100) = NULL,&#xD;&#xA;    @ConversationId NVARCHAR(500) = NULL,&#xD;&#xA;    @ServiceUrl NVARCHAR(100) = NULL,&#xD;&#xA;    @UserName NVARCHAR(100) = NULL,&#xD;&#xA;    @UserADID NVARCHAR(100) = NULL,&#xD;&#xA;    @Status NVARCHAR(50) = NULL,&#xD;&#xA;    @TaskId BIGINT = NULL,&#xD;&#xA;&#xD;&#xA;    @udt_NotificationResponse udt_TaskNotificationResponse NULL READONLY&#xD;&#xA;)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_InsertComments]">
