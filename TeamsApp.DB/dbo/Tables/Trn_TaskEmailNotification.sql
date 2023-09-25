@@ -2,6 +2,7 @@
 (
 	[EmailNotificationId] INT NOT NULL PRIMARY KEY IDENTITY,
 	[TaskId] BIGINT NULL,
+	[TransactionId] UNIQUEIDENTIFIER NULL,
 	[EmailSubject] NVARCHAR(MAX) NULL,
 	[EmailBody] NVARCHAR(MAX) NULL,
 	[ToRecipient] NVARCHAR(MAX) NULL,
@@ -11,4 +12,6 @@
     [IsSent] BIT NULL,
 	[CreatedOnIST] DATETIME NULL, 
 	[CreatedOnUTC] DATETIME NULL, 
+	[SentOnIST] DATETIME NULL, 
+	[SentOnUTC] DATETIME NULL
 )

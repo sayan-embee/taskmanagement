@@ -31,6 +31,8 @@
     using TeamsApp.Bot.Services.MicrosoftGraph.Users;
     using TeamsApp.Bot.Services.Notification;
     using TeamsApp.Bot.Helpers.NotificationHelper;
+    using TeamsApp.Bot.Services.Email;
+    using TeamsApp.Bot.Helpers.EmailHelper;
 
     /// <summary>
     /// Class to extend ServiceCollection.
@@ -121,6 +123,7 @@
             services.AddTransient<IAppLifecycleHandler, AppLifecycleHandler>();
             services.AddTransient<ITokenHelper, TokenHelper>();
             services.AddTransient<INotificationHelper, NotificationHelper>();
+            services.AddTransient<IEmailHelper, EmailHelper>();
         }
 
         public static void AddCustomJWTAuthentication(this IServiceCollection services, IConfiguration configuration)
@@ -178,6 +181,7 @@
             services.AddScoped<IMasterAPIData, MasterAPIData>();
             services.AddScoped<ITaskData, TaskData>();
             services.AddScoped<INotificationService, NotificationService>();
+            services.AddScoped<IEmailService, EmailService>();
         }
 
         /// <summary>

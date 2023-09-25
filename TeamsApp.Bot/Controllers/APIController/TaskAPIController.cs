@@ -16,6 +16,7 @@ using TeamsApp.Bot.Helpers;
 using Microsoft.SqlServer.Server;
 using TeamsApp.Bot.Helpers.NotificationHelper;
 using Microsoft.AspNetCore.Mvc.Diagnostics;
+using TeamsApp.Bot.Helpers.EmailHelper;
 
 namespace TeamsApp.Bot.Controllers.APIController
 {
@@ -29,12 +30,14 @@ namespace TeamsApp.Bot.Controllers.APIController
 
         private readonly ITaskData _taskData;
         private readonly INotificationHelper _notificationHelper;
+        private readonly IEmailHelper _emailHelper;
 
         public TaskAPIController(
             ILogger<TaskAPIController> logger
             , TelemetryClient telemetryClient
             , ITaskData taskData
             , INotificationHelper notificationHelper
+            , IEmailHelper emailHelper
             )
             : base(telemetryClient)
         {
@@ -42,6 +45,7 @@ namespace TeamsApp.Bot.Controllers.APIController
             this._telemetryClient = telemetryClient;
             this._taskData = taskData;
             this._notificationHelper = notificationHelper;
+            this._emailHelper = emailHelper;
         }
 
         #region GET
@@ -247,6 +251,21 @@ namespace TeamsApp.Bot.Controllers.APIController
                 if (taskListResponse != null && taskListResponse.Any())
                 {
                     await this._notificationHelper.ProcesssNotification_CreateTask(taskListResponse);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(response.ReferenceNo))
+            {
+                var taskIdList = (response.ReferenceNo).Split(",");
+
+                if (taskIdList != null && taskIdList.Any())
+                {
+                    // SEND EMAIL TO STAKEHOLDERS
+                    var taskEmailDetails = await this._taskData.GetEmailsByTaskIdList(response.ReferenceNo);
+                    if(taskEmailDetails != null && taskEmailDetails.Any())
+                    {
+                        await this._emailHelper.ProcesssEmail_CreateTask(taskEmailDetails);
+                    }
                 }
             }
         }

@@ -100,6 +100,9 @@
     <Build Include="dbo\Stored Procedures\usp_Task_Insert_NotificationResponse.sql" />
     <Build Include="dbo\Tables\Trn_TaskNotificationResponse.sql" />
     <Build Include="dbo\Tables\Trn_TaskEmailNotification.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Emails_GetByTaskIdList.sql" />
+    <Build Include="dbo\Types\udt_TaskEmailResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Task_Insert_EmailResponse.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\PostDeployment\Script.PostDeployment1.sql" />

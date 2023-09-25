@@ -136,6 +136,29 @@ namespace TeamsApp.DataAccess.Data
         }
 
 
+        public async Task<List<TaskEmailNotificationModel>> GetEmailsByTaskIdList(string TaskIdList)
+        {
+            var returnObject = new List<TaskEmailNotificationModel>();
+            try
+            {
+                var results = await _db.LoadData<TaskEmailNotificationModel, dynamic>("dbo.usp_Emails_GetByTaskIdList",
+                new
+                {
+                    TaskIdList
+                });
+
+                if (results != null && results.Any()) { returnObject = results.ToList(); }
+
+                return returnObject;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetEmailsByTaskIdList() --> SQL(usp_Emails_GetByTaskIdList) execution failed");
+                return null;
+            }
+        }
+
+
         public async Task<TaskGetByIdListViewModel> GetTaskByIdListView(long Id, string Email)
         {
             try
@@ -476,7 +499,7 @@ namespace TeamsApp.DataAccess.Data
             }
             catch (Exception ex)
             {
-                this._logger.LogError(ex, $"TaskData --> InsertTaskNotificationResponse() --> SQL(usp_Task_Insert_NotificationResponse) execution failed");
+                this._logger.LogError(ex, $"TaskData --> InsertTaskNotificationResponse_Multiple() --> SQL(usp_Task_Insert_NotificationResponse) execution failed");
                 return null;
             }
         }
@@ -508,6 +531,54 @@ namespace TeamsApp.DataAccess.Data
                         row.UserADID,
                         row.Status,
                         row.TaskId
+                        );
+                    }
+                }
+            }
+            return output;
+        }
+
+        #endregion
+
+        #region EMAIL
+
+        public async Task<ReturnMessageModel> InsertEmailResponse_Multiple(List<TaskEmailNotificationModel> data)
+        {
+            try
+            {
+                var udt = GetEmailResponse_UDT(data);
+
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_Insert_EmailResponse",
+                new
+                {
+                    @udt_EmailResponse = udt.AsTableValuedParameter("udt_TaskEmailResponse")
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> InsertEmailResponse_Multiple() --> SQL(usp_Task_Insert_EmailResponse) execution failed");
+                return null;
+            }
+        }
+
+        private DataTable GetEmailResponse_UDT(List<TaskEmailNotificationModel> udt)
+        {
+            var output = new DataTable();            
+            output.Columns.Add("TaskId", typeof(long));
+            output.Columns.Add("TransactionId", typeof(Guid));
+            output.Columns.Add("IsSent", typeof(bool));
+
+            if (udt != null)
+            {
+                foreach (var row in udt)
+                {
+                    if (row != null)
+                    {
+                        output.Rows.Add(
+                        row.TaskId,
+                        row.TransactionId,
+                        row.IsSent
                         );
                     }
                 }

@@ -1,0 +1,200 @@
+-----------Exception Details on  22-09-2023 15:53:13-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 15:53:13
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorAccessDenied
+Message: Access is denied. Check credentials and try again.
+ClientRequestId: 85b1197d-86fd-41d0-bc83-8eb29284e2b9
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  22-09-2023 16:25:51-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 16:25:51
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorInvalidRecipients
+Message: At least one recipient is not valid., Recipient ' demouser6@11dt1m.onmicrosoft.com' is not resolved. All recipients must be resolved before a message can be submitted.
+ClientRequestId: 501c807a-58a1-4ddc-83c1-3bcc6de71c96
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  22-09-2023 16:29:24-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 16:29:24
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorInvalidRecipients
+Message: At least one recipient is not valid., Recipient ' demouser6@11dt1m.onmicrosoft.com' is not resolved. All recipients must be resolved before a message can be submitted.
+ClientRequestId: 3b27eb50-73c3-4975-9e13-797cefa04407
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  22-09-2023 16:29:25-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 16:29:25
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorInvalidRecipients
+Message: At least one recipient is not valid., Recipient ' demouser6@11dt1m.onmicrosoft.com' is not resolved. All recipients must be resolved before a message can be submitted.
+ClientRequestId: 50cd06c6-911a-4ba3-a9c6-e3f55f701812
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  22-09-2023 16:41:26-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 16:41:26
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorInvalidRecipients
+Message: At least one recipient is not valid., Recipient ' demouser6@11dt1m.onmicrosoft.com' is not resolved. All recipients must be resolved before a message can be submitted.
+ClientRequestId: 78411a82-532e-4777-83e5-32e7a494ef23
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  22-09-2023 16:41:33-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 16:41:33
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorInvalidRecipients
+Message: At least one recipient is not valid., Recipient ' demouser6@11dt1m.onmicrosoft.com' is not resolved. All recipients must be resolved before a message can be submitted.
+ClientRequestId: 63382c85-33b3-4322-9254-5fcf4b614e57
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  22-09-2023 16:46:03-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 16:46:03
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorInvalidRecipients
+Message: At least one recipient is not valid., Recipient ' demouser2@11dt1m.onmicrosoft.com' is not resolved. All recipients must be resolved before a message can be submitted.
+ClientRequestId: 194d76cd-3240-4f28-b95b-3fb8944325d5
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  22-09-2023 16:46:03-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 22-09-2023 16:46:03
+
+Error Line No : line 84
+
+Error Message: ServiceException
+
+Exception Type: Microsoft.Graph.ServiceException
+
+Error Location : Code: ErrorInvalidRecipients
+Message: At least one recipient is not valid., Recipient ' demouser2@11dt1m.onmicrosoft.com' is not resolved. All recipients must be resolved before a message can be submitted.
+ClientRequestId: 69e56cf3-7bb7-4478-a141-7d1c3ed3adcb
+
+
+
+--------------------------------*End*------------------------------------------
+
+
+

@@ -302,6 +302,8 @@ END
     DECLARE @Email_AssignerEmail NVARCHAR(100);
     DECLARE @Email_CoordinatorName NVARCHAR(100);
     DECLARE @Email_CoordinatorEmail NVARCHAR(100);
+    DECLARE @Email_CollaboratorName NVARCHAR(100);
+    DECLARE @Email_CollaboratorEmail NVARCHAR(100);
     DECLARE @Email_AssigneeName NVARCHAR(100);
     DECLARE @Email_AssigneeEmail NVARCHAR(100);
     DECLARE @Email_TaskDesc NVARCHAR(MAX);
@@ -322,6 +324,8 @@ END
     AssignerEmail NVARCHAR(100),
     CoordinatorName NVARCHAR(100),
     CoordinatorEmail NVARCHAR(100),
+    CollaboratorName NVARCHAR(100),
+    CollaboratorEmail NVARCHAR(100),
     AssigneeName NVARCHAR(100),
     AssigneeEmail NVARCHAR(100),
     TaskDesc NVARCHAR(MAX),
@@ -340,6 +344,8 @@ END
     AssignerEmail,
     CoordinatorName,
     CoordinatorEmail,
+    CollaboratorName,
+    CollaboratorEmail,
     AssigneeName,
     AssigneeEmail,
     TaskDesc,
@@ -355,6 +361,8 @@ END
     T.AssignerEmail,
     T.CoordinatorName,
     T.CoordinatorEmail,
+    CollaboratorName,
+    CollaboratorEmail,
     T.AssigneeName,
     T.AssigneeEmail,
     T.TaskDesc,
@@ -375,6 +383,8 @@ END
     AssignerEmail,
     CoordinatorName,
     CoordinatorEmail,
+    CollaboratorName,
+    CollaboratorEmail,
     AssigneeName,
     AssigneeEmail,
     TaskDesc,
@@ -392,6 +402,8 @@ END
     @Email_AssignerEmail,
     @Email_CoordinatorName,
     @Email_CoordinatorEmail,
+    @Email_CollaboratorName,
+    @Email_CollaboratorEmail,
     @Email_AssigneeName,
     @Email_AssigneeEmail,
     @Email_TaskDesc,
@@ -404,10 +416,14 @@ END
     -- You can use the @TaskId and @EmailBody variables to create the email content
 
     -- set the email body as a simple message
+    SET @Email_EmailSubject = 'New Task Notification - Task App V2';
+
+    -- set the email body as a simple message
     SET @Email_EmailBody = N'
                         <html>
                         <body>
-                            <h1>New Task Created</h1>
+                            <p>Hi,</p>
+                            <h2>New Task Created</h2>
                             <p><strong>Target Date:</strong> ' + @Email_TargetDate + N'</p>
                             <p><strong>Priority:</strong> ' + @Email_Priority + N'</p>
                             <p><strong>Task Subject:</strong> ' + @Email_TaskSubject + N'</p>
@@ -432,9 +448,10 @@ END
 
                         -- Complete the email body
                         SET @Email_EmailBody = @Email_EmailBody + N'
-                            <h2>Stakeholders</h2>
+                            <h3>Stakeholders</h3>
                             <p><strong>Assigner:</strong> ' + @Email_AssignerName + N' (' + @Email_AssigneeEmail + N')</p>
                             <p><strong>Coordinator:</strong> ' + @Email_CoordinatorName + N' (' + @Email_CoordinatorEmail + N')</p>
+                            <p><strong>Collaborator:</strong> ' + @Email_CollaboratorName + N' (' + @Email_CollaboratorEmail + N')</p>
                             <p><strong>Assignee:</strong> ' + @Email_AssigneeName + N' (' + @Email_AssigneeEmail + N')</p>
                         </body>
                         </html>
@@ -442,7 +459,8 @@ END
 
     -- Update the @Emails table variable with the generated email body
     UPDATE @Emails
-    SET [EmailBody] = @Email_EmailBody
+    SET [EmailBody] = @Email_EmailBody,
+    [EmailSubject] = @Email_EmailSubject
     WHERE [TaskId] = @Email_TaskId;
 
     -- Fetch the next task
@@ -455,6 +473,8 @@ END
     @Email_AssignerEmail,
     @Email_CoordinatorName,
     @Email_CoordinatorEmail,
+    @Email_CollaboratorName,
+    @Email_CollaboratorEmail,
     @Email_AssigneeName,
     @Email_AssigneeEmail,
     @Email_TaskDesc,
@@ -471,24 +491,29 @@ END
     INSERT INTO [dbo].[Trn_TaskEmailNotification]
     (
         TaskId,
+        EmailSubject,
         EmailBody,
         ToRecipient,
         FromRecipient,
         CreatedOnIST,
         CreatedOnUTC,
-        [Status]
+        [Status],
+        TransactionId
     )
     SELECT 
-    T.[TaskId], 
+    T.[TaskId],
+    [EmailSubject],
     [EmailBody],
-    STRING_AGG(CONCAT(T.AssignerEmail, ', ', T.CoordinatorEmail, ', ', T.AssigneeEmail), ', ') AS ToRecipient,
+    STRING_AGG(CONCAT(T.AssignerEmail, ', ', T.CoordinatorEmail, ', ', T.CollaboratorEmail, ', ', T.AssigneeEmail), ', ') AS ToRecipient,
+    --STRING_AGG(CONCAT(T.CollaboratorEmail, ', '), ', ') AS ToRecipient,
     T.AssignerEmail,
     DATEADD(MINUTE, 330, GETUTCDATE()),
     GETUTCDATE(),
-    'CREATE-TASK'
+    'CREATE-TASK',
+    @TransactionId
     FROM @Emails E
     INNER JOIN [dbo].[Trn_TaskDetails] T WITH (NOLOCK) ON T.TaskId = E.[TaskId]
-    GROUP BY T.[TaskId], [EmailBody], T.AssignerEmail
+    GROUP BY T.[TaskId], [EmailSubject], [EmailBody], T.AssignerEmail, T.TransactionId
 
 
     COMMIT TRANSACTION

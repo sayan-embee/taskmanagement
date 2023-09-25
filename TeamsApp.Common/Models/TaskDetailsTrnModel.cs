@@ -407,4 +407,44 @@ namespace TeamsApp.Common.Models
         [JsonProperty("collaboratorADID")]
         public string CollaboratorADID { get; set; }
     }
+
+
+    public class TaskEmailNotificationModel
+    {
+        [JsonProperty("emailNotificationId")]
+        public int EmailNotificationId { get; set; }
+
+        [JsonProperty("taskId")]
+        public long? TaskId { get; set; }
+
+        [JsonProperty("transactionId")]
+        public Guid TransactionId { get; set; }
+
+        [JsonProperty("emailSubject")]
+        public string EmailSubject { get; set; }
+
+        [JsonProperty("emailBody")]
+        public string EmailBody { get; set; }
+
+        [JsonProperty("toRecipient")]
+        public string ToRecipient { get; set; }
+
+        [JsonProperty("ccRecipient")]
+        public string CcRecipient { get; set; }
+
+        [JsonProperty("fromRecipient")]
+        public string FromRecipient { get; set; }
+
+        [JsonProperty("status")]
+        public string Status { get; set; }
+
+        [JsonProperty("isSent")]
+        public bool? IsSent { get; set; }
+
+        [JsonProperty("createdOnIST")]
+        public DateTime? CreatedOnIST { get; set; }
+
+        [JsonProperty("createdOnUTC")]
+        public DateTime? CreatedOnUTC { get; set; }
+    }
 }
