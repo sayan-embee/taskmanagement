@@ -1,0 +1,450 @@
+
+
+Log Written Date: 28-09-2023 13:16:38
+
+Message : TaskAPIController --> CreateTask() execution started: 28-09-2023 07:46:38
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 13:16:42
+
+Message : TaskAPIController --> CreateTask() execution ended: 28-09-2023 07:46:42
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 13:16:42
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 13:40:35
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 08:10:35
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 13:41:50
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 08:11:50
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 13:44:25
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 08:14:25
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 13:44:26
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 08:14:26
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 13:44:26
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 15:49:47
+
+Message : TaskAPIController --> CreateTask() execution started: 28-09-2023 10:19:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 15:49:49
+
+Message : TaskAPIController --> CreateTask() execution ended: 28-09-2023 10:19:49
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 15:49:49
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 15:50:13
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 10:20:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 15:50:14
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 10:20:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 15:50:14
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:35:43
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:05:43
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:35:45
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 11:05:45
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:35:45
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:36:01
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:06:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:36:02
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 11:06:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:36:02
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:36:45
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:06:45
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:37:53
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 11:07:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:37:53
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:01:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:41:24
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:11:24
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:41:29
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:11:29
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:41:32
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:11:32
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:42:14
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:12:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:45:07
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:15:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:45:12
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 11:15:12
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:45:12
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:45:28
+
+Message : TaskAPIController --> CreateTask() execution started: 28-09-2023 11:15:28
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:45:30
+
+Message : TaskAPIController --> CreateTask() execution ended: 28-09-2023 11:15:30
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:45:30
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:48:48
+
+Message : TaskAPIController --> CreateTask() execution started: 28-09-2023 11:18:48
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:49:01
+
+Message : TaskAPIController --> CreateTask() execution ended: 28-09-2023 11:19:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:49:01
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:12
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:53:11
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:23:11
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:53:13
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 11:23:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:53:13
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:59:46
+
+Message : TaskAPIController --> CreateTask() execution started: 28-09-2023 11:29:46
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:59:48
+
+Message : TaskAPIController --> CreateTask() execution ended: 28-09-2023 11:29:48
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 16:59:48
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 17:04:32
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 11:34:32
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 17:04:33
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 11:34:33
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 17:04:33
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:03:03
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 12:33:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:03:16
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 12:33:16
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:03:16
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:12
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:04:05
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 12:34:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:04:06
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 12:34:06
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:04:06
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:07:37
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 12:37:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:07:38
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 12:37:38
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:07:38
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:20:47
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 12:50:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:20:49
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 12:50:49
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:20:49
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:23:51
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 12:53:51
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:23:54
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 12:53:54
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:23:54
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:36:03
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 13:06:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:36:05
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 13:06:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:36:05
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:55:53
+
+Message : TaskAPIController --> CreateTask() execution started: 28-09-2023 13:25:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:55:55
+
+Message : TaskAPIController --> CreateTask() execution ended: 28-09-2023 13:25:55
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 18:55:55
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:01:03
+
+Message : TaskAPIController --> CreateTask() execution started: 28-09-2023 13:31:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:01:04
+
+Message : TaskAPIController --> CreateTask() execution ended: 28-09-2023 13:31:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:01:04
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:03:15
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 13:33:15
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:03:16
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 13:33:16
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:03:16
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:05:13
+
+Message : TaskAPIController --> UpdateTask() execution started: 28-09-2023 13:35:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:05:14
+
+Message : TaskAPIController --> UpdateTask() execution ended: 28-09-2023 13:35:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 28-09-2023 19:05:14
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------

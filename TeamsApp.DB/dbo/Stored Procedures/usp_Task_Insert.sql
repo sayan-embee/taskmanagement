@@ -354,7 +354,7 @@ END
     )
     SELECT 
     T.[TaskId],    
-    CurrentTargetDate,
+    CONVERT(NVARCHAR(20), CurrentTargetDate, 103),
     T.TaskSubject,
     P.PriorityName,
     T.AssignerName,
@@ -416,7 +416,7 @@ END
     -- You can use the @TaskId and @EmailBody variables to create the email content
 
     -- set the email body as a simple message
-    SET @Email_EmailSubject = 'New Task Notification - Task App V2';
+    SET @Email_EmailSubject = 'Task Creation Notification - Task App V2';
 
     -- set the email body as a simple message
     SET @Email_EmailBody = N'

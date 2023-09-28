@@ -7,5 +7,6 @@ namespace TeamsApp.Bot.Helpers.NotificationHelper
     public interface INotificationHelper
     {
         Task<bool> ProcesssNotification_CreateTask(List<TaskDetailsCardModel> data);
+        Task<bool> ProcesssNotification_UpdateTask(List<TaskDetailsCardModel> data);
     }
 }

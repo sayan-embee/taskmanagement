@@ -113,7 +113,7 @@ namespace TeamsApp.DataAccess.Data
         }
 
 
-        public async Task<List<TaskDetailsCardModel>> GetTaskByUnqId(Guid TaskUnqId)
+        public async Task<List<TaskDetailsCardModel>> GetTaskByUnqId(Guid TaskUnqId, long TaskId = 0)
         {
             var returnObject = new List<TaskDetailsCardModel>();
             try
@@ -121,6 +121,7 @@ namespace TeamsApp.DataAccess.Data
                 var results = await _db.LoadData<TaskDetailsCardModel, dynamic>("dbo.usp_Task_GetByUnqId",
                 new
                 {
+                    TaskId,
                     TaskUnqId
                 });
 
@@ -484,7 +485,7 @@ namespace TeamsApp.DataAccess.Data
 
         #region NOTIFICATION
 
-        public async Task<ReturnMessageModel> InsertTaskNotificationResponse_Multiple(List<NotificationResponseTrnModel> data)
+        public async Task<ReturnMessageModel> InsertTaskNotificationResponse_Multiple(List<NotificationResponseTrnModel> data, string Status)
         {
             try
             {
@@ -493,6 +494,7 @@ namespace TeamsApp.DataAccess.Data
                 var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_Insert_NotificationResponse",
                 new
                 {
+                    Status,
                     udt_NotificationResponse = udt.AsTableValuedParameter("udt_TaskNotificationResponse")
                 });
                 return results.FirstOrDefault();

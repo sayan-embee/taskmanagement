@@ -8,5 +8,7 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
         Attachment GetWelcomeCardForPersonalScope();
         Attachment GetCard_CreateTask_ActionButton_PersonalScope(TaskDetailsCardModel data);
         Attachment GetCard_CreateTask_PersonalScope(TaskDetailsCardModel data);
+        Attachment GetCard_UpdateTask_ActionButton_PersonalScope(TaskDetailsCardModel data);
+        Attachment GetCard_UpdateTask_PersonalScope(TaskDetailsCardModel data);
     }
 }

@@ -354,8 +354,7 @@ namespace TeamsApp.Bot.Controllers.APIController
                     || string.IsNullOrEmpty(dataModel.TaskDesc)
                     || string.IsNullOrEmpty(dataModel.AssignerADID)
                     || string.IsNullOrEmpty(dataModel.CoordinatorADID)
-                    || dataModel.InitialTargetDate == null
-                    || (dataModel.TaskId == null || dataModel.TaskId == 0)
+                    || dataModel.CurrentTargetDate == null
                     || (dataModel.StatusId == null || dataModel.StatusId == 0)
                     || (dataModel.PriorityId == null || dataModel.PriorityId == 0)
                     )
@@ -394,6 +393,9 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> UpdateTask() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> UpdateTask() execution time: {formattedTimeDifference}");
+
+                    // SEND NOTIFICATIONS TO STAKEHOLDERS
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_UpdateTask(response));
                 }
                 return this.Ok(response);
             }
@@ -403,6 +405,36 @@ namespace TeamsApp.Bot.Controllers.APIController
                 this._logger.LogError(ex, $"TaskAPIController --> UpdateTask() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
                 return this.Ok();
+            }
+        }
+
+        private async Task ProcessOtherActivities_UpdateTask(ReturnMessageModel response)
+        {
+            if (!string.IsNullOrEmpty(response.Id) && response.GuidId != Guid.Empty)
+            {
+                long TaskId = long.Parse(response.Id);
+
+                // SEND NOTIFICATIONS TO STAKEHOLDERS
+                var taskListResponse = await this._taskData.GetTaskByUnqId(response.GuidId, TaskId);
+                if (taskListResponse != null && taskListResponse.Any())
+                {
+                    await this._notificationHelper.ProcesssNotification_UpdateTask(taskListResponse);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(response.ReferenceNo))
+            {
+                var taskIdList = (response.ReferenceNo).Split(",");
+
+                if (taskIdList != null && taskIdList.Any())
+                {
+                    // SEND EMAIL TO STAKEHOLDERS
+                    var taskEmailDetails = await this._taskData.GetEmailsByTaskIdList(response.ReferenceNo);
+                    if (taskEmailDetails != null && taskEmailDetails.Any())
+                    {
+                        await this._emailHelper.ProcesssEmail_UpdateTask(taskEmailDetails);
+                    }
+                }
             }
         }
 

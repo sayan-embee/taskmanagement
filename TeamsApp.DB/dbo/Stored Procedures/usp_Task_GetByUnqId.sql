@@ -1,12 +1,13 @@
 ﻿CREATE PROCEDURE [dbo].[usp_Task_GetByUnqId]
 (
+    @TaskId BIGINT,
 	@TaskUnqId UNIQUEIDENTIFIER = NULL
 )
 AS
 BEGIN
 
 	SELECT
-        [TaskId],
+        T.[TaskId],
         [TaskRefNo],
         [TaskUnqId],
         T.[StatusId],
@@ -42,10 +43,16 @@ BEGIN
         [CollaboratorName],
         [CollaboratorEmail],
         [CollaboratorUPN],
-        [CollaboratorADID]
+        [CollaboratorADID],
+        PR.[UpdatedOnIST],
+        PR.[UpdatedByName]
     FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
     INNER JOIN [dbo].[Mst_TaskStatus] S ON S.StatusId = T.StatusId
     INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId
     INNER JOIN [dbo].[Mst_Role] R ON R.RoleId = T.RoleId
-    WHERE T.TaskUnqId = @TaskUnqId
+    LEFT JOIN [dbo].[Trn_TaskProgressDetails] PR ON PR.TaskId = T.TaskId AND PR.TransactionId = T.TransactionId
+    WHERE
+    (@TaskId > 0 AND T.TaskId = @TaskId AND T.TaskUnqId = @TaskUnqId)
+    OR
+    (@TaskId <= 0 AND T.TaskUnqId = @TaskUnqId)
 END

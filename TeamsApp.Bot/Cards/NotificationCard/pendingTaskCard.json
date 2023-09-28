@@ -1,0 +1,369 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://img.icons8.com/ultraviolet/46/000000/time-machine.png",
+                  "altText": "task",
+                  "horizontalAlignment": "Left",
+                  "size": "Small",
+                  "height": "25px",
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Large",
+                  "weight": "Bolder",
+                  "text": "Task Pending",
+                  "wrap": true,
+                  "style": "heading",
+                  "gridStyle": "accent",
+                  "fontType": "Default",
+                  "color": "Accent",
+                  "horizontalAlignment": "Center"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://img.icons8.com/emoji/48/000000/warning-emoji.png",
+                  "horizontalAlignment": "Right",
+                  "width": "24px",
+                  "height": "24px",
+                  "spacing": "Small"
+                }
+              ],
+              "spacing": "Small",
+              "horizontalAlignment": "Center",
+              "verticalContentAlignment": "Top",
+              "minHeight": "0px"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${formatDateTime(updatedOnIST, 'dd/MM/yyyy')} IST",
+                  "wrap": true,
+                  "height": "stretch",
+                  "horizontalAlignment": "Right",
+                  "weight": "Lighter",
+                  "color": "Accent",
+                  "fontType": "Monospace",
+                  "size": "Small"
+                }
+              ],
+              "spacing": "None",
+              "horizontalAlignment": "Right"
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "size": "Small",
+                  "width": "19px",
+                  "horizontalAlignment": "Right",
+                  "altText": "calendar",
+                  "url": "https://img.icons8.com/external-sbts2018-outline-color-sbts2018/48/000000/external-alert-emergencies-set-sbts2018-outline-color-sbts2018.png"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "weight": "Bolder",
+                  "size": "Default",
+                  "color": "Attention",
+                  "fontType": "Default",
+                  "text": "Target date exceeded, immediate action needed"
+                }
+              ],
+              "width": "stretch",
+              "horizontalAlignment": "Left",
+              "spacing": "Small",
+              "verticalContentAlignment": "Top"
+            }
+          ],
+          "spacing": "Small",
+          "style": "attention",
+          "horizontalAlignment": "Left",
+          "minHeight": "0px"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Task Subject",
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ],
+              "spacing": "None",
+              "horizontalAlignment": "Left",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${taskSubject}",
+                  "wrap": true,
+                  "spacing": "None",
+                  "weight": "Default",
+                  "color": "Accent",
+                  "maxLines": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Priority",
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ],
+              "spacing": "None",
+              "horizontalAlignment": "Left",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${priorityName}",
+                  "spacing": "None",
+                  "wrap": true,
+                  "weight": "Default",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Assigner",
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent"
+                }
+              ],
+              "spacing": "None",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${assignerName}",
+                  "wrap": true,
+                  "spacing": "None",
+                  "weight": "Default",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Coordinator",
+                  "wrap": true,
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ],
+              "spacing": "None",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${coordinatorName}",
+                  "spacing": "None",
+                  "weight": "Default",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "100px",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Assignee",
+                  "wrap": true,
+                  "spacing": "None",
+                  "weight": "Bolder",
+                  "color": "Accent",
+                  "horizontalAlignment": "Left"
+                }
+              ],
+              "spacing": "None",
+              "verticalContentAlignment": "Center"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${assigneeName}",
+                  "spacing": "None",
+                  "weight": "Default",
+                  "color": "Accent"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet"
+        }
+      ],
+      "style": "default"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "Image",
+              "size": "Small",
+              "url": "https://img.icons8.com/fluency/48/000000/calendar.png",
+              "width": "18px",
+              "horizontalAlignment": "Right",
+              "altText": "calendar"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "weight": "Bolder",
+              "text": "**Target Date -** ${formatDateTime(currentTargetDate, 'dd MMMM yyyy')} IST",
+              "size": "Default",
+              "color": "Accent",
+              "fontType": "Default"
+            }
+          ],
+          "width": "stretch",
+          "horizontalAlignment": "Left",
+          "spacing": "Small",
+          "verticalContentAlignment": "Top"
+        }
+      ],
+      "spacing": "None",
+      "style": "accent",
+      "horizontalAlignment": "Left",
+      "minHeight": "0px"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "VIEW-TASK",
+      "data": {
+        "msteams": {
+          "type": "task/fetch"
+        },
+        "Command": "VIEW-TASK",
+        "TaskId": "${TaskId}"
+      },
+      "title": "View task",
+      "iconUrl": "https://img.icons8.com/color/480/000000/info--v1.png",
+      "style": "positive"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5"
+}

@@ -1,0 +1,22 @@
+-----------Exception Details on  28-09-2023 16:45:48-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 28-09-2023 16:45:48
+
+Error Line No : line 65
+
+Error Message: AggregateException
+
+Exception Type: System.AggregateException
+
+Error Location : Failed to acquire token for client credentials. (Exception of type 'Microsoft.Bot.Connector.Authentication.ThrottleException' was thrown.)
+
+
+--------------------------------*End*------------------------------------------
+
+
+

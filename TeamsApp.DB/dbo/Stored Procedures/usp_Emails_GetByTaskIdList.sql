@@ -7,7 +7,7 @@ BEGIN
 
 	SELECT 
         [EmailNotificationId],
-        [TaskId],
+        TE.[TaskId],
         [EmailSubject],
         [EmailBody],
         [ToRecipient],
@@ -15,13 +15,15 @@ BEGIN
         [FromRecipient],
         [Status],
         [IsSent],
-        [CreatedOnIST],
-        [CreatedOnUTC],
-        [TransactionId]
-    FROM [dbo].[Trn_TaskEmailNotification]
-    WHERE [TaskId] IN (
+        TE.[CreatedOnIST],
+        TE.[CreatedOnUTC],
+        TE.[TransactionId]
+    FROM [dbo].[Trn_TaskEmailNotification] TE WITH(NOLOCK)
+    INNER JOIN [dbo].[Trn_TaskDetails] TD WITH(NOLOCK) ON TD.TaskId = TE.TaskId AND TD.TransactionId = TE.TransactionId
+    WHERE TE.[TaskId] IN (
         SELECT CAST(value AS BIGINT)
         FROM STRING_SPLIT(@TaskIdList, ',')
-    );
+    )
+    AND TE.IsSent IS NULL
 
 END

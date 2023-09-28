@@ -171,114 +171,114 @@ namespace TeamsApp.Bot
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            /*app.UseExceptionHandler(applicationBuilder => this.HandleGlobalException(applicationBuilder));
-            app.UseIpRateLimiting();
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseHsts();
-            }
-
-            app.UseDefaultFiles()
-                .UseStaticFiles()
-                .UseWebSockets()
-                .UseRouting()
-                .UseAuthentication()
-                .UseAuthorization()
-                .UseMvc()
-                .UseRequestLocalization()
-                .UseEndpoints(endpoints =>
-                {
-                    endpoints.MapControllers();
-                });
-
-           app.UseSpa(spa =>
-            {
-                spa.Options.SourcePath = "ClientApp";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start");
-                }
-            });
-            */
-            app.UseExceptionHandler(applicationBuilder => this.HandleGlobalException(applicationBuilder));
-            app.UseIpRateLimiting();
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
-            app.UseWebSockets();
-            app.UseRouting();
-            app.UseAuthentication();
-            app.UseAuthorization();
-            //app.UseHttpsRedirection();
-            app.UseSpaStaticFiles();
-            app.UseMvc();
-            app.UseRequestLocalization();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
-            });
-
-            app.UseSpa(spa =>
-            {
-                spa.Options.SourcePath = "ClientApp";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start");
-                }
-            });
-        }
-
         //public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         //{
-
-
-
+        //    /*app.UseExceptionHandler(applicationBuilder => this.HandleGlobalException(applicationBuilder));
+        //    app.UseIpRateLimiting();
         //    if (env.IsDevelopment())
         //    {
         //        app.UseDeveloperExceptionPage();
         //    }
+        //    else
+        //    {
+        //        app.UseHsts();
+        //    }
 
+        //    app.UseDefaultFiles()
+        //        .UseStaticFiles()
+        //        .UseWebSockets()
+        //        .UseRouting()
+        //        .UseAuthentication()
+        //        .UseAuthorization()
+        //        .UseMvc()
+        //        .UseRequestLocalization()
+        //        .UseEndpoints(endpoints =>
+        //        {
+        //            endpoints.MapControllers();
+        //        });
 
+        //   app.UseSpa(spa =>
+        //    {
+        //        spa.Options.SourcePath = "ClientApp";
+
+        //        if (env.IsDevelopment())
+        //        {
+        //            spa.UseReactDevelopmentServer(npmScript: "start");
+        //        }
+        //    });
+        //    */
         //    app.UseExceptionHandler(applicationBuilder => this.HandleGlobalException(applicationBuilder));
+        //    app.UseIpRateLimiting();
+        //    if (env.IsDevelopment())
+        //    {
+        //        app.UseDeveloperExceptionPage();
+        //    }
+        //    else
+        //    {
+        //        app.UseExceptionHandler("/Error");
+        //        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        //        app.UseHsts();
+        //    }
         //    app.UseDefaultFiles();
         //    app.UseStaticFiles();
         //    app.UseWebSockets();
-        //    app.UseAuthentication();
-        //    app.UseSpaStaticFiles();
         //    app.UseRouting();
-        //    app.UseCors("AllowOrigin");
+        //    app.UseAuthentication();
         //    app.UseAuthorization();
+        //    //app.UseHttpsRedirection();
+        //    app.UseSpaStaticFiles();
+        //    app.UseMvc();
+        //    app.UseRequestLocalization();
         //    app.UseEndpoints(endpoints =>
         //    {
-        //        endpoints.MapGet("/", async context =>
+        //        endpoints.MapControllerRoute(
+        //            name: "default",
+        //            pattern: "{controller}/{action=Index}/{id?}");
+        //    });
+
+        //    app.UseSpa(spa =>
+        //    {
+        //        spa.Options.SourcePath = "ClientApp";
+
+        //        if (env.IsDevelopment())
         //        {
-        //            await context.Response.WriteAsync("Custom API is running..."); // Replace with your custom message
-        //        });
-
-
-
-        //        endpoints.MapControllers();
+        //            spa.UseReactDevelopmentServer(npmScript: "start");
+        //        }
         //    });
         //}
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+
+
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+
+            app.UseExceptionHandler(applicationBuilder => this.HandleGlobalException(applicationBuilder));
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            app.UseWebSockets();
+            app.UseAuthentication();
+            app.UseSpaStaticFiles();
+            app.UseRouting();
+            app.UseCors("AllowOrigin");
+            app.UseAuthorization();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGet("/", async context =>
+                {
+                    await context.Response.WriteAsync("Custom API is running..."); // Replace with your custom message
+                });
+
+
+
+                endpoints.MapControllers();
+            });
+        }
 
         /// <summary>
         /// Validate whether the configuration settings are missing or not.

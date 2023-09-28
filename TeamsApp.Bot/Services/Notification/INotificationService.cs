@@ -8,5 +8,6 @@ namespace TeamsApp.Bot.Services.Notification
     public interface INotificationService
     {
         Task<NotificationResponseTrnModel> SendCard_PersonalScope(string userADID, Attachment cardAttachment, long referenceId);
+        Task<bool> DeleteCard_PersonalScope(NotificationResponseTrnModel data);
     }
 }

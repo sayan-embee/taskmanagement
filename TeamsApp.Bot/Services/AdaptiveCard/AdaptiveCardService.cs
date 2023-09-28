@@ -24,7 +24,9 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
     {
         private const string WelcomeCardCacheKey = "_welcome-card";
         private const string CreateTask_ActionButton_CacheKey = "_createTask-ActionButton";
+        private const string UpdateTask_ActionButton_CacheKey = "_updateTask-ActionButton";
         private const string CreateTask_CacheKey = "_createTask";
+        private const string UpdateTask_CacheKey = "_updateTask";
         private const string ReassignTaskCardCacheKey = "_task-card-reassign";
         private const string UpdatedTaskCardCacheKey = "_task-card-updated";
 
@@ -141,6 +143,44 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
         public Attachment GetCard_CreateTask_PersonalScope(TaskDetailsCardModel data)
         {
             var cardPayload = this.GetCardPayload(CreateTask_CacheKey, "\\NotificationCard\\newTaskCard.json");
+            var template = new AdaptiveCardTemplate(cardPayload);
+
+            //data.CollaboratorName = data.CollaboratorName + $" ({data.CollaboratorEmail})";
+
+            var cardJson = template.Expand(data);
+            AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
+
+            var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = AdaptiveCard.ContentType,
+                Content = card,
+            };
+            return adaptiveCardAttachment;
+        }
+
+        public Attachment GetCard_UpdateTask_ActionButton_PersonalScope(TaskDetailsCardModel data)
+        {
+            var cardPayload = this.GetCardPayload(UpdateTask_ActionButton_CacheKey, "\\NotificationCard\\updateTaskCard_withActionBtn.json");
+            var template = new AdaptiveCardTemplate(cardPayload);
+
+            //data.AssignerName = data.AssignerName + $" ({data.AssignerEmail})";
+            //data.CoordinatorName = data.CoordinatorName + $" ({data.CoordinatorEmail})";
+            //data.AssigneeName = data.AssigneeName + $" ({data.AssigneeEmail})";
+
+            var cardJson = template.Expand(data);
+            AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
+
+            var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = AdaptiveCard.ContentType,
+                Content = card,
+            };
+            return adaptiveCardAttachment;
+        }
+
+        public Attachment GetCard_UpdateTask_PersonalScope(TaskDetailsCardModel data)
+        {
+            var cardPayload = this.GetCardPayload(UpdateTask_CacheKey, "\\NotificationCard\\updateTaskCard.json");
             var template = new AdaptiveCardTemplate(cardPayload);
 
             //data.CollaboratorName = data.CollaboratorName + $" ({data.CollaboratorEmail})";

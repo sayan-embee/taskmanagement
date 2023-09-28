@@ -13,15 +13,44 @@
 )
 AS
 BEGIN
+
+ DECLARE @JSONString NVARCHAR(MAX) = NULL;
+
     BEGIN TRANSACTION
     IF EXISTS (SELECT TaskId FROM @udt_NotificationResponse)
     BEGIN
+
+        ---- ADD ALL PREVIOUS NotificationId ID IN A LIST
+        --DECLARE @IdList VARCHAR(MAX) = NULL;
+        --IF EXISTS(SELECT * FROM @udt_NotificationResponse)
+        --BEGIN
+        --    ;WITH DATA1 AS 
+        --    (
+        --        SELECT R.NotificationId
+        --        FROM [dbo].[Trn_TaskNotificationResponse] R WITH(NOLOCK), @udt_NotificationResponse udt
+        --         WHERE R.TaskId = udt.TaskId AND R.IsActive = 1
+        --    )
+        --    SELECT @IdList = CONCAT(@IdList,',',NotificationId)
+        --    FROM DATA1
+        --END       
+
+        SET @JSONString = (
+        SELECT
+            R.NotificationId,
+            R.ServiceUrl,
+            R.ConversationId,
+            R.ActivityId
+        FROM [dbo].[Trn_TaskNotificationResponse] R WITH(NOLOCK), @udt_NotificationResponse udt
+        WHERE R.TaskId = udt.TaskId AND R.IsActive = 1
+        FOR JSON AUTO
+        );
+
         
-        UPDATE T
-        SET T.IsActive = 0
-        FROM [dbo].[Trn_TaskNotificationResponse] T,
-        @udt_NotificationResponse udt
-        WHERE T.TaskId = udt.TaskId
+        UPDATE R
+        SET R.IsActive = 0
+        FROM [dbo].[Trn_TaskNotificationResponse] R, @udt_NotificationResponse udt
+        WHERE R.TaskId = udt.TaskId AND R.IsActive = 1
+
 
         INSERT INTO [dbo].[Trn_TaskNotificationResponse]
         (
@@ -44,7 +73,7 @@ BEGIN
             udt.ServiceUrl,
             udt.UserName,
             udt.UserADID,
-            udt.[Status],
+            @Status,
             udt.TaskId,
             DATEADD(MINUTE, 330, GETUTCDATE()),
             GETUTCDATE(),
@@ -61,15 +90,27 @@ BEGIN
 		        0				        AS Id,
 		        ''						AS ReferenceNo
 	        RETURN
-    END
+        END
+
     END
     ELSE
     BEGIN
 
-        UPDATE T
-        SET T.IsActive = 0
-        FROM [dbo].[Trn_TaskNotificationResponse] T
-        WHERE T.TaskId = @TaskId
+        SET @JSONString = (
+        SELECT
+            R.NotificationId,
+            R.ServiceUrl,
+            R.ConversationId,
+            R.ActivityId
+        FROM [dbo].[Trn_TaskNotificationResponse] R WITH(NOLOCK), @udt_NotificationResponse udt
+        WHERE R.TaskId = @TaskId AND R.IsActive = 1
+        FOR JSON AUTO
+        );
+
+        UPDATE R
+        SET R.IsActive = 0
+        FROM [dbo].[Trn_TaskNotificationResponse] R
+        WHERE R.TaskId = @TaskId AND R.IsActive = 1
 
         INSERT INTO [dbo].[Trn_TaskNotificationResponse]
         (
@@ -95,12 +136,13 @@ BEGIN
         )
     END
 
+
     COMMIT TRANSACTION
     SELECT 
         'Insert executed'          AS [Message],
         ''						   AS ErrorMessage,
         1					       AS [Status],
         @@IDENTITY				   AS Id,
-        ''				           AS ReferenceNo
+        @JSONString				   AS ReferenceNo
 END
 

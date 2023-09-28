@@ -7,5 +7,6 @@ namespace TeamsApp.Bot.Helpers.EmailHelper
     public interface IEmailHelper
     {
         Task<bool> ProcesssEmail_CreateTask(List<TaskEmailNotificationModel> data);
+        Task<bool> ProcesssEmail_UpdateTask(List<TaskEmailNotificationModel> data);
     }
 }

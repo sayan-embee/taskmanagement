@@ -15,6 +15,7 @@ using TeamsApp.Bot.Services.MicrosoftGraph;
 using TeamsApp.Common.Models;
 using TeamsApp.DataAccess.Data;
 using TeamsApp.DataAccess.DbAccess;
+using static Microsoft.Graph.Constants;
 
 namespace TeamsApp.Bot.Services.Notification
 {
@@ -46,7 +47,10 @@ namespace TeamsApp.Bot.Services.Notification
                     {
                         var conversationDetails = await _conversationData.GetConversationByUserId(Id);
 
-                        if (conversationDetails != null && !string.IsNullOrEmpty(conversationDetails.ServiceUrl) && !string.IsNullOrEmpty(conversationDetails.ConversationId))
+                        if (conversationDetails != null 
+                            && !string.IsNullOrEmpty(conversationDetails.ServiceUrl) 
+                            && !string.IsNullOrEmpty(conversationDetails.ConversationId)
+                            )
                         {
                             Uri url = new Uri(conversationDetails.ServiceUrl);
                             ConnectorClient connectorClient = new ConnectorClient(url, this._botOptions.Value.UserAppId, this._botOptions.Value.UserAppPassword);
@@ -67,12 +71,13 @@ namespace TeamsApp.Bot.Services.Notification
                             {
                                 var returnObj = new NotificationResponseTrnModel();
                                 returnObj.ReplyToId = result.Id;
-                                returnObj.ActivityId = conversationDetails.ActivityId;
+                                //returnObj.ActivityId = conversationDetails.ActivityId;
+                                returnObj.ActivityId = result.Id;
                                 returnObj.ConversationId = conversationDetails.ConversationId;
                                 returnObj.ServiceUrl = conversationDetails.ServiceUrl;
                                 returnObj.UserName = conversationDetails.UserName;
                                 returnObj.UserADID = conversationDetails.UserId.ToString();
-                                returnObj.Status = "CREATE-TASK";
+                                returnObj.Status = "";
                                 returnObj.TaskId = referenceId;
                                 return returnObj;
                             }
@@ -89,5 +94,29 @@ namespace TeamsApp.Bot.Services.Notification
             }            
         }
 
+
+        public async Task<bool> DeleteCard_PersonalScope(NotificationResponseTrnModel data)
+        {
+            try
+            {
+                if (data != null
+                    && !string.IsNullOrEmpty(data.ServiceUrl)
+                    && !string.IsNullOrEmpty(data.ConversationId)
+                    && !string.IsNullOrEmpty(data.ActivityId)
+                    )
+                {
+                    Uri url = new Uri(data.ServiceUrl);
+                    ConnectorClient connectorClient = new ConnectorClient(url, this._botOptions.Value.UserAppId, this._botOptions.Value.UserAppPassword);
+                    await connectorClient.Conversations.DeleteActivityAsync(data.ConversationId, data.ActivityId);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"NotificationService --> DeleteCard_PersonalScope() execution failed for Id: {data.NotificationId}");
+                ExceptionLogging.SendErrorToText(ex);
+                return false;
+            }
+        }
     }
 }

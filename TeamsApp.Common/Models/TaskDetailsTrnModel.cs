@@ -329,24 +329,6 @@ namespace TeamsApp.Common.Models
         [JsonProperty("isActive")]
         public bool? IsActive { get; set; }
 
-        [JsonProperty("createdOnIST")]
-        public DateTime? CreatedOnIST { get; set; }
-
-        [JsonProperty("createdOnUTC")]
-        public DateTime? CreatedOnUTC { get; set; }
-
-        [JsonProperty("createdByName")]
-        public string CreatedByName { get; set; }
-
-        [JsonProperty("createdByEmail")]
-        public string CreatedByEmail { get; set; }
-
-        [JsonProperty("createdByUPN")]
-        public string CreatedByUPN { get; set; }
-
-        [JsonProperty("createdByADID")]
-        public string CreatedByADID { get; set; }
-
         [JsonProperty("taskSubject")]
         public string TaskSubject { get; set; }
 
@@ -406,6 +388,47 @@ namespace TeamsApp.Common.Models
 
         [JsonProperty("collaboratorADID")]
         public string CollaboratorADID { get; set; }
+
+
+
+        [JsonProperty("createdOnIST")]
+        public DateTime? CreatedOnIST { get; set; }
+
+        [JsonProperty("createdOnUTC")]
+        public DateTime? CreatedOnUTC { get; set; }
+
+        [JsonProperty("createdByName")]
+        public string CreatedByName { get; set; }
+
+        [JsonProperty("createdByEmail")]
+        public string CreatedByEmail { get; set; }
+
+        [JsonProperty("createdByUPN")]
+        public string CreatedByUPN { get; set; }
+
+        [JsonProperty("createdByADID")]
+        public string CreatedByADID { get; set; }
+
+
+
+
+        [JsonProperty("updatedOnIST")]
+        public DateTime? UpdatedOnIST { get; set; }
+
+        [JsonProperty("updatedOnUTC")]
+        public DateTime? UpdatedOnUTC { get; set; }
+
+        [JsonProperty("updatedByName")]
+        public string UpdatedByName { get; set; }
+
+        [JsonProperty("updatedByEmail")]
+        public string UpdatedByEmail { get; set; }
+
+        [JsonProperty("updatedByUPN")]
+        public string UpdatedByUPN { get; set; }
+
+        [JsonProperty("updatedByADID")]
+        public string UpdatedByADID { get; set; }
     }
 
 
