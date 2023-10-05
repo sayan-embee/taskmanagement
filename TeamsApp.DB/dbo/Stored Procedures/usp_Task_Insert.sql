@@ -253,28 +253,32 @@ END
      SET @ProgressId = @@IDENTITY;
 
 
-     INSERT INTO [dbo].[Trn_TaskAssignmentDetails] 
-     (
-        [TaskId],
-        [ProgressId],
-        [AssigneeName],
-        [AssigneeEmail],
-        [AssigneeUPN],
-        [AssigneeADID],
-        [AssignmentType],
-        [TransactionId]
-    )
-    SELECT
-        [TaskId],
-        @ProgressId,
-        [AssigneeName],
-        [AssigneeEmail],
-        [AssigneeUPN],
-        [AssigneeADID],
-        'ASSIGNED',
-        @TransactionId
-    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
-     WHERE TaskUnqId = @TaskUnqId AND @ProgressId > 0
+     IF(@ProgressId > 0)
+     BEGIN
+        INSERT INTO [dbo].[Trn_TaskAssignmentDetails] 
+         (
+            [TaskId],
+            [ProgressId],
+            [AssigneeName],
+            [AssigneeEmail],
+            [AssigneeUPN],
+            [AssigneeADID],
+            [AssignmentType],
+            [TransactionId]
+        )
+        SELECT
+            T.[TaskId],
+            P.ProgressId,
+            [AssigneeName],
+            [AssigneeEmail],
+            [AssigneeUPN],
+            [AssigneeADID],
+            'ASSIGNED',
+            @TransactionId
+        FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
+        INNER JOIN [dbo].[Trn_TaskProgressDetails] P WITH(NOLOCK) ON P.TaskId = T.TaskId
+        WHERE T.TaskUnqId = @TaskUnqId AND T.TransactionId = P.TransactionId
+     END
 
 
     -- ADD ALL TASK ID IN A LIST
@@ -523,6 +527,7 @@ END
         1					       AS [Status],
         @@IDENTITY				   AS Id,
         @IdList				       AS ReferenceNo,
-        @TaskUnqId                 AS GuidId
+        @TaskUnqId                 AS GuidId,
+        @TransactionId             AS TransactionId
 
 END

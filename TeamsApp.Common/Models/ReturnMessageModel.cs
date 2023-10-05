@@ -13,6 +13,7 @@ namespace TeamsApp.Common.Models
         public string Id { get; set; }
         public string ReferenceNo { get; set; }
         public Guid GuidId { get; set; }
+        public Guid TransactionId { get; set; }
         public string ExecutionTime { get; set; }
     }
 }

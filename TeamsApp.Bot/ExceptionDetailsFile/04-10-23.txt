@@ -1,0 +1,22 @@
+-----------Exception Details on  04-10-2023 19:51:50-----------------
+-------------------------------------------------------------------------------------
+
+
+
+
+
+Log Written Date: 04-10-2023 19:51:50
+
+Error Line No : line 69
+
+Error Message: JsonWriterException
+
+Exception Type: Newtonsoft.Json.JsonWriterException
+
+Error Location : Token PropertyName in state Property would result in an invalid JSON object. Path 'attachments[0].content.body[2].items[0].columns[0]'.
+
+
+--------------------------------*End*------------------------------------------
+
+
+

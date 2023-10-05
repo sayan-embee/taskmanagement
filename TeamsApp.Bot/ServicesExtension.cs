@@ -33,6 +33,7 @@
     using TeamsApp.Bot.Helpers.NotificationHelper;
     using TeamsApp.Bot.Services.Email;
     using TeamsApp.Bot.Helpers.EmailHelper;
+    using TeamsApp.Bot.Helpers.FileHelper;
 
     /// <summary>
     /// Class to extend ServiceCollection.
@@ -124,6 +125,7 @@
             services.AddTransient<ITokenHelper, TokenHelper>();
             services.AddTransient<INotificationHelper, NotificationHelper>();
             services.AddTransient<IEmailHelper, EmailHelper>();
+            services.AddTransient<IFileHelper, FileHelper>();
         }
 
         public static void AddCustomJWTAuthentication(this IServiceCollection services, IConfiguration configuration)

@@ -30,7 +30,7 @@
                   "type": "TextBlock",
                   "size": "Large",
                   "weight": "Bolder",
-                  "text": "Task Re-assigned",
+                  "text": "Task Reassigned",
                   "wrap": true,
                   "style": "heading",
                   "gridStyle": "accent",
@@ -280,7 +280,7 @@
               "items": [
                 {
                   "type": "TextBlock",
-                  "text": "Assignee",
+                  "text": "New Assignee",
                   "wrap": true,
                   "spacing": "None",
                   "weight": "Bolder",
@@ -342,7 +342,7 @@
               "items": [
                 {
                   "type": "TextBlock",
-                  "text": "This task has been re-assigned to ${assignedTo}",
+                  "text": "This task has been reassigned to ${assigneeName}",
                   "wrap": true,
                   "size": "Default",
                   "color": "Accent",

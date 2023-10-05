@@ -73,7 +73,10 @@ namespace TeamsApp.DataAccess.Data
                         var taskAssignmentList = await results.ReadAsync<TaskAssignmentTrnModel>();
 
                         // Task History
-                        var taskHistoryList = await results.ReadAsync<TaskHistoryViewModel>();                        
+                        var taskHistoryList = await results.ReadAsync<TaskHistoryViewModel>();
+
+                        // Task Files
+                        var taskfileList = await results.ReadAsync<TaskFileDetailsTrnModel>();
 
                         if (taskProgressList != null && taskProgressList.Any())
                         {
@@ -100,6 +103,11 @@ namespace TeamsApp.DataAccess.Data
                             }                           
 
                             returnModel.TaskProgressList = taskProgressList.ToList();
+                        }
+
+                        if (taskfileList != null && taskfileList.Any())
+                        {
+                            returnModel.TaskFileList = taskfileList.ToList();
                         }
                     }
                 }
@@ -192,6 +200,9 @@ namespace TeamsApp.DataAccess.Data
                         // Task History
                         var taskHistoryList = await results.ReadAsync<TaskProgressViewModelHistoryDetails>();
 
+                        // Task Files
+                        var taskfileList = await results.ReadAsync<TaskFileDetailsTrnModel>();
+
                         if (taskAssignmentList != null && taskAssignmentList.Any())
                         {
                             returnModel.TaskAssignmentList = taskAssignmentList.ToList();
@@ -200,6 +211,11 @@ namespace TeamsApp.DataAccess.Data
                         if (taskHistoryList != null && taskHistoryList.Any())
                         {
                             returnModel.TaskHistoryList = taskHistoryList.ToList();
+                        }
+
+                        if (taskfileList != null && taskfileList.Any())
+                        {
+                            returnModel.TaskFileList = taskfileList.ToList();
                         }
                     }
                 }
@@ -243,7 +259,7 @@ namespace TeamsApp.DataAccess.Data
         }
 
 
-        public async Task<TaskGetAllViewModel> GetAllSubTask(TaskGetFilterModel data)
+        public async Task<TaskGetAllViewModel> GetSubTaskByEmail(TaskGetFilterModel data)
         {
             var returnObject = new TaskGetAllViewModel();
             try
@@ -267,7 +283,37 @@ namespace TeamsApp.DataAccess.Data
             }
             catch (Exception ex)
             {
-                this._logger.LogError(ex, $"TaskData --> GetAllSubTask() --> SQL(usp_SubTask_GetAll) execution failed");
+                this._logger.LogError(ex, $"TaskData --> GetSubTaskByEmail() --> SQL(usp_SubTask_GetAll) execution failed");
+                return null;
+            }
+        }
+
+
+        public async Task<TaskGetAllViewModel> GetSubTaskById(TaskGetFilterModel data)
+        {
+            var returnObject = new TaskGetAllViewModel();
+            try
+            {
+                var results = await _db.LoadData<TaskGetByEmailModel, dynamic>("dbo.usp_SubTask_GetByTaskId",
+                new
+                {
+                    data.LoggedInUserEmail,
+                    data.TaskId,
+                    data.StatusId,
+                    data.PriorityId,
+                    data.RoleId,                    
+                    data.TaskSubject,
+                    data.FromDate,
+                    data.ToDate
+                });
+
+                if (results != null && results.Any()) { returnObject.TaskDetailsList = results.ToList(); }
+
+                return returnObject;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetSubTaskById() --> SQL(usp_SubTask_GetByTaskId) execution failed");
                 return null;
             }
         }
@@ -324,7 +370,7 @@ namespace TeamsApp.DataAccess.Data
         }
 
 
-        private DataTable GetTaskAssigneeList_UDT(List<TaskAssigneeListTrnModel> udt)
+        private DataTable GetTaskAssigneeList_UDT(List<TaskAssigneeTrnModel> udt)
         {
             var output = new DataTable();
             output.Columns.Add("AssigneeName", typeof(string));
@@ -467,6 +513,10 @@ namespace TeamsApp.DataAccess.Data
                     data.AssigneeEmail,
                     data.AssigneeUPN,
                     data.AssigneeADID,
+                    data.PrevAssigneeName,
+                    data.PrevAssigneeEmail,
+                    data.PrevAssigneeUPN,
+                    data.PrevAssigneeADID,
                     data.TaskProgressDetails.ProgressRemarks,
                 });
 
@@ -581,6 +631,84 @@ namespace TeamsApp.DataAccess.Data
                         row.TaskId,
                         row.TransactionId,
                         row.IsSent
+                        );
+                    }
+                }
+            }
+            return output;
+        }
+
+        #endregion
+
+        #region FILE
+
+        public async Task<ReturnMessageModel> InsertFileResponse_Multiple(List<TaskFileDetailsTrnModel> data)
+        {
+            try
+            {
+                var udt = GetFileResponse_UDT(data);
+
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_Insert_FileResponse",
+                new
+                {
+                    udt_TaskFileResponse = udt.AsTableValuedParameter("udt_TaskFileResponse")
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> InsertFileResponse_Multiple() --> SQL(usp_Task_Insert_FileResponse) execution failed");
+                return null;
+            }
+        }
+
+        private DataTable GetFileResponse_UDT(List<TaskFileDetailsTrnModel> udt)
+        {
+            var output = new DataTable();
+            output.Columns.Add("TaskId", typeof(long));
+            output.Columns.Add("RoleId", typeof(long));
+            output.Columns.Add("FileName", typeof(string));
+            output.Columns.Add("UnqFileName", typeof(string));
+            output.Columns.Add("FileDesc", typeof(string));
+            output.Columns.Add("FileUrl", typeof(string));
+            output.Columns.Add("FileSize", typeof(string));
+            output.Columns.Add("ContentType", typeof(string));
+            output.Columns.Add("IsActive", typeof(bool));
+            output.Columns.Add("CreatedByName", typeof(string));
+            output.Columns.Add("CreatedByEmail", typeof(string));
+            output.Columns.Add("CreatedByUPN", typeof(string));
+            output.Columns.Add("CreatedByADID", typeof(string));
+            output.Columns.Add("UpdatedByName", typeof(string));
+            output.Columns.Add("UpdatedByEmail", typeof(string));
+            output.Columns.Add("UpdatedByUPN", typeof(string));
+            output.Columns.Add("UpdatedByADID", typeof(string));
+            output.Columns.Add("TransactionId", typeof(Guid));
+
+            if (udt != null)
+            {
+                foreach (var row in udt)
+                {
+                    if (row != null)
+                    {
+                        output.Rows.Add(
+                        row.TaskId,
+                        row.RoleId,
+                        row.FileName,
+                        row.UnqFileName,
+                        row.FileDesc,
+                        row.FileUrl,
+                        row.FileSize,
+                        row.ContentType,
+                        row.IsActive,
+                        row.CreatedByName,
+                        row.CreatedByEmail,
+                        row.CreatedByUPN,
+                        row.CreatedByADID,
+                        row.UpdatedByName,
+                        row.UpdatedByEmail,
+                        row.UpdatedByUPN,
+                        row.UpdatedByADID,
+                        row.TransactionId
                         );
                     }
                 }

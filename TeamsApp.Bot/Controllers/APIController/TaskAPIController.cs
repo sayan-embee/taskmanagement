@@ -17,6 +17,10 @@ using Microsoft.SqlServer.Server;
 using TeamsApp.Bot.Helpers.NotificationHelper;
 using Microsoft.AspNetCore.Mvc.Diagnostics;
 using TeamsApp.Bot.Helpers.EmailHelper;
+using System.Collections.Generic;
+using TeamsApp.Bot.Services.AzureBlob;
+using TeamsApp.Bot.Helpers.FileHelper;
+using Microsoft.Graph;
 
 namespace TeamsApp.Bot.Controllers.APIController
 {
@@ -31,6 +35,7 @@ namespace TeamsApp.Bot.Controllers.APIController
         private readonly ITaskData _taskData;
         private readonly INotificationHelper _notificationHelper;
         private readonly IEmailHelper _emailHelper;
+        private readonly IFileHelper _fileHelper;
 
         public TaskAPIController(
             ILogger<TaskAPIController> logger
@@ -38,6 +43,7 @@ namespace TeamsApp.Bot.Controllers.APIController
             , ITaskData taskData
             , INotificationHelper notificationHelper
             , IEmailHelper emailHelper
+            , IFileHelper fileHelper
             )
             : base(telemetryClient)
         {
@@ -46,6 +52,7 @@ namespace TeamsApp.Bot.Controllers.APIController
             this._taskData = taskData;
             this._notificationHelper = notificationHelper;
             this._emailHelper = emailHelper;
+            this._fileHelper = fileHelper;
         }
 
         #region GET
@@ -116,14 +123,14 @@ namespace TeamsApp.Bot.Controllers.APIController
             try
             {
                 DateTime startTime = DateTime.UtcNow;
-                ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetTaskByEmail() execution started: {DateTime.UtcNow}");
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetAllTask() execution started: {DateTime.UtcNow}");
                 //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution started: {DateTime.UtcNow}");
 
                 var response = await this._taskData.GetAllTask(data);
                 if (response != null)
                 {
                     DateTime endTime = DateTime.UtcNow;
-                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetTaskByEmail() execution ended: {DateTime.UtcNow}");
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetAllTask() execution ended: {DateTime.UtcNow}");
                     //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution ended: {DateTime.UtcNow}");
 
                     TimeSpan timeDifference = endTime - startTime;
@@ -131,15 +138,89 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     response.ExecutionTime = formattedTimeDifference;
 
-                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetTaskByEmail() execution time: {formattedTimeDifference}");
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetAllTask() execution time: {formattedTimeDifference}");
                     //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution time: {formattedTimeDifference}");
                 }
                 return this.Ok(response);
             }
             catch (Exception ex)
             {
-                this.RecordEvent("TaskAPIController --> GetTaskByEmail() - Failed to execute.", RequestType.Failed);
-                this._logger.LogError(ex, $"TaskAPIController --> GetTaskByEmail() execution failed");
+                this.RecordEvent("TaskAPIController --> GetAllTask() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> GetAllTask() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return this.Ok();
+            }
+        }
+
+
+        [HttpGet]
+        [Route("getSubTaskById")]
+        public async Task<IActionResult> GetSubTaskById(TaskGetFilterModel data)
+        {
+            try
+            {
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetSubTaskById() execution started: {DateTime.UtcNow}");
+                //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution started: {DateTime.UtcNow}");
+
+                var response = await this._taskData.GetSubTaskById(data);
+                if (response != null)
+                {
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetSubTaskById() execution ended: {DateTime.UtcNow}");
+                    //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution ended: {DateTime.UtcNow}");
+
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+                    response.ExecutionTime = formattedTimeDifference;
+
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetSubTaskById() execution time: {formattedTimeDifference}");
+                    //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution time: {formattedTimeDifference}");
+                }
+                return this.Ok(response);
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> GetSubTaskById() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> GetSubTaskById() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return this.Ok();
+            }
+        }
+
+
+        [HttpGet]
+        [Route("getSubTaskByEmail")]
+        public async Task<IActionResult> GetSubTaskByEmail(TaskGetFilterModel data)
+        {
+            try
+            {
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetSubTaskByEmail() execution started: {DateTime.UtcNow}");
+                //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution started: {DateTime.UtcNow}");
+
+                var response = await this._taskData.GetSubTaskByEmail(data);
+                if (response != null)
+                {
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetSubTaskByEmail() execution ended: {DateTime.UtcNow}");
+                    //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution ended: {DateTime.UtcNow}");
+
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+                    response.ExecutionTime = formattedTimeDifference;
+
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetSubTaskByEmail() execution time: {formattedTimeDifference}");
+                    //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution time: {formattedTimeDifference}");
+                }
+                return this.Ok(response);
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> GetSubTaskByEmail() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> GetSubTaskByEmail() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
                 return this.Ok();
             }
@@ -213,8 +294,12 @@ namespace TeamsApp.Bot.Controllers.APIController
                 var response = await this._taskData.InsertTask(dataModel);
                 if (response != null)
                 {
-                    // FILE UPLOAD
-                    // SEND NOTIFICATIONS TO STAKEHOLDERS
+                    // UPLOAD FILES
+                    if (formdata.Files != null && formdata.Files.Count > 0)
+                    {
+                        //_ = Task.Run(() => this._fileHelper.ProcesssFile_CreateTask_NonAsync(dataModel, formdata.Files, response.ReferenceNo, response.TransactionId)); // NOT WORKING
+                        await this._fileHelper.ProcesssFile_CreateTask_NonAsync(dataModel, formdata.Files, response.ReferenceNo, response.TransactionId);
+                    }
 
                     DateTime endTime = DateTime.UtcNow;
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateTask() execution ended: {DateTime.UtcNow}");
@@ -228,8 +313,9 @@ namespace TeamsApp.Bot.Controllers.APIController
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateTask() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> CreateTask() execution time: {formattedTimeDifference}");
 
-                    // SEND NOTIFICATIONS TO STAKEHOLDERS
-                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_CreateTask(response));
+                    // INITIATE OTHER ACTIVITIES
+                    //_ = Task.Factory.StartNew(() => this.ProcessOtherActivities_CreateTask(response));
+                                      
                 }
                 return this.Ok(response);                
             }
@@ -246,7 +332,7 @@ namespace TeamsApp.Bot.Controllers.APIController
         {
             if (response.GuidId != Guid.Empty)
             {
-                // SEND NOTIFICATIONS TO STAKEHOLDERS
+                // SEND CARD NOTIFICATIONS TO STAKEHOLDERS
                 var taskListResponse = await this._taskData.GetTaskByUnqId(response.GuidId);
                 if (taskListResponse != null && taskListResponse.Any())
                 {
@@ -260,9 +346,9 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                 if (taskIdList != null && taskIdList.Any())
                 {
-                    // SEND EMAIL TO STAKEHOLDERS
+                    // SEND EMAIL NOTIFICATIONS TO STAKEHOLDERS
                     var taskEmailDetails = await this._taskData.GetEmailsByTaskIdList(response.ReferenceNo);
-                    if(taskEmailDetails != null && taskEmailDetails.Any())
+                    if (taskEmailDetails != null && taskEmailDetails.Any())
                     {
                         await this._emailHelper.ProcesssEmail_CreateTask(taskEmailDetails);
                     }
@@ -379,9 +465,6 @@ namespace TeamsApp.Bot.Controllers.APIController
                 var response = await this._taskData.UpdateTask(dataModel);
                 if (response != null)
                 {
-                    // FILE UPLOAD
-                    // SEND NOTIFICATIONS TO STAKEHOLDERS
-
                     DateTime endTime = DateTime.UtcNow;
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> UpdateTask() execution ended: {DateTime.UtcNow}");
                     this._logger.LogInformation($"TaskAPIController --> UpdateTask() execution ended: {DateTime.UtcNow}");
@@ -476,9 +559,6 @@ namespace TeamsApp.Bot.Controllers.APIController
                 var response = await this._taskData.ReassignTask(dataModel);
                 if (response != null)
                 {
-                    // FILE UPLOAD
-                    // SEND NOTIFICATIONS TO STAKEHOLDERS
-
                     DateTime endTime = DateTime.UtcNow;
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> ReassignTask() execution ended: {DateTime.UtcNow}");
                     this._logger.LogInformation($"TaskAPIController --> ReassignTask() execution ended: {DateTime.UtcNow}");
@@ -490,6 +570,9 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> ReassignTask() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> ReassignTask() execution time: {formattedTimeDifference}");
+
+                    // SEND NOTIFICATIONS TO STAKEHOLDERS
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_ReassignTask(response));
                 }
                 return this.Ok(response);
             }
@@ -499,6 +582,57 @@ namespace TeamsApp.Bot.Controllers.APIController
                 this._logger.LogError(ex, $"TaskAPIController --> ReassignTask() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
                 return this.Ok();
+            }
+        }
+
+        private async Task ProcessOtherActivities_ReassignTask(ReturnMessageModel response)
+        {
+            if (!string.IsNullOrEmpty(response.Id) && response.GuidId != Guid.Empty)
+            {
+                long TaskId = long.Parse(response.Id);
+
+                // SEND NOTIFICATIONS TO STAKEHOLDERS
+                var taskListResponse = await this._taskData.GetTaskByUnqId(response.GuidId, TaskId);
+                if (taskListResponse != null && taskListResponse.Any())
+                {
+                    if (!string.IsNullOrEmpty(response.ReferenceNo))
+                    {
+                        try
+                        {
+                            var prevAssigneeList = JsonConvert.DeserializeObject<List<TaskAssigneeTrnModel>>(response.ReferenceNo);
+                            if (prevAssigneeList != null && prevAssigneeList.Any())
+                            {
+                                await this._notificationHelper.ProcesssNotification_ReassignTask(taskListResponse, prevAssigneeList);
+                            }
+                        }
+                        catch(Exception ex)
+                        {
+                            this._logger.LogError(ex, $"TaskAPIController --> ProcessOtherActivities_ReassignTask() execution failed: {JsonConvert.SerializeObject(response.ReferenceNo, Formatting.Indented)}");
+                            ExceptionLogging.SendErrorToText(ex);
+                        }
+                    }
+                    else
+                    {
+                        await this._notificationHelper.ProcesssNotification_ReassignTask(taskListResponse);
+                    }                    
+                }
+
+                response.ReferenceNo = "," + (response.Id).ToString() + ","; // CUSTOMIZATION
+            }
+
+            if (!string.IsNullOrEmpty(response.ReferenceNo))
+            {
+                var taskIdList = (response.ReferenceNo).Split(",");
+
+                if (taskIdList != null && taskIdList.Any())
+                {
+                    // SEND EMAIL TO STAKEHOLDERS
+                    var taskEmailDetails = await this._taskData.GetEmailsByTaskIdList(response.ReferenceNo);
+                    if (taskEmailDetails != null && taskEmailDetails.Any())
+                    {
+                        await this._emailHelper.ProcesssEmail_UpdateTask(taskEmailDetails);
+                    }
+                }
             }
         }
 
@@ -545,6 +679,9 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> ReassignAllTask() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> ReassignAllTask() execution time: {formattedTimeDifference}");
+
+                    // SEND NOTIFICATIONS TO STAKEHOLDERS
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_ReassignAllTask(response));
                 }
                 return this.Ok(response);
             }
@@ -554,6 +691,24 @@ namespace TeamsApp.Bot.Controllers.APIController
                 this._logger.LogError(ex, $"TaskAPIController --> ReassignAllTask() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
                 return this.Ok();
+            }
+        }
+
+        private async Task ProcessOtherActivities_ReassignAllTask(List<ReturnMessageModel> response)
+        {
+            if (response != null && response.Any())
+            {
+                var reassignAllTaskList = new List<Task>();
+
+                foreach (var item in response)
+                {
+                    reassignAllTaskList.Add(this.ProcessOtherActivities_ReassignTask(item));
+                }
+
+                if (reassignAllTaskList != null && reassignAllTaskList.Any())
+                {
+                    await Task.WhenAll(reassignAllTaskList);
+                }
             }
         }
 

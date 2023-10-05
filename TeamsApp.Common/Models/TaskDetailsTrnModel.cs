@@ -86,7 +86,7 @@ namespace TeamsApp.Common.Models
         //public string AssigneeADID { get; set; }
 
         [JsonProperty("taskAssigneeList")]
-        public List<TaskAssigneeListTrnModel> TaskAssigneeList { get; set; }
+        public List<TaskAssigneeTrnModel> TaskAssigneeList { get; set; }
 
         [JsonProperty("coordinatorName")]
         public string CoordinatorName { get; set; }
@@ -118,7 +118,7 @@ namespace TeamsApp.Common.Models
         public string ExecutionTime { get; set; }
     }
 
-    public class TaskAssigneeListTrnModel
+    public class TaskAssigneeTrnModel
     {
         [JsonProperty("assigneeName")]
         public string AssigneeName { get; set; }
@@ -144,6 +144,9 @@ namespace TeamsApp.Common.Models
         [JsonProperty("taskProgressList")]
         public List<TaskProgressViewModel> TaskProgressList { get; set; }
 
+        [JsonProperty("taskFileList")]
+        public List<TaskFileDetailsTrnModel> TaskFileList { get; set; }
+
         //Additional Details
 
         [JsonProperty("executionTime")]
@@ -164,6 +167,9 @@ namespace TeamsApp.Common.Models
 
         [JsonProperty("taskHistoryList")]
         public List<TaskProgressViewModelHistoryDetails> TaskHistoryList { get; set; }
+
+        [JsonProperty("taskFileList")]
+        public List<TaskFileDetailsTrnModel> TaskFileList { get; set; }
 
         //Additional Details
 
@@ -279,6 +285,9 @@ namespace TeamsApp.Common.Models
 
         [JsonProperty("roleId")]
         public int? RoleId { get; set; }
+
+        [JsonProperty("taskId")]
+        public long? TaskId { get; set; }
 
         [JsonProperty("parentTaskId")]
         public long? ParentTaskId { get; set; }

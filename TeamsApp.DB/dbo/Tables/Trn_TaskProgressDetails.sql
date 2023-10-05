@@ -8,7 +8,7 @@
     [UpdatedOnUTC] DATETIME NULL, 
     [UpdatedByName] NVARCHAR(100) NULL,
     [UpdatedByEmail] NVARCHAR(100) NULL,
-    [UpdatedByUPN] NVARCHAR(50) NULL,
+    [UpdatedByUPN] NVARCHAR(100) NULL,
     [UpdatedByADID] NVARCHAR(50) NULL,
     [TransactionId] UNIQUEIDENTIFIER NULL
 )

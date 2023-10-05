@@ -1,0 +1,2310 @@
+
+
+Log Written Date: 05-10-2023 18:21:20
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 12:51:20
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:21:22
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 12:51:22
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:21:22
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:23:35
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 12:53:35
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:23:37
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 12:53:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:23:37
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:24:15
+
+Message : "Uploading file --> 936476da-5a8f-4d69-b8c2-687fcc34d3fe_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:24:15
+
+Message : "Uploading file --> ad09a917-caf2-4450-8578-e73a586b2853_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:25:16
+
+Message : "Uploading file --> 97dab437-f513-42de-8580-678d472258f0_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:27:47
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 12:57:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:27:48
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 12:57:48
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:27:48
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:28:31
+
+Message : "Uploading file --> 4dafbfc1-7da4-4e90-a310-22e471183e67_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:29:43
+
+Message : "Uploading file --> 11227d4d-5cbb-4606-9c19-f737451dd528_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:32:22
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:02:22
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:32:24
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:02:24
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:32:24
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:32:25
+
+Message : Uploading file --> a8a473ba-f9f2-4c76-a38a-50e8c2105d7e_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:32:25
+
+Message : Uploading file --> 17b14c91-61c0-40b2-98de-1ad6455e9a6d_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:33:08
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:03:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:33:09
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:03:09
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:33:09
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:33:16
+
+Message : Uploading file --> 4e1da339-e4bb-499a-8766-88bd38a10272_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:33:18
+
+Message : Uploading file --> a3fa69bf-3e4f-445d-89c9-cd6a70f6677f_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:33:22
+
+Message : Uploading file --> 871f6d9e-cb41-4648-88bb-2cd914e48362_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:37:50
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:07:50
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:37:51
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:07:51
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:37:51
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:00
+
+Message : Uploading file --> 82c380ce-0225-416b-8f94-4c731409b2c6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:00
+
+Message : Uploading file --> c1d4dc0c-6d0b-42e6-af68-4f062b2a3276_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:00
+
+Message : Uploading file --> fc9ec87a-92d3-4495-94df-0ee33827b419_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:24
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:08:24
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:25
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:08:25
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:25
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:28
+
+Message : Uploading file --> d5047c24-6735-4c91-951f-97436d4bef91_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:38:32
+
+Message : Uploading file --> e521687f-8757-410b-943f-9207b0d334fd_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:48:04
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:18:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:48:05
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:18:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:48:05
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:48:06
+
+Message : Uploading file --> 6cfd8ed3-2ca6-49a9-a2f2-9acb7395461e_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:49:37
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:19:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:49:39
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:19:39
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:49:39
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:49:40
+
+Message : Uploading file --> cc2fce57-d9b7-4ca9-8520-3c22954aa795_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:51:38
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:21:38
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:51:40
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:21:40
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:51:40
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 18:51:40
+
+Message : Uploading file --> a5c88456-60ed-4b2d-afe9-7bf5c364dd54_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:06:04
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 13:36:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:06:06
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 13:36:06
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:06:06
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:06:07
+
+Message : "Uploading file --> 678156f6-1c32-4418-b8a3-3e5c1e6ef0cf_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:06:07
+
+Message : Configuring metadata for file --> 24d57dc5-dec4-40c8-9a36-f965f9872fc8_block-mic.gif || TaskId --> 31
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:06:08
+
+Message : Generating SAS token successfully for file --> 24d57dc5-dec4-40c8-9a36-f965f9872fc8_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:06:22
+
+Message : Generated SAS token successfully for file --> 24d57dc5-dec4-40c8-9a36-f965f9872fc8_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/24d57dc5-dec4-40c8-9a36-f965f9872fc8_block-mic.gif?sv=2023-01-03&se=2123-09-11T13%3A36%3A22Z&sr=b&sp=r&sig=Avoe9x%2BQ2wvx8jMajheT70X1lWecy8GFJqCvUY2fGtQ%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:43
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:00:43
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:44
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:00:44
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:44
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:44
+
+Message : "Uploading file --> 8f50ae27-20f5-44b3-b047-3940434f755d_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:44
+
+Message : "Uploading file --> 1dea060d-ede0-4a79-876d-fe7f4c43b9a1_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:44
+
+Message : "Uploading file --> d9c88c94-0ccd-450f-b09f-aa32d164a0d4_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:45
+
+Message : Configuring metadata for file --> 8f50ae27-20f5-44b3-b047-3940434f755d_block-mic.gif || TaskId --> 34
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:45
+
+Message : Generating SAS token successfully for file --> 8f50ae27-20f5-44b3-b047-3940434f755d_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:45
+
+Message : Generated SAS token successfully for file --> 8f50ae27-20f5-44b3-b047-3940434f755d_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/8f50ae27-20f5-44b3-b047-3940434f755d_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A00%3A45Z&sr=b&sp=r&sig=Mv0ljW668Ha1OCTYLureenngKKTIzgIM5ihF95QJTFo%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:55
+
+Message : Configuring metadata for file --> d9c88c94-0ccd-450f-b09f-aa32d164a0d4_block-mic.gif || TaskId --> 36
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:56
+
+Message : Configuring metadata for file --> 1dea060d-ede0-4a79-876d-fe7f4c43b9a1_block-mic.gif || TaskId --> 35
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:57
+
+Message : Generating SAS token successfully for file --> d9c88c94-0ccd-450f-b09f-aa32d164a0d4_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:57
+
+Message : Generated SAS token successfully for file --> d9c88c94-0ccd-450f-b09f-aa32d164a0d4_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/d9c88c94-0ccd-450f-b09f-aa32d164a0d4_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A00%3A57Z&sr=b&sp=r&sig=UAxIralXM8VdjdMfqPfMFaKpKKDQ5MUK%2F5vDScuvd2s%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:30:58
+
+Message : Generated SAS token successfully for file --> 1dea060d-ede0-4a79-876d-fe7f4c43b9a1_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/1dea060d-ede0-4a79-876d-fe7f4c43b9a1_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A00%3A58Z&sr=b&sp=r&sig=x6F%2BRoM4oat9WNtF%2Fg31n7QwnuK2KTulnQJXTj3O2DY%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:31:40
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:01:40
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:31:41
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:01:41
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:31:41
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:31:41
+
+Message : "Uploading file --> 3af37478-be2a-4f81-9097-db2a8c9be013_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:31:42
+
+Message : Configuring metadata for file --> 3af37478-be2a-4f81-9097-db2a8c9be013_block-mic.gif || TaskId --> 37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:31:42
+
+Message : Generating SAS token successfully for file --> 3af37478-be2a-4f81-9097-db2a8c9be013_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:31:42
+
+Message : Generated SAS token successfully for file --> 3af37478-be2a-4f81-9097-db2a8c9be013_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/3af37478-be2a-4f81-9097-db2a8c9be013_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A01%3A42Z&sr=b&sp=r&sig=HAI2Ul4RDN2BGF5h23D2x5h2rp1sFJ5Z2fOy2CODyCE%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:29
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:07:29
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:07:30
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : "Uploading file --> 36a4f1c5-148c-45c0-9c6e-d8c084f7db30_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : "Uploading file --> 26c45ee7-5164-440a-9a4f-b2bf39b91d8e_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : "Uploading file --> 47490281-32ac-4f7a-bf28-dc1da0f8cc21_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : Configuring metadata for file --> 26c45ee7-5164-440a-9a4f-b2bf39b91d8e_block-mic.gif || TaskId --> 41
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : Configuring metadata for file --> 36a4f1c5-148c-45c0-9c6e-d8c084f7db30_block-mic.gif || TaskId --> 40
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : Configuring metadata for file --> 47490281-32ac-4f7a-bf28-dc1da0f8cc21_block-mic.gif || TaskId --> 42
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:30
+
+Message : Generating SAS token successfully for file --> 36a4f1c5-148c-45c0-9c6e-d8c084f7db30_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:31
+
+Message : Generated SAS token successfully for file --> 36a4f1c5-148c-45c0-9c6e-d8c084f7db30_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/36a4f1c5-148c-45c0-9c6e-d8c084f7db30_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A07%3A30Z&sr=b&sp=r&sig=pSAHjx41tZvoXDWyGIFVO%2FPVdwCDxQ%2FVwWVuNtY38WY%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:31
+
+Message : Generating SAS token successfully for file --> 47490281-32ac-4f7a-bf28-dc1da0f8cc21_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:37:31
+
+Message : Generated SAS token successfully for file --> 47490281-32ac-4f7a-bf28-dc1da0f8cc21_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/47490281-32ac-4f7a-bf28-dc1da0f8cc21_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A07%3A31Z&sr=b&sp=r&sig=kNaHt5XIXvmlgKeCrDZr4Hgj3M0buQzmMJBWOuJZLSc%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:30
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:09:30
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:32
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:09:32
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:32
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:33
+
+Message : "Uploading file --> 2530ec8e-3592-4362-baf5-e37368ac2067_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:33
+
+Message : "Uploading file --> 2c0232eb-6127-4008-8f37-1cd2e8e4d8d9_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:33
+
+Message : "Uploading file --> 93f1ae3c-9841-4307-8311-7bf3013d76bc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:33
+
+Message : Configuring metadata for file --> 93f1ae3c-9841-4307-8311-7bf3013d76bc_block-mic.gif || TaskId --> 45
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:33
+
+Message : Generating SAS token successfully for file --> 93f1ae3c-9841-4307-8311-7bf3013d76bc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:39:33
+
+Message : Generated SAS token successfully for file --> 93f1ae3c-9841-4307-8311-7bf3013d76bc_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/93f1ae3c-9841-4307-8311-7bf3013d76bc_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A09%3A33Z&sr=b&sp=r&sig=2S6eNXprCLv9n0S4ziMxNjmCaCYkVb9zcMwRevkQIQk%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:53:45
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:23:45
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:53:47
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:23:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:53:47
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:53:48
+
+Message : "Uploading file --> 5b27ee31-9e05-4c60-a116-3cd7f1ab028a_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:55:34
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:25:34
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:55:35
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:25:35
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:55:35
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:55:36
+
+Message : "Uploading file --> 7f63ad7b-fd8a-471a-a4f3-89478be93c1d_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:55:36
+
+Message : "Uploading file --> fb36ab7b-5f83-49fb-89e2-f7d4df9e745c_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:55:51
+
+Message : "Uploading file --> 78f3f174-900b-4502-824e-07c257da0355_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:57:46
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:27:46
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:57:48
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:27:48
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:57:48
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 19:57:48
+
+Message : "Uploading file --> d9b2e4a0-7a3e-46a6-91a5-c6d904e637bc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:00:14
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:30:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:00:16
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:30:16
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:00:16
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:00:16
+
+Message : "Uploading file --> 07803127-4a83-4b12-b004-d72df5427d8e_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:14:17
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:44:17
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:14:20
+
+Message : "Uploading file --> 7a525e69-4c2e-4618-9971-f9ed8cde5836_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:14:20
+
+Message : Configuring metadata for file --> 75bfbd2e-2db2-4822-8979-fa4bf62ac77f_block-mic.gif || TaskId --> 58
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:14:20
+
+Message : Generating SAS token successfully for file --> 75bfbd2e-2db2-4822-8979-fa4bf62ac77f_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:14:20
+
+Message : Generated SAS token successfully for file --> 75bfbd2e-2db2-4822-8979-fa4bf62ac77f_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/75bfbd2e-2db2-4822-8979-fa4bf62ac77f_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A44%3A20Z&sr=b&sp=r&sig=hwhNDvkrhRW%2BDoCPj49n5WLilB1U7LTZldPXQGW4XWE%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:32
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 14:46:32
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:32
+
+Message : TaskAPIController --> CreateTask() execution time: 00:02:15
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:32
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:46:32
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:34
+
+Message : "Uploading file --> f41ec9e5-3d61-445a-b3df-41b5fa1dceb9_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:34
+
+Message : "Uploading file --> 25e30424-ea1b-429e-9c39-9118c01fd0e6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:34
+
+Message : "Uploading file --> 13aa6c5f-f144-465f-aa07-b2d5a13b6514_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:34
+
+Message : Configuring metadata for file --> f41ec9e5-3d61-445a-b3df-41b5fa1dceb9_block-mic.gif || TaskId --> 61
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:34
+
+Message : Generating SAS token successfully for file --> f41ec9e5-3d61-445a-b3df-41b5fa1dceb9_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:16:34
+
+Message : Generated SAS token successfully for file --> f41ec9e5-3d61-445a-b3df-41b5fa1dceb9_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/f41ec9e5-3d61-445a-b3df-41b5fa1dceb9_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A46%3A34Z&sr=b&sp=r&sig=WRpGeSH6Q2h7iUxOM9rL6dxsSrinbZxYj3BFCP2TO5E%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:17:06
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 14:47:06
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:17:08
+
+Message : "Uploading file --> 9df06869-3987-46e7-8060-25fa7e0729c2_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:17:09
+
+Message : Configuring metadata for file --> 1e005f01-ffbc-470d-87af-7285c2bfac1a_block-mic.gif || TaskId --> 65
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:17:09
+
+Message : Generating SAS token successfully for file --> 1e005f01-ffbc-470d-87af-7285c2bfac1a_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:17:09
+
+Message : Generated SAS token successfully for file --> 1e005f01-ffbc-470d-87af-7285c2bfac1a_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/1e005f01-ffbc-470d-87af-7285c2bfac1a_block-mic.gif?sv=2023-01-03&se=2123-09-11T14%3A47%3A09Z&sr=b&sp=r&sig=xAjnLNtP6BSc4r0xDxpdiSSRmzhLz2r7G9twSX2E5Ss%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:31:39
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:01:39
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:31:41
+
+Message : "Uploading file --> afe5be95-f7d8-4a8f-85dc-0affe7a95a78_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:07
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:03:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:09
+
+Message : "Uploading file --> c7f9789e-a8d9-4cd6-bf39-55132e3533a6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : Configuring metadata for file --> c7f9789e-a8d9-4cd6-bf39-55132e3533a6_block-mic.gif || TaskId --> 70
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : Generating SAS token successfully for file --> c7f9789e-a8d9-4cd6-bf39-55132e3533a6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : Generated SAS token successfully for file --> c7f9789e-a8d9-4cd6-bf39-55132e3533a6_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/c7f9789e-a8d9-4cd6-bf39-55132e3533a6_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A03%3A10Z&sr=b&sp=r&sig=i%2FzwqScS36yP9xHN7q8b0B0saXIjy4op%2BkIQnoXhxBE%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : "Uploading file --> 1f5a4566-1aa7-463e-ab6e-70e258053672_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : Configuring metadata for file --> 1f5a4566-1aa7-463e-ab6e-70e258053672_block-mic.gif || TaskId --> 71
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : Generating SAS token successfully for file --> 1f5a4566-1aa7-463e-ab6e-70e258053672_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : Generated SAS token successfully for file --> 1f5a4566-1aa7-463e-ab6e-70e258053672_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/1f5a4566-1aa7-463e-ab6e-70e258053672_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A03%3A10Z&sr=b&sp=r&sig=ATxpbxc8UBraZeFmUC5aFtP02mTb16BFXxWIajlevU8%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : "Uploading file --> aeeda99b-258d-47f1-8a46-501e75fc5d66_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:10
+
+Message : Configuring metadata for file --> aeeda99b-258d-47f1-8a46-501e75fc5d66_block-mic.gif || TaskId --> 72
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:11
+
+Message : Generating SAS token successfully for file --> aeeda99b-258d-47f1-8a46-501e75fc5d66_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:11
+
+Message : Generated SAS token successfully for file --> aeeda99b-258d-47f1-8a46-501e75fc5d66_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/aeeda99b-258d-47f1-8a46-501e75fc5d66_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A03%3A11Z&sr=b&sp=r&sig=qEOLoN9r4D5j%2BuZXEBnXM3V%2FuLJjsLb71eyF%2Ft5l4Hs%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:11
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 15:03:11
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:33:11
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:34:02
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:04:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:34:04
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 15:04:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:34:04
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:34:05
+
+Message : "Uploading file --> 188b10dc-7836-4b40-b73c-f268d3d1c0ab_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:29
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:05:29
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:31
+
+Message : "Uploading file --> 05dc06e3-cbf6-4509-9157-06917dbfb45c_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:31
+
+Message : Configuring metadata for file --> 05dc06e3-cbf6-4509-9157-06917dbfb45c_block-mic.gif || TaskId --> 76
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:31
+
+Message : Generating SAS token successfully for file --> 05dc06e3-cbf6-4509-9157-06917dbfb45c_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:31
+
+Message : Generated SAS token successfully for file --> 05dc06e3-cbf6-4509-9157-06917dbfb45c_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/05dc06e3-cbf6-4509-9157-06917dbfb45c_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A05%3A31Z&sr=b&sp=r&sig=4QiV%2BUQhCxusKI6T8Hd9h2HYWsj3Qwsivh55nq5Cym8%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:31
+
+Message : "Uploading file --> 99d5169c-d57c-4265-9ac4-04c10605eeaf_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:31
+
+Message : Configuring metadata for file --> 99d5169c-d57c-4265-9ac4-04c10605eeaf_block-mic.gif || TaskId --> 77
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:32
+
+Message : Generating SAS token successfully for file --> 99d5169c-d57c-4265-9ac4-04c10605eeaf_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:32
+
+Message : Generated SAS token successfully for file --> 99d5169c-d57c-4265-9ac4-04c10605eeaf_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/99d5169c-d57c-4265-9ac4-04c10605eeaf_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A05%3A32Z&sr=b&sp=r&sig=Otl7BYyKFEWZx5YT7nAEGzPN0Z1Uo%2FfSWaPN34mBLwo%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:32
+
+Message : "Uploading file --> 5cb0efb0-77fb-4c72-bec4-3f03a6b9b221_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:32
+
+Message : Configuring metadata for file --> 5cb0efb0-77fb-4c72-bec4-3f03a6b9b221_block-mic.gif || TaskId --> 78
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:32
+
+Message : Generating SAS token successfully for file --> 5cb0efb0-77fb-4c72-bec4-3f03a6b9b221_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:35:32
+
+Message : Generated SAS token successfully for file --> 5cb0efb0-77fb-4c72-bec4-3f03a6b9b221_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/5cb0efb0-77fb-4c72-bec4-3f03a6b9b221_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A05%3A32Z&sr=b&sp=r&sig=yoI7WJl%2FzhO57BcJLsHG2Bq5MYZXokLQrH3KVYZW3FQ%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:36:18
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 15:06:18
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 20:36:18
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:49
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:25:57
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:55:57
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:25:59
+
+Message : "Uploading file --> 4b0ec1a1-4c9f-4805-b399-9b1f4ed6fdf4_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : Configuring metadata for file --> 4b0ec1a1-4c9f-4805-b399-9b1f4ed6fdf4_block-mic.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : Generating SAS token successfully for file --> 4b0ec1a1-4c9f-4805-b399-9b1f4ed6fdf4_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : Generated SAS token successfully for file --> 4b0ec1a1-4c9f-4805-b399-9b1f4ed6fdf4_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/4b0ec1a1-4c9f-4805-b399-9b1f4ed6fdf4_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A56%3A00Z&sr=b&sp=r&sig=1rJORCPBoWquRTFZYyYHl8baIaLp50L5nqMgqW%2BtAi8%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : "Uploading file --> 117ec2fd-d0f6-493d-9b1c-948068255fcc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : Configuring metadata for file --> 117ec2fd-d0f6-493d-9b1c-948068255fcc_block-mic.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : Generating SAS token successfully for file --> 117ec2fd-d0f6-493d-9b1c-948068255fcc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : Generated SAS token successfully for file --> 117ec2fd-d0f6-493d-9b1c-948068255fcc_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/117ec2fd-d0f6-493d-9b1c-948068255fcc_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A56%3A00Z&sr=b&sp=r&sig=tPlU3mBm4DbiBIwC5fVkYh3L%2BZZt8%2FdAZaFyK3OejOY%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : "Uploading file --> 6f35f126-5149-4a49-a052-e049281b962f_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:00
+
+Message : Configuring metadata for file --> 6f35f126-5149-4a49-a052-e049281b962f_block-mic.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:01
+
+Message : Generating SAS token successfully for file --> 6f35f126-5149-4a49-a052-e049281b962f_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:01
+
+Message : Generated SAS token successfully for file --> 6f35f126-5149-4a49-a052-e049281b962f_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/6f35f126-5149-4a49-a052-e049281b962f_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A56%3A01Z&sr=b&sp=r&sig=jS5%2ButXcGjNyq4QLYI9yUt08Sz2ytDEyUFiiXdaAk7Y%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:02
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 15:56:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:02
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:37
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:56:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:38
+
+Message : "Uploading file --> de9243d2-d18d-4a01-ba46-371680315edc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:38
+
+Message : Configuring metadata for file --> de9243d2-d18d-4a01-ba46-371680315edc_block-mic.gif || TaskId --> 4
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Generating SAS token successfully for file --> de9243d2-d18d-4a01-ba46-371680315edc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Generated SAS token successfully for file --> de9243d2-d18d-4a01-ba46-371680315edc_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/de9243d2-d18d-4a01-ba46-371680315edc_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A56%3A39Z&sr=b&sp=r&sig=ZgipMz%2BIMx5ZAQyWkD2RaPK1ljHI5OBtpY77rmM%2BfWc%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : "Uploading file --> 1a3fc3fa-3ede-4dde-bbcc-1f57abb87150_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Configuring metadata for file --> 1a3fc3fa-3ede-4dde-bbcc-1f57abb87150_block-mic.gif || TaskId --> 5
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Generating SAS token successfully for file --> 1a3fc3fa-3ede-4dde-bbcc-1f57abb87150_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Generated SAS token successfully for file --> 1a3fc3fa-3ede-4dde-bbcc-1f57abb87150_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/1a3fc3fa-3ede-4dde-bbcc-1f57abb87150_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A56%3A39Z&sr=b&sp=r&sig=EvhWMspMldnHrJyoJ%2F%2FnGaXxNfFIB4bPGn60G52wBBQ%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : "Uploading file --> 98a74558-6a2d-4410-8674-6b512dd39951_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Configuring metadata for file --> 98a74558-6a2d-4410-8674-6b512dd39951_block-mic.gif || TaskId --> 6
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Generating SAS token successfully for file --> 98a74558-6a2d-4410-8674-6b512dd39951_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:39
+
+Message : Generated SAS token successfully for file --> 98a74558-6a2d-4410-8674-6b512dd39951_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/98a74558-6a2d-4410-8674-6b512dd39951_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A56%3A39Z&sr=b&sp=r&sig=58TssH5Hhd6TcD3jD7OAgDzGZh9HEM3mP%2FFWbHn29%2Fc%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:40
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 15:56:40
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:26:40
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:14
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:57:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : "Uploading file --> 0bf9343a-6ae0-450f-88b3-19cb228c11c6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : Configuring metadata for file --> 0bf9343a-6ae0-450f-88b3-19cb228c11c6_block-mic.gif || TaskId --> 7
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : Generating SAS token successfully for file --> 0bf9343a-6ae0-450f-88b3-19cb228c11c6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : Generated SAS token successfully for file --> 0bf9343a-6ae0-450f-88b3-19cb228c11c6_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/0bf9343a-6ae0-450f-88b3-19cb228c11c6_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A57%3A16Z&sr=b&sp=r&sig=l1SPiyhF828odtc0%2BiYOxiwgz1OYFoFtJs17iIC4AyA%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : "Uploading file --> 13777ec0-2f71-4421-8409-6e362d9cb433_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : Configuring metadata for file --> 13777ec0-2f71-4421-8409-6e362d9cb433_block-mic.gif || TaskId --> 8
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : Generating SAS token successfully for file --> 13777ec0-2f71-4421-8409-6e362d9cb433_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : Generated SAS token successfully for file --> 13777ec0-2f71-4421-8409-6e362d9cb433_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/13777ec0-2f71-4421-8409-6e362d9cb433_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A57%3A16Z&sr=b&sp=r&sig=8C%2FtyXfisOZ4NEHRC8Vb2IYnW%2F9hh877Jb80ncQCOl0%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : "Uploading file --> c55b8a87-58e3-4934-a54b-d3ef50732b0a_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:16
+
+Message : Configuring metadata for file --> c55b8a87-58e3-4934-a54b-d3ef50732b0a_block-mic.gif || TaskId --> 9
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:17
+
+Message : Generating SAS token successfully for file --> c55b8a87-58e3-4934-a54b-d3ef50732b0a_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:27:17
+
+Message : Generated SAS token successfully for file --> c55b8a87-58e3-4934-a54b-d3ef50732b0a_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/c55b8a87-58e3-4934-a54b-d3ef50732b0a_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A57%3A17Z&sr=b&sp=r&sig=2i0r0%2BwBft0AUbOl0urCtGvdwW0KD%2FgQ3Rnt8uKjb8o%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:01
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 15:58:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : "Uploading file --> 7fe1cf23-8da3-4567-97f9-8aea46d4ca97_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : Configuring metadata for file --> 7fe1cf23-8da3-4567-97f9-8aea46d4ca97_block-mic.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : Generating SAS token successfully for file --> 7fe1cf23-8da3-4567-97f9-8aea46d4ca97_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : Generated SAS token successfully for file --> 7fe1cf23-8da3-4567-97f9-8aea46d4ca97_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/7fe1cf23-8da3-4567-97f9-8aea46d4ca97_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A58%3A04Z&sr=b&sp=r&sig=%2BXZVndxZL%2BNu5PGtHuMLidI01jz4%2F0br2vFHu5qZSYA%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : "Uploading file --> 4010fe45-16bc-4f4e-854b-47c14862977d_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : Configuring metadata for file --> 4010fe45-16bc-4f4e-854b-47c14862977d_block-mic.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : Generating SAS token successfully for file --> 4010fe45-16bc-4f4e-854b-47c14862977d_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : Generated SAS token successfully for file --> 4010fe45-16bc-4f4e-854b-47c14862977d_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/4010fe45-16bc-4f4e-854b-47c14862977d_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A58%3A04Z&sr=b&sp=r&sig=%2FUOm77a216YgIF2kS%2BXUnFmAxSr385ektcE76blgVzk%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:04
+
+Message : "Uploading file --> 4eee7547-af04-4b71-a698-f77284ca7ae9_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:05
+
+Message : Configuring metadata for file --> 4eee7547-af04-4b71-a698-f77284ca7ae9_block-mic.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:05
+
+Message : Generating SAS token successfully for file --> 4eee7547-af04-4b71-a698-f77284ca7ae9_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:05
+
+Message : Generated SAS token successfully for file --> 4eee7547-af04-4b71-a698-f77284ca7ae9_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/4eee7547-af04-4b71-a698-f77284ca7ae9_block-mic.gif?sv=2023-01-03&se=2123-09-11T15%3A58%3A05Z&sr=b&sp=r&sig=MtjuTcWHPup2i%2BD2pvyJoGkpQ26PCVaNje3VlB9mD2w%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:06
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 15:58:06
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:28:06
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:05
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:03:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:07
+
+Message : "Uploading file --> c9a1c521-4e45-41a3-afba-efd8232d3f94_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:07
+
+Message : Configuring metadata for file --> c9a1c521-4e45-41a3-afba-efd8232d3f94_block-mic.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:07
+
+Message : Generating SAS token successfully for file --> c9a1c521-4e45-41a3-afba-efd8232d3f94_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:07
+
+Message : Generated SAS token successfully for file --> c9a1c521-4e45-41a3-afba-efd8232d3f94_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/c9a1c521-4e45-41a3-afba-efd8232d3f94_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A03%3A07Z&sr=b&sp=r&sig=wHcywITtBx2472%2FFGuQ8XoZBFG97wAX9H8%2Bd6SBFbKw%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:07
+
+Message : "Uploading file --> d92003b2-a252-4446-8248-cd5cbce6f62b_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:08
+
+Message : Configuring metadata for file --> d92003b2-a252-4446-8248-cd5cbce6f62b_block-mic.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:08
+
+Message : Generating SAS token successfully for file --> d92003b2-a252-4446-8248-cd5cbce6f62b_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:08
+
+Message : Generated SAS token successfully for file --> d92003b2-a252-4446-8248-cd5cbce6f62b_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/d92003b2-a252-4446-8248-cd5cbce6f62b_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A03%3A08Z&sr=b&sp=r&sig=RbpX61KI4vjPPRBtEeQtP4RUVXPcoN1iQxhm5yrH9F0%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:08
+
+Message : "Uploading file --> b11ec086-4201-41d2-9c2c-e3a5013c450b_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:08
+
+Message : Configuring metadata for file --> b11ec086-4201-41d2-9c2c-e3a5013c450b_block-mic.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:08
+
+Message : Generating SAS token successfully for file --> b11ec086-4201-41d2-9c2c-e3a5013c450b_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:08
+
+Message : Generated SAS token successfully for file --> b11ec086-4201-41d2-9c2c-e3a5013c450b_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/b11ec086-4201-41d2-9c2c-e3a5013c450b_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A03%3A08Z&sr=b&sp=r&sig=IYxQ%2BkL4GN9Ny10yUK7jG5YuzwQInkutufLq3t4tVwg%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:09
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:03:09
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:33:09
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:49:44
+
+Message : TaskAPIController --> GetTaskById() execution started: 05-10-2023 16:19:44
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:49:46
+
+Message : TaskAPIController --> GetTaskById() execution ended: 05-10-2023 16:19:46
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:49:46
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:50:19
+
+Message : TaskAPIController --> GetTaskById() execution started: 05-10-2023 16:20:19
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:50:20
+
+Message : TaskAPIController --> GetTaskById() execution ended: 05-10-2023 16:20:20
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:50:20
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:50:52
+
+Message : TaskAPIController --> GetTaskById() execution started: 05-10-2023 16:20:52
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:50:53
+
+Message : TaskAPIController --> GetTaskById() execution ended: 05-10-2023 16:20:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 21:50:53
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:34
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:35:34
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:36
+
+Message : "Uploading file --> 6679e4c2-d225-48b4-a732-89af73373dcc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:36
+
+Message : Configuring metadata for file --> 6679e4c2-d225-48b4-a732-89af73373dcc_block-mic.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:36
+
+Message : Generating SAS token successfully for file --> 6679e4c2-d225-48b4-a732-89af73373dcc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:36
+
+Message : Generated SAS token successfully for file --> 6679e4c2-d225-48b4-a732-89af73373dcc_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/6679e4c2-d225-48b4-a732-89af73373dcc_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A35%3A36Z&sr=b&sp=r&sig=f1X7TDTJ1drmdUa8iJI%2Bqm4KTlgJmkWumDhxJuxWQaQ%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : "Uploading file --> a6b2d23d-4eb8-4639-a6db-3484913388b7_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : Configuring metadata for file --> a6b2d23d-4eb8-4639-a6db-3484913388b7_block-mic.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : Generating SAS token successfully for file --> a6b2d23d-4eb8-4639-a6db-3484913388b7_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : Generated SAS token successfully for file --> a6b2d23d-4eb8-4639-a6db-3484913388b7_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/a6b2d23d-4eb8-4639-a6db-3484913388b7_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A35%3A37Z&sr=b&sp=r&sig=AS55QIC64r3Nqm4CUC%2B2OOuUSXZhXr%2BU%2FA6bJNoZRUg%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : "Uploading file --> 4271bbd6-b96d-44db-849d-664881a060a6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : Configuring metadata for file --> 4271bbd6-b96d-44db-849d-664881a060a6_block-mic.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : Generating SAS token successfully for file --> 4271bbd6-b96d-44db-849d-664881a060a6_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:37
+
+Message : Generated SAS token successfully for file --> 4271bbd6-b96d-44db-849d-664881a060a6_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/4271bbd6-b96d-44db-849d-664881a060a6_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A35%3A37Z&sr=b&sp=r&sig=KkS9Ja93WsLGkh1Ex3xdcZ4T7RIkcLponOaQ9sdQ0Ew%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:38
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:35:38
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:05:38
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:22
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:38:22
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:24
+
+Message : "Uploading file --> b38fa699-f7e4-406e-8bae-4942cc5a84b0_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : Configuring metadata for file --> b38fa699-f7e4-406e-8bae-4942cc5a84b0_block-mic.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : Generating SAS token successfully for file --> b38fa699-f7e4-406e-8bae-4942cc5a84b0_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : Generated SAS token successfully for file --> b38fa699-f7e4-406e-8bae-4942cc5a84b0_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/b38fa699-f7e4-406e-8bae-4942cc5a84b0_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A38%3A25Z&sr=b&sp=r&sig=NfjdEFHixNqHeEp0ygqtDWZP%2FddkWkKzh763Dq6yqMs%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : "Uploading file --> a4a816ac-1051-48fe-b983-67aa3dd232c4_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : Configuring metadata for file --> a4a816ac-1051-48fe-b983-67aa3dd232c4_block-mic.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : Generating SAS token successfully for file --> a4a816ac-1051-48fe-b983-67aa3dd232c4_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : Generated SAS token successfully for file --> a4a816ac-1051-48fe-b983-67aa3dd232c4_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/a4a816ac-1051-48fe-b983-67aa3dd232c4_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A38%3A25Z&sr=b&sp=r&sig=yNy8lBxScs8iGkO24My9mek0N%2B54RDr1AZoFUtFXTeM%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : "Uploading file --> cc4ff244-8fdf-45e0-ba1e-a1b51df36afe_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:25
+
+Message : Configuring metadata for file --> cc4ff244-8fdf-45e0-ba1e-a1b51df36afe_block-mic.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:26
+
+Message : Generating SAS token successfully for file --> cc4ff244-8fdf-45e0-ba1e-a1b51df36afe_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:26
+
+Message : Generated SAS token successfully for file --> cc4ff244-8fdf-45e0-ba1e-a1b51df36afe_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/cc4ff244-8fdf-45e0-ba1e-a1b51df36afe_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A38%3A26Z&sr=b&sp=r&sig=%2BjroHMK0iJP8NGUFla5lYAkRqiUXeCeku43%2BQMnh9uc%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:27
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:38:27
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:27
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:38
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:38:38
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:39
+
+Message : "Uploading file --> b56ce071-7f6d-4662-836a-106a143c1de0_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Configuring metadata for file --> b56ce071-7f6d-4662-836a-106a143c1de0_block-mic.gif || TaskId --> 4
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Generating SAS token successfully for file --> b56ce071-7f6d-4662-836a-106a143c1de0_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Generated SAS token successfully for file --> b56ce071-7f6d-4662-836a-106a143c1de0_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/b56ce071-7f6d-4662-836a-106a143c1de0_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A38%3A40Z&sr=b&sp=r&sig=R1fUfmSQVorZZ%2BBKOsGv9jq9u5qOp3%2Bz9e3oqKj8M%2B4%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : "Uploading file --> f5205753-8509-4ae4-99cc-2194c2ea3691_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Configuring metadata for file --> f5205753-8509-4ae4-99cc-2194c2ea3691_block-mic.gif || TaskId --> 5
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Generating SAS token successfully for file --> f5205753-8509-4ae4-99cc-2194c2ea3691_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Generated SAS token successfully for file --> f5205753-8509-4ae4-99cc-2194c2ea3691_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/f5205753-8509-4ae4-99cc-2194c2ea3691_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A38%3A40Z&sr=b&sp=r&sig=hHANP5NZWHUhw4fh1J4KhJ1PHDndORTHkyHiXu4YG5g%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : "Uploading file --> a4e7e7f0-58bb-493f-bfd7-214dd7e0c372_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Configuring metadata for file --> a4e7e7f0-58bb-493f-bfd7-214dd7e0c372_block-mic.gif || TaskId --> 6
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Generating SAS token successfully for file --> a4e7e7f0-58bb-493f-bfd7-214dd7e0c372_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:40
+
+Message : Generated SAS token successfully for file --> a4e7e7f0-58bb-493f-bfd7-214dd7e0c372_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/a4e7e7f0-58bb-493f-bfd7-214dd7e0c372_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A38%3A40Z&sr=b&sp=r&sig=F8qXLPw6zEWmkln6dGomnOZ8iAhg%2B3BKJMelk4Sbx7Q%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:41
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:38:41
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:08:41
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:03
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:43:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:06
+
+Message : "Uploading file --> efd86fd4-5d36-48ee-8aaa-b5941847eed9_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:06
+
+Message : Configuring metadata for file --> efd86fd4-5d36-48ee-8aaa-b5941847eed9_block-mic.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:06
+
+Message : Generating SAS token successfully for file --> efd86fd4-5d36-48ee-8aaa-b5941847eed9_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:06
+
+Message : Generated SAS token successfully for file --> efd86fd4-5d36-48ee-8aaa-b5941847eed9_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/efd86fd4-5d36-48ee-8aaa-b5941847eed9_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A06Z&sr=b&sp=r&sig=C2PFbFw5vPmd74HZmM6LbdeU18fpf98aszDXhojHaQA%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:06
+
+Message : "Uploading file --> b5ff6549-95e7-4e97-8dd6-f4444e5bf4fa_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:07
+
+Message : Configuring metadata for file --> b5ff6549-95e7-4e97-8dd6-f4444e5bf4fa_block-mic.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:07
+
+Message : Generating SAS token successfully for file --> b5ff6549-95e7-4e97-8dd6-f4444e5bf4fa_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:07
+
+Message : Generated SAS token successfully for file --> b5ff6549-95e7-4e97-8dd6-f4444e5bf4fa_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/b5ff6549-95e7-4e97-8dd6-f4444e5bf4fa_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A07Z&sr=b&sp=r&sig=1K8Twv4jyoAVShyd%2FAT6MTsNBORxlBAPs%2FAIL6Bm8dI%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:07
+
+Message : "Uploading file --> 1944e472-d6db-40a0-94b7-3ea5a1593674_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:07
+
+Message : Configuring metadata for file --> 1944e472-d6db-40a0-94b7-3ea5a1593674_block-mic.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:07
+
+Message : Generating SAS token successfully for file --> 1944e472-d6db-40a0-94b7-3ea5a1593674_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:07
+
+Message : Generated SAS token successfully for file --> 1944e472-d6db-40a0-94b7-3ea5a1593674_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/1944e472-d6db-40a0-94b7-3ea5a1593674_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A07Z&sr=b&sp=r&sig=Mytb2n1W4cZlwREBE9w%2BpacpY8aH3mlSQUvqJmT6EAg%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:08
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:43:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:08
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:30
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:43:30
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:31
+
+Message : "Uploading file --> ba8fc711-7072-47d0-b468-444c014b0fff_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : Configuring metadata for file --> ba8fc711-7072-47d0-b468-444c014b0fff_block-mic.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : Generating SAS token successfully for file --> ba8fc711-7072-47d0-b468-444c014b0fff_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : Generated SAS token successfully for file --> ba8fc711-7072-47d0-b468-444c014b0fff_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/ba8fc711-7072-47d0-b468-444c014b0fff_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A32Z&sr=b&sp=r&sig=O%2FA%2FKbS5V6DGXwtpZnD%2FOGUrAbhJ1hOOdB6vkh4HHKU%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : "Uploading file --> 7ca37f63-712a-46ab-b262-bb54498a8fbc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : Configuring metadata for file --> 7ca37f63-712a-46ab-b262-bb54498a8fbc_block-mic.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : Generating SAS token successfully for file --> 7ca37f63-712a-46ab-b262-bb54498a8fbc_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : Generated SAS token successfully for file --> 7ca37f63-712a-46ab-b262-bb54498a8fbc_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/7ca37f63-712a-46ab-b262-bb54498a8fbc_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A32Z&sr=b&sp=r&sig=ETj0u7AtOWGgmDAJl%2F8uDVVZvXhTFYh2zOJgk7V5TkU%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : "Uploading file --> c9a5f16d-81c1-4b11-b71c-26f9dbf1d26b_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:32
+
+Message : Configuring metadata for file --> c9a5f16d-81c1-4b11-b71c-26f9dbf1d26b_block-mic.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:33
+
+Message : Generating SAS token successfully for file --> c9a5f16d-81c1-4b11-b71c-26f9dbf1d26b_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:33
+
+Message : Generated SAS token successfully for file --> c9a5f16d-81c1-4b11-b71c-26f9dbf1d26b_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/c9a5f16d-81c1-4b11-b71c-26f9dbf1d26b_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A33Z&sr=b&sp=r&sig=t%2BJxsNxWwJOPDX4U9Y0CsxmpjeeKdaeUysb3FonpE%2BY%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:34
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:43:34
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:34
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:49
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:43:49
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:50
+
+Message : "Uploading file --> 1743d0d4-d75c-4c61-b996-3719ebb41936_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:50
+
+Message : Configuring metadata for file --> 1743d0d4-d75c-4c61-b996-3719ebb41936_block-mic.gif || TaskId --> 4
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:50
+
+Message : Generating SAS token successfully for file --> 1743d0d4-d75c-4c61-b996-3719ebb41936_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:50
+
+Message : Generated SAS token successfully for file --> 1743d0d4-d75c-4c61-b996-3719ebb41936_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/1743d0d4-d75c-4c61-b996-3719ebb41936_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A50Z&sr=b&sp=r&sig=rReK1DBipbdDtzVgh5MVu0BaIPGRigBsjQYJ7TWCflQ%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:50
+
+Message : "Uploading file --> 5284c277-8900-4693-97d7-1d8f92cd3b42_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:50
+
+Message : Configuring metadata for file --> 5284c277-8900-4693-97d7-1d8f92cd3b42_block-mic.gif || TaskId --> 5
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:51
+
+Message : Generating SAS token successfully for file --> 5284c277-8900-4693-97d7-1d8f92cd3b42_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:51
+
+Message : Generated SAS token successfully for file --> 5284c277-8900-4693-97d7-1d8f92cd3b42_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/5284c277-8900-4693-97d7-1d8f92cd3b42_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A51Z&sr=b&sp=r&sig=Fbz9ZBIlPiY6mjPzdyHvuGA0cF7nhMxqatuvd%2BkNnRo%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:51
+
+Message : "Uploading file --> 618db997-3812-4fc1-9a9a-69c899a2f03a_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:51
+
+Message : Configuring metadata for file --> 618db997-3812-4fc1-9a9a-69c899a2f03a_block-mic.gif || TaskId --> 6
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:51
+
+Message : Generating SAS token successfully for file --> 618db997-3812-4fc1-9a9a-69c899a2f03a_block-mic.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:51
+
+Message : Generated SAS token successfully for file --> 618db997-3812-4fc1-9a9a-69c899a2f03a_block-mic.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/618db997-3812-4fc1-9a9a-69c899a2f03a_block-mic.gif?sv=2023-01-03&se=2123-09-11T16%3A43%3A51Z&sr=b&sp=r&sig=LURL2wBAhTvAuuXrLikD1OcKS7L8H6OtSunkWc%2Bx9KM%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:52
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:43:52
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:13:52
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:14:21
+
+Message : TaskAPIController --> GetTaskById() execution started: 05-10-2023 16:44:21
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:14:23
+
+Message : TaskAPIController --> GetTaskById() execution ended: 05-10-2023 16:44:23
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:14:23
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:15:47
+
+Message : TaskAPIController --> GetTaskById() execution started: 05-10-2023 16:45:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:15:49
+
+Message : TaskAPIController --> GetTaskById() execution ended: 05-10-2023 16:45:49
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:15:49
+
+Message : TaskAPIController --> GetTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:19:53
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:49:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:19:55
+
+Message : "Uploading file --> fe243570-dd2d-4fd8-9f1b-9162510082cd_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:19:55
+
+Message : Configuring metadata for file --> fe243570-dd2d-4fd8-9f1b-9162510082cd_bell.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:19:55
+
+Message : Generating SAS token successfully for file --> fe243570-dd2d-4fd8-9f1b-9162510082cd_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:19:55
+
+Message : Generated SAS token successfully for file --> fe243570-dd2d-4fd8-9f1b-9162510082cd_bell.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/fe243570-dd2d-4fd8-9f1b-9162510082cd_bell.gif?sv=2023-01-03&se=2123-09-11T16%3A49%3A55Z&sr=b&sp=r&sig=o78r1kjTwYG%2BPWnvLNZs07CPiISJMrt2wL1iLFU%2Brt8%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:19:56
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:49:56
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:19:56
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:20:57
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:50:57
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:20:58
+
+Message : "Uploading file --> 8dfc5f7c-678a-4843-8917-2b66bee65ba3_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:20:58
+
+Message : Configuring metadata for file --> 8dfc5f7c-678a-4843-8917-2b66bee65ba3_bell.gif || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:20:58
+
+Message : Generating SAS token successfully for file --> 8dfc5f7c-678a-4843-8917-2b66bee65ba3_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:20:58
+
+Message : Generated SAS token successfully for file --> 8dfc5f7c-678a-4843-8917-2b66bee65ba3_bell.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/8dfc5f7c-678a-4843-8917-2b66bee65ba3_bell.gif?sv=2023-01-03&se=2123-09-11T16%3A50%3A58Z&sr=b&sp=r&sig=ZnSMjIMnChDqfN3MUNNP9J%2FtE6SpC6QZ0CFPhvWHR3Y%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:20:59
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:50:59
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:20:59
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:21:58
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 16:51:58
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:22:00
+
+Message : "Uploading file --> afe37563-8d33-4dc7-98a8-549b203cb23b_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:22:00
+
+Message : Configuring metadata for file --> afe37563-8d33-4dc7-98a8-549b203cb23b_bell.gif || TaskId --> 3
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:22:01
+
+Message : Generating SAS token successfully for file --> afe37563-8d33-4dc7-98a8-549b203cb23b_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:22:01
+
+Message : Generated SAS token successfully for file --> afe37563-8d33-4dc7-98a8-549b203cb23b_bell.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/afe37563-8d33-4dc7-98a8-549b203cb23b_bell.gif?sv=2023-01-03&se=2123-09-11T16%3A52%3A01Z&sr=b&sp=r&sig=V1y2pdtNac%2FeX0YNRAcuwh538wXXVa5nVb1AC4i4mnI%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:22:02
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 16:52:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:22:02
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:54:59
+
+Message : TaskAPIController --> CreateTask() execution started: 05-10-2023 17:24:59
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:55:01
+
+Message : "Uploading file --> 1375607a-989c-498e-913c-26d9a53d5254_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:55:01
+
+Message : Configuring metadata for file --> 1375607a-989c-498e-913c-26d9a53d5254_bell.gif || TaskId --> 4
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:55:01
+
+Message : Generating SAS token successfully for file --> 1375607a-989c-498e-913c-26d9a53d5254_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:55:01
+
+Message : Generated SAS token successfully for file --> 1375607a-989c-498e-913c-26d9a53d5254_bell.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/1375607a-989c-498e-913c-26d9a53d5254_bell.gif?sv=2023-01-03&se=2123-09-11T17%3A25%3A01Z&sr=b&sp=r&sig=AwFywaYnLHdIwRAV2BsJDMsRrS4MjEJyJFtHZYjtSUA%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:55:03
+
+Message : TaskAPIController --> CreateTask() execution ended: 05-10-2023 17:25:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 22:55:03
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:45:08
+
+Message : TaskAPIController --> GetSubTaskById() execution started: 05-10-2023 18:15:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:45:33
+
+Message : TaskAPIController --> GetSubTaskById() execution started: 05-10-2023 18:15:33
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:47:02
+
+Message : TaskAPIController --> GetSubTaskById() execution started: 05-10-2023 18:17:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:47:03
+
+Message : TaskAPIController --> GetSubTaskById() execution ended: 05-10-2023 18:17:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:47:03
+
+Message : TaskAPIController --> GetSubTaskById() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:47:53
+
+Message : TaskAPIController --> GetSubTaskByEmail() execution started: 05-10-2023 18:17:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:47:54
+
+Message : TaskAPIController --> GetSubTaskByEmail() execution ended: 05-10-2023 18:17:54
+-------------------------------------------------------------------------
+
+
+Log Written Date: 05-10-2023 23:47:54
+
+Message : TaskAPIController --> GetSubTaskByEmail() execution time: 00:00:01
+-------------------------------------------------------------------------

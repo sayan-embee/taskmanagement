@@ -95,6 +95,7 @@ BEGIN
             [AssignmentType]
         FROM [dbo].[Trn_TaskAssignmentDetails] WITH(NOLOCK) WHERE TaskId = @Id
         --ORDER BY AssignId DESC
+        ORDER BY ProgressId DESC
     --END
 
     --IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskHistoryDetails] WITH(NOLOCK) WHERE TaskId = @Id)
@@ -132,7 +133,36 @@ BEGIN
             [CollaboratorADID]
         FROM [dbo].[Trn_TaskHistoryDetails] WITH(NOLOCK) WHERE TaskId = @Id
         --ORDER BY HistoryId DESC
+        ORDER BY ProgressId DESC
     --END
+
+        SELECT
+            [FileId],
+            [TaskId],
+            [RoleId],
+            [FileName],
+            [UnqFileName],
+            [FileDesc],
+            [FileUrl],
+            [FileSize],
+            [ContentType],
+            [IsActive],
+            [CreatedOnIST],
+            [CreatedOnUTC],
+            [CreatedByName],
+            [CreatedByEmail],
+            [CreatedByUPN],
+            [CreatedByADID],
+            [UpdatedOnIST],
+            [UpdatedOnUTC],
+            [UpdatedByName],
+            [UpdatedByEmail],
+            [UpdatedByUPN],
+            [UpdatedByADID],
+            [TransactionId]
+    FROM [dbo].[Trn_TaskFileDetails] WITH(NOLOCK)
+    WHERE TaskId = @Id AND IsActive = 1 
+    ORDER BY [FileId] DESC
 
 END
 

@@ -114,3 +114,8 @@ D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\obj\Debug\net6.0\refint\T
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\obj\Debug\net6.0\TeamsApp.Bot.pdb
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\obj\Debug\net6.0\TeamsApp.Bot.genruntimeconfig.cache
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\obj\Debug\net6.0\ref\TeamsApp.Bot.dll
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\pendingTaskCard.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\pendingTaskCard_withActionBtn.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\reassignTaskCard.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\reassignTaskCard_NoAction.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\reassignTaskCard_withActionBtn.json

@@ -52,7 +52,7 @@
 					<References Name="[dbo].[Trn_ConversationsTeams].[Active]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -68,7 +68,7 @@
 					<References Name="[dbo].[Trn_Conversations].[Active]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -87,7 +87,7 @@
 					<References Name="[dbo].[Trn_ConversationsTeams]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -106,7 +106,7 @@
 					<References Name="[dbo].[Trn_Conversations]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -125,7 +125,7 @@
 					<References Name="[dbo].[Mst_TaskStatus]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -144,7 +144,7 @@
 					<References Name="[dbo].[Mst_TaskPriority]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -163,7 +163,7 @@
 					<References Name="[dbo].[Mst_Role]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -182,7 +182,7 @@
 					<References Name="[dbo].[Trn_TaskDetails]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -199,25 +199,6 @@
 			<Relationship Name="DefiningTable">
 				<Entry>
 					<References Name="[dbo].[Trn_TaskHistoryDetails]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
-		</Element>
-		<Element Type="SqlPrimaryKeyConstraint">
-			<Relationship Name="ColumnSpecifications">
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Trn_TaskProgressDetails].[ProgressId]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="DefiningTable">
-				<Entry>
-					<References Name="[dbo].[Trn_TaskProgressDetails]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
@@ -298,6 +279,44 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="19" />
 		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Trn_TaskProgressDetails].[ProgressId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Trn_TaskProgressDetails]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Trn_TaskFileDetails].[FileId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
+		</Element>
 		<Element Type="SqlTable" Name="[dbo].[Mst_Role]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
@@ -316,7 +335,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="12" />
+						<AttachedAnnotation Disambiguator="13" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -376,7 +395,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="11" />
+						<AttachedAnnotation Disambiguator="12" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -451,7 +470,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="10" />
+						<AttachedAnnotation Disambiguator="11" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -526,7 +545,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="9" />
+						<AttachedAnnotation Disambiguator="10" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -717,7 +736,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="7" />
+						<AttachedAnnotation Disambiguator="8" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -760,7 +779,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="8" />
+						<AttachedAnnotation Disambiguator="9" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -936,7 +955,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="6" />
+						<AttachedAnnotation Disambiguator="7" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -1182,7 +1201,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -1265,7 +1284,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="13" />
+						<AttachedAnnotation Disambiguator="14" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -1441,7 +1460,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -1567,7 +1586,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -1631,7 +1650,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -1695,7 +1714,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -1775,7 +1794,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -2037,6 +2056,378 @@
 				</Entry>
 			</Relationship>
 		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Trn_TaskFileDetails]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[FileId]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="21" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[TaskId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[RoleId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[FileName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[UnqFileName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[FileDesc]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[FileUrl]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[FileSize]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[ContentType]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[IsActive]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[CreatedOnIST]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[CreatedOnUTC]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[CreatedByName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[CreatedByEmail]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[CreatedByUPN]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[CreatedByADID]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[UpdatedOnIST]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[UpdatedOnUTC]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[UpdatedByName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[UpdatedByEmail]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[UpdatedByUPN]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[UpdatedByADID]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Trn_TaskFileDetails].[TransactionId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
 		<Element Type="SqlTable" Name="[dbo].[Trn_TaskHistoryDetails]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
@@ -2055,7 +2446,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="14" />
+						<AttachedAnnotation Disambiguator="15" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2278,7 +2669,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -2342,7 +2733,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -2406,7 +2797,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -2470,7 +2861,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -2752,7 +3143,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="15" />
+						<AttachedAnnotation Disambiguator="20" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2868,7 +3259,7 @@
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -3037,6 +3428,317 @@
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTableType" Name="[dbo].[udt_TaskFileResponse]">
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[TaskId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[RoleId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[FileName]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[UnqFileName]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[FileDesc]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[FileUrl]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[FileSize]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[ContentType]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[IsActive]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[CreatedByName]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[CreatedByEmail]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[CreatedByUPN]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[CreatedByADID]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[UpdatedByName]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[UpdatedByEmail]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[UpdatedByUPN]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[UpdatedByADID]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlTableTypeSimpleColumn" Name="[dbo].[udt_TaskFileResponse].[TransactionId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -5295,14 +5997,14 @@ DECLARE @temp_table TABLE
 
     ;WITH UserTasks AS (
         SELECT TaskId, ParentTaskId
-        FROM [dbo].[Trn_TaskDetails]
+        FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
         WHERE [AssignerEmail] = @LoggedInUserEmail
             OR [AssigneeEmail] = @LoggedInUserEmail
             OR [CoordinatorEmail] = @LoggedInUserEmail
             OR [CollaboratorEmail] = @LoggedInUserEmail
         UNION ALL
         SELECT T.TaskId, T.ParentTaskId
-        FROM [dbo].[Trn_TaskDetails] T
+        FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
         INNER JOIN UserTasks UT ON T.ParentTaskId = UT.TaskId
     )
 
@@ -5777,10 +6479,785 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="3194" />
+				<Property Name="Length" Value="3220" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_SubTask_GetAll]&#xD;&#xA;(&#xD;&#xA;    @LoggedInUserEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @StatusId INT = NULL,&#xD;&#xA;    @PriorityId INT = NULL,&#xD;&#xA;    @RoleId INT = NULL,&#xD;&#xA;    @ParentTaskId BIGINT = NULL,&#xD;&#xA;    @TaskSubject NVARCHAR(200) = NULL,&#xD;&#xA;    @FromDate DATETIME = NULL,&#xD;&#xA;    @ToDate DATETIME = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[usp_SubTask_GetByTaskId]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+DECLARE @temp_table TABLE
+(
+  TaskId INT DEFAULT 0,
+  RoleId INT DEFAULT 0,
+  RoleName NVARCHAR(50) NULL,
+  RoleCode NVARCHAR(50) NULL
+)
+
+    INSERT INTO @temp_table EXEC usp_Task_CheckRole_ByTaskId @Id = 0, @Email = @LoggedInUserEmail
+
+
+    ;WITH RecursiveTasks AS (
+
+            SELECT
+                --temp.RoleId AS 'LoggedInUserRoleId',
+                --temp.RoleName AS 'LoggedInUserRoleName',
+                T.[TaskId],
+                T.[TaskRefNo],
+                T.[StatusId],
+                S.[StatusName],
+                T.[PriorityId],
+                P.[PriorityName],
+                T.[RoleId],
+                R.[RoleName],
+                T.[ParentTaskId],
+                T.[IsActive],
+                T.[CreatedByName],
+                T.[CreatedByEmail],
+                T.[TaskSubject],
+                T.[TaskDesc],
+                T.[InitialTargetDate],
+                T.[CurrentTargetDate],
+                T.[AssignerName],
+                T.[AssignerEmail],
+                T.[AssigneeName],
+                T.[AssigneeEmail],
+                CASE
+                    WHEN T.[StatusId] <> 3 THEN
+                    CASE
+                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) > GETUTCDATE() THEN
+                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' days remaining'
+                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) = GETUTCDATE() THEN
+                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' due today'
+                        ELSE
+                            CAST(DATEDIFF(DAY, DATEADD(MINUTE, 300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' days overdue'
+                    END
+                    ELSE '-'
+                END AS 'ElapsedDays'
+            FROM [dbo].[Trn_TaskDetails] T
+            INNER JOIN [dbo].[Mst_TaskStatus] S ON S.StatusId = T.StatusId
+            INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId
+            INNER JOIN [dbo].[Mst_Role] R ON R.RoleId = T.RoleId
+            --LEFT OUTER JOIN @temp_table temp ON temp.TaskId = T.TaskId
+            WHERE T.[TaskId] = @TaskId
+
+            UNION ALL
+
+            SELECT
+                --temp.RoleId AS 'LoggedInUserRoleId',
+                --temp.RoleName AS 'LoggedInUserRoleName',
+                T.[TaskId],
+                T.[TaskRefNo],
+                T.[StatusId],
+                S.[StatusName],
+                T.[PriorityId],
+                P.[PriorityName],
+                T.[RoleId],
+                R.[RoleName],
+                T.[ParentTaskId],
+                T.[IsActive],
+                T.[CreatedByName],
+                T.[CreatedByEmail],
+                T.[TaskSubject],
+                T.[TaskDesc],
+                T.[InitialTargetDate],
+                T.[CurrentTargetDate],
+                T.[AssignerName],
+                T.[AssignerEmail],
+                T.[AssigneeName],
+                T.[AssigneeEmail],
+                CASE
+                    WHEN T.[StatusId] <> 3 THEN
+                    CASE
+                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) > GETUTCDATE() THEN
+                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' days remaining'
+                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) = GETUTCDATE() THEN
+                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' due today'
+                        ELSE
+                            CAST(DATEDIFF(DAY, DATEADD(MINUTE, 300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' days overdue'
+                    END
+                    ELSE '-'
+                END AS 'ElapsedDays'
+            FROM [dbo].[Trn_TaskDetails] T
+            INNER JOIN RecursiveTasks RT ON T.[ParentTaskId] = RT.[TaskId]
+            INNER JOIN [dbo].[Mst_TaskStatus] S ON S.StatusId = T.StatusId
+            INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId
+            INNER JOIN [dbo].[Mst_Role] R ON R.RoleId = T.RoleId
+            --LEFT OUTER JOIN @temp_table temp ON temp.TaskId = T.TaskId
+
+            AND (@StatusId IS NULL OR T.[StatusId] = @StatusId)
+            AND (@PriorityId IS NULL OR T.[PriorityId] = @PriorityId)
+            AND (@RoleId IS NULL OR T.[RoleId] = @RoleId)
+            AND (@TaskSubject IS NULL OR T.[TaskSubject] = @TaskSubject)
+            AND (@FromDate IS NULL OR T.[CurrentTargetDate] >= @FromDate)
+            AND (@ToDate IS NULL OR T.[CurrentTargetDate] <= @ToDate)
+    )
+
+    SELECT
+	temp.RoleId AS 'LoggedInUserRoleId',
+    temp.RoleName AS 'LoggedInUserRoleName',
+	R.*
+	FROM RecursiveTasks R
+	LEFT OUTER JOIN @temp_table temp ON temp.TaskId = R.TaskId
+	ORDER BY R.TaskId
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[usp_Task_CheckRole_ByTaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_CheckRole_ByTaskId].[@Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_CheckRole_ByTaskId].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@LoggedInUserEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskRefNo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus].[StatusName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role].[RoleName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[ParentTaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[InitialTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CurrentTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[ParentTaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@FromDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CurrentTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@ToDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskRefNo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskStatus].[StatusName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_Role].[RoleName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[ParentTaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CreatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[InitialTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table].[RoleName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table].[TaskId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table].[RoleId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table].[RoleName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[@temp_table].[RoleCode]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[TaskId]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[TaskRefNo]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[TaskRefNo]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[StatusId]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[StatusName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Mst_TaskStatus].[StatusName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[PriorityId]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[PriorityName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Mst_TaskPriority].[PriorityName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[RoleId]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[RoleId]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[RoleName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Mst_Role].[RoleName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[ParentTaskId]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[ParentTaskId]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[IsActive]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[IsActive]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[CreatedByName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[CreatedByName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[CreatedByEmail]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[CreatedByEmail]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[TaskSubject]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[TaskSubject]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[TaskDesc]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[TaskDesc]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[InitialTargetDate]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[InitialTargetDate]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[CurrentTargetDate]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[CurrentTargetDate]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[AssignerName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[AssignerName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[AssignerEmail]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[AssigneeName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[AssigneeEmail]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[usp_SubTask_GetByTaskId].[CTE1].[RecursiveTasks].[ElapsedDays]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@LoggedInUserEmail]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@TaskId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@StatusId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@PriorityId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@RoleId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@TaskSubject]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@FromDate]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_SubTask_GetByTaskId].[@ToDate]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="5372" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_SubTask_GetByTaskId]&#xD;&#xA;(&#xD;&#xA;    @LoggedInUserEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @TaskId BIGINT = NULL,&#xD;&#xA;    @StatusId INT = NULL,&#xD;&#xA;    @PriorityId INT = NULL,&#xD;&#xA;    @RoleId INT = NULL,   &#xD;&#xA;    @TaskSubject NVARCHAR(200) = NULL,&#xD;&#xA;    @FromDate DATETIME = NULL,&#xD;&#xA;    @ToDate DATETIME = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_CheckRole_ByTaskId]">
@@ -6476,6 +7953,7 @@ BEGIN
             [AssignmentType]
         FROM [dbo].[Trn_TaskAssignmentDetails] WITH(NOLOCK) WHERE TaskId = @Id
         --ORDER BY AssignId DESC
+        ORDER BY ProgressId DESC
     --END
 
     --IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskHistoryDetails] WITH(NOLOCK) WHERE TaskId = @Id)
@@ -6513,7 +7991,36 @@ BEGIN
             [CollaboratorADID]
         FROM [dbo].[Trn_TaskHistoryDetails] WITH(NOLOCK) WHERE TaskId = @Id
         --ORDER BY HistoryId DESC
+        ORDER BY ProgressId DESC
     --END
+
+        SELECT
+            [FileId],
+            [TaskId],
+            [RoleId],
+            [FileName],
+            [UnqFileName],
+            [FileDesc],
+            [FileUrl],
+            [FileSize],
+            [ContentType],
+            [IsActive],
+            [CreatedOnIST],
+            [CreatedOnUTC],
+            [CreatedByName],
+            [CreatedByEmail],
+            [CreatedByUPN],
+            [CreatedByADID],
+            [UpdatedOnIST],
+            [UpdatedOnUTC],
+            [UpdatedByName],
+            [UpdatedByEmail],
+            [UpdatedByUPN],
+            [UpdatedByADID],
+            [TransactionId]
+    FROM [dbo].[Trn_TaskFileDetails] WITH(NOLOCK)
+    WHERE TaskId = @Id AND IsActive = 1 
+    ORDER BY [FileId] DESC
 
 END
 
@@ -6803,6 +8310,78 @@ END]]></Value>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskHistoryDetails].[CollaboratorADID]" />
 				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UnqFileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileUrl]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[ContentType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[TransactionId]" />
+				</Entry>
 			</Relationship>
 			<Relationship Name="DynamicObjects">
 				<Entry>
@@ -6919,7 +8498,7 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="3615" />
+				<Property Name="Length" Value="4456" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_GetById]&#xD;&#xA;(&#xD;&#xA;&#x9;@Id BIGINT = NULL,&#xD;&#xA;    @Email NVARCHAR(100) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
@@ -7053,6 +8632,35 @@ BEGIN
         INNER JOIN [dbo].[Trn_TaskHistoryDetails] H WITH(NOLOCK) ON H.ProgressId = P.ProgressId
         WHERE P.TaskId = @Id
         ORDER BY P.ProgressId DESC
+
+
+        SELECT
+            [FileId],
+            [TaskId],
+            [RoleId],
+            [FileName],
+            [UnqFileName],
+            [FileDesc],
+            [FileUrl],
+            [FileSize],
+            [ContentType],
+            [IsActive],
+            [CreatedOnIST],
+            [CreatedOnUTC],
+            [CreatedByName],
+            [CreatedByEmail],
+            [CreatedByUPN],
+            [CreatedByADID],
+            [UpdatedOnIST],
+            [UpdatedOnUTC],
+            [UpdatedByName],
+            [UpdatedByEmail],
+            [UpdatedByUPN],
+            [UpdatedByADID],
+            [TransactionId]
+    FROM [dbo].[Trn_TaskFileDetails] WITH(NOLOCK) 
+    WHERE TaskId = @Id AND IsActive = 1 
+    ORDER BY [FileId] DESC
 
 END
 
@@ -7363,6 +8971,78 @@ END]]></Value>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskHistoryDetails].[CollaboratorADID]" />
 				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UnqFileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileUrl]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[ContentType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UpdatedByADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[TransactionId]" />
+				</Entry>
 			</Relationship>
 			<Relationship Name="DynamicObjects">
 				<Entry>
@@ -7479,7 +9159,7 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="3512" />
+				<Property Name="Length" Value="4288" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_GetByIdListView]&#xD;&#xA;(&#xD;&#xA;&#x9;@Id BIGINT = NULL,&#xD;&#xA;    @Email NVARCHAR(100) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
@@ -7984,28 +9664,32 @@ END
      SET @ProgressId = @@IDENTITY;
 
 
-     INSERT INTO [dbo].[Trn_TaskAssignmentDetails] 
-     (
-        [TaskId],
-        [ProgressId],
-        [AssigneeName],
-        [AssigneeEmail],
-        [AssigneeUPN],
-        [AssigneeADID],
-        [AssignmentType],
-        [TransactionId]
-    )
-    SELECT
-        [TaskId],
-        @ProgressId,
-        [AssigneeName],
-        [AssigneeEmail],
-        [AssigneeUPN],
-        [AssigneeADID],
-        'ASSIGNED',
-        @TransactionId
-    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
-     WHERE TaskUnqId = @TaskUnqId AND @ProgressId > 0
+     IF(@ProgressId > 0)
+     BEGIN
+        INSERT INTO [dbo].[Trn_TaskAssignmentDetails] 
+         (
+            [TaskId],
+            [ProgressId],
+            [AssigneeName],
+            [AssigneeEmail],
+            [AssigneeUPN],
+            [AssigneeADID],
+            [AssignmentType],
+            [TransactionId]
+        )
+        SELECT
+            T.[TaskId],
+            P.ProgressId,
+            [AssigneeName],
+            [AssigneeEmail],
+            [AssigneeUPN],
+            [AssigneeADID],
+            'ASSIGNED',
+            @TransactionId
+        FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
+        INNER JOIN [dbo].[Trn_TaskProgressDetails] P WITH(NOLOCK) ON P.TaskId = T.TaskId
+        WHERE T.TaskUnqId = @TaskUnqId AND T.TransactionId = P.TransactionId
+     END
 
 
     -- ADD ALL TASK ID IN A LIST
@@ -8254,7 +9938,8 @@ END
         1					       AS [Status],
         @@IDENTITY				   AS Id,
         @IdList				       AS ReferenceNo,
-        @TaskUnqId                 AS GuidId
+        @TaskUnqId                 AS GuidId,
+        @TransactionId             AS TransactionId
 
 END]]></Value>
 			</Property>
@@ -8571,6 +10256,36 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskAssignmentDetails].[TransactionId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskProgressDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskProgressDetails].[ProgressId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskUnqId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TransactionId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskProgressDetails].[TransactionId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[usp_Task_Insert].[@Emails].[TaskId]" />
@@ -8991,7 +10706,7 @@ END]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert].[@udt_TaskAssignee]" Disambiguator="4">
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert].[@udt_TaskAssignee]" Disambiguator="6">
 						<Relationship Name="Columns">
 							<Entry>
 								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert].[@udt_TaskAssignee].[AssigneeName]">
@@ -9517,7 +11232,7 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="15436" />
+				<Property Name="Length" Value="15739" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Insert]&#xD;&#xA;(&#xD;&#xA;    @StatusId INT = NULL,&#xD;&#xA;    @PriorityId INT = NULL,&#xD;&#xA;    @RoleId INT = NULL,&#xD;&#xA;    @ParentTaskId BIGINT = NULL,&#xD;&#xA;    @CreatedByName NVARCHAR(100) = NULL,&#xD;&#xA;    @CreatedByEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CreatedByUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CreatedByADID NVARCHAR(50) = NULL,&#xD;&#xA;    @TaskSubject NVARCHAR(200) = NULL,&#xD;&#xA;    @TaskDesc NVARCHAR(500) = NULL,&#xD;&#xA;    @InitialTargetDate DATETIME = NULL,&#xD;&#xA;    @AssignerName NVARCHAR(100) = NULL,&#xD;&#xA;    @AssignerEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @AssignerUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @AssignerADID NVARCHAR(50) = NULL,&#xD;&#xA;    --@AssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    --@AssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    --@AssigneeUPN NVARCHAR(50) = NULL,&#xD;&#xA;    --@AssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @CoordinatorName NVARCHAR(100) = NULL,&#xD;&#xA;    @CoordinatorEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CoordinatorUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CoordinatorADID NVARCHAR(50) = NULL,&#xD;&#xA;    @CollaboratorName NVARCHAR(100) = NULL,&#xD;&#xA;    @CollaboratorEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CollaboratorUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CollaboratorADID NVARCHAR(50) = NULL,&#xD;&#xA;&#xD;&#xA;    @udt_TaskAssignee udt_TaskAssignee NULL READONLY&#xD;&#xA;)&#xD;&#xA;AS" />
@@ -9653,6 +11368,484 @@ END]]></Value>
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Insert_EmailResponse]&#xD;&#xA;(&#xD;&#xA;&#x9;@udt_EmailResponse udt_TaskEmailResponse NULL READONLY&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_Insert_FileResponse]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ 
+BEGIN
+
+	INSERT INTO [dbo].[Trn_TaskFileDetails]
+    (
+        [TaskId],
+        [RoleId],
+        [FileName],
+        [UnqFileName],
+        [FileDesc],
+        [FileUrl],
+        [FileSize],
+        [ContentType],
+        [IsActive],
+        [CreatedOnIST],
+        [CreatedOnUTC],
+        [CreatedByName],
+        [CreatedByEmail],
+        [CreatedByUPN],
+        [CreatedByADID],
+        --[UpdatedOnIST],
+        --[UpdatedOnUTC],
+        --[UpdatedByName],
+        --[UpdatedByEmail],
+        --[UpdatedByUPN],
+        --[UpdatedByADID],
+        [TransactionId]
+    )
+    SELECT
+        [TaskId],
+        [RoleId],
+        [FileName],
+        [UnqFileName],
+        [FileDesc],
+        [FileUrl],
+        [FileSize],
+        [ContentType],
+        [IsActive],
+        DATEADD(MINUTE, 330, GETUTCDATE()),
+        GETUTCDATE(),
+        [CreatedByName],
+        [CreatedByEmail],
+        [CreatedByUPN],
+        [CreatedByADID],
+        --[UpdatedOnIST],
+        --[UpdatedOnUTC],
+        --[UpdatedByName],
+        --[UpdatedByEmail],
+        --[UpdatedByUPN],
+        --[UpdatedByADID],
+        [TransactionId]
+    FROM @udt_TaskFileResponse
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[UnqFileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileUrl]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[ContentType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[CreatedByADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskFileDetails].[TransactionId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[RoleId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[UnqFileName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileUrl]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[ContentType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[IsActive]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByADID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[TransactionId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse]" Disambiguator="5">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[TaskId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[bigint]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[RoleId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[UnqFileName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileDesc]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="500" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileUrl]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[FileSize]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[ContentType]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[IsActive]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[bit]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByUPN]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[CreatedByADID]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[UpdatedByName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[UpdatedByEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[UpdatedByUPN]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[UpdatedByADID]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse].[TransactionId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_Insert_FileResponse].[@udt_TaskFileResponse]">
+						<Property Name="IsReadOnly" Value="True" />
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References Name="[dbo].[udt_TaskFileResponse]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1327" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Insert_FileResponse]&#xD;&#xA;(&#xD;&#xA;&#x9;@udt_TaskFileResponse udt_TaskFileResponse NULL READONLY&#xD;&#xA;)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_Insert_NotificationResponse]">
@@ -9923,7 +12116,7 @@ END]]></Value>
 			</Relationship>
 			<Relationship Name="DynamicObjects">
 				<Entry>
-					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse]" Disambiguator="5">
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse]" Disambiguator="4">
 						<Relationship Name="Columns">
 							<Entry>
 								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Insert_NotificationResponse].[@udt_NotificationResponse].[ReplyToId]">
@@ -10521,7 +12714,9 @@ BEGIN
 
 DECLARE @ProgressId BIGINT = 0;
 DECLARE @HistoryId BIGINT = 0;
+DECLARE @TaskUnqId AS UNIQUEIDENTIFIER = NULL;
 DECLARE @TransactionId AS UNIQUEIDENTIFIER = NEWID ();
+DECLARE @JSONString NVARCHAR(MAX) = NULL;
 
 IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND AssigneeEmail = @AssigneeEmail)
 BEGIN
@@ -10534,10 +12729,12 @@ BEGIN
     RETURN
 END
 
-BEGIN TRANSACTION
-
 IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId)
 BEGIN
+
+    BEGIN TRANSACTION
+
+    SELECT @TaskUnqId = TaskUnqId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId
 
     INSERT INTO [dbo].[Trn_TaskProgressDetails] 
     (
@@ -10663,6 +12860,18 @@ BEGIN
     
     IF(@HistoryId > 0)
     BEGIN
+
+        SET @JSONString = (
+        SELECT
+            AssigneeName,
+            AssigneeEmail,
+            AssigneeUPN,
+            AssigneeADID
+        FROM [dbo].[Trn_TaskDetails] WITH (NOLOCK) WHERE [TaskId] = @TaskId
+        FOR JSON AUTO
+        );
+
+
         UPDATE [dbo].[Trn_TaskDetails]
         SET
             [RoleId] = ISNULL(@RoleId,RoleId),
@@ -10699,7 +12908,6 @@ BEGIN
 
     END
 
-
     IF @@ERROR<>0
     BEGIN
 	    ROLLBACK TRANSACTION
@@ -10712,6 +12920,248 @@ BEGIN
 	    RETURN
     END
 
+
+    -- Declare variables
+    DECLARE @Email_TaskId BIGINT;
+    DECLARE @Email_TargetDate NVARCHAR(100);
+    DECLARE @Email_TaskSubject NVARCHAR(100);
+    DECLARE @Email_Priority NVARCHAR(50);
+    DECLARE @Email_AssignerName NVARCHAR(100);
+    DECLARE @Email_AssignerEmail NVARCHAR(100);
+    DECLARE @Email_CoordinatorName NVARCHAR(100);
+    DECLARE @Email_CoordinatorEmail NVARCHAR(100);
+    DECLARE @Email_CollaboratorName NVARCHAR(100);
+    DECLARE @Email_CollaboratorEmail NVARCHAR(100);
+    DECLARE @Email_AssigneeName NVARCHAR(100);
+    DECLARE @Email_AssigneeEmail NVARCHAR(100);
+    DECLARE @Email_TaskDesc NVARCHAR(MAX);
+    DECLARE @Email_EmailBody NVARCHAR(MAX);
+    DECLARE @Email_EmailSubject NVARCHAR(MAX);
+
+    -- Maximum length for the Task Description to display initially
+    DECLARE @MaxDescLength INT = 200;
+
+    -- Create a table variable to store the results
+    DECLARE @Emails AS TABLE
+    (
+    [TaskId] BIGINT,
+    TargetDate NVARCHAR(100),
+    TaskSubject NVARCHAR(100),
+    [Priority] NVARCHAR(50),
+    AssignerName NVARCHAR(100),
+    AssignerEmail NVARCHAR(100),
+    CoordinatorName NVARCHAR(100),
+    CoordinatorEmail NVARCHAR(100),
+    CollaboratorName NVARCHAR(100),
+    CollaboratorEmail NVARCHAR(100),
+    AssigneeName NVARCHAR(100),
+    AssigneeEmail NVARCHAR(100),
+    TaskDesc NVARCHAR(MAX),
+    [EmailBody] NVARCHAR(MAX),
+    EmailSubject NVARCHAR(MAX)
+    );
+
+    -- Populate the @Emails table variable
+    INSERT INTO @Emails 
+    (
+    [TaskId],
+    TargetDate,
+    TaskSubject,
+    [Priority],
+    AssignerName,
+    AssignerEmail,
+    CoordinatorName,
+    CoordinatorEmail,
+    CollaboratorName,
+    CollaboratorEmail,
+    AssigneeName,
+    AssigneeEmail,
+    TaskDesc,
+    [EmailBody],
+    EmailSubject
+    )
+    SELECT 
+    T.[TaskId],    
+    CONVERT(NVARCHAR(20), CurrentTargetDate, 103),
+    T.TaskSubject,
+    P.PriorityName,
+    T.AssignerName,
+    T.AssignerEmail,
+    T.CoordinatorName,
+    T.CoordinatorEmail,
+    CollaboratorName,
+    CollaboratorEmail,
+    T.AssigneeName,
+    T.AssigneeEmail,
+    T.TaskDesc,
+    N'', -- Initialize the EmailSubject with an empty string
+    N'' -- Initialize the EmailBody with an empty string
+    FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
+    INNER JOIN [dbo].[Mst_TaskPriority] P WITH(NOLOCK) ON P.PriorityId = T.PriorityId
+    WHERE TaskId = @TaskId;
+
+    -- Loop through the @Emails table variable
+    DECLARE emailCursor CURSOR FOR
+    SELECT
+    [TaskId],
+    TargetDate,
+    TaskSubject,
+    [Priority],
+    AssignerName,
+    AssignerEmail,
+    CoordinatorName,
+    CoordinatorEmail,
+    CollaboratorName,
+    CollaboratorEmail,
+    AssigneeName,
+    AssigneeEmail,
+    TaskDesc,
+    [EmailBody],
+    EmailSubject
+    FROM @Emails;
+
+    OPEN emailCursor;
+    FETCH NEXT FROM emailCursor INTO 
+    @Email_TaskId, 
+    @Email_TargetDate,
+    @Email_TaskSubject,
+    @Email_Priority,
+    @Email_AssignerName,
+    @Email_AssignerEmail,
+    @Email_CoordinatorName,
+    @Email_CoordinatorEmail,
+    @Email_CollaboratorName,
+    @Email_CollaboratorEmail,
+    @Email_AssigneeName,
+    @Email_AssigneeEmail,
+    @Email_TaskDesc,
+    @Email_EmailBody,
+    @Email_EmailSubject;
+
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+    -- Construct the email body for each TaskId here
+    -- You can use the @TaskId and @EmailBody variables to create the email content
+
+    -- set the email body as a simple message
+    SET @Email_EmailSubject = 'Task Reassignment Notification - Task App V2';
+
+    -- set the email body as a simple message
+    SET @Email_EmailBody = N'
+                        <html>
+                            <head>
+                                <style>
+                                    .indented-paragraph {
+                                        margin-left: 20px; /* Adjust the indentation level as needed */
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                <p>Hi,</p>
+                                <h3>The following task has been reassigned:</h3>
+                                <p class="indented-paragraph"><strong>Target Date:</strong> ' + @Email_TargetDate + N'</p>
+                                <p class="indented-paragraph"><strong>Priority:</strong> ' + @Email_Priority + N'</p>
+                                <p class="indented-paragraph"><strong>Task Subject:</strong> ' + @Email_TaskSubject + N'</p>
+                                <p class="indented-paragraph"><strong>Task Description:</strong> ' + LEFT(@Email_TaskDesc, @MaxDescLength) + N'</p>';
+
+                                IF LEN(@Email_TaskDesc) > @MaxDescLength
+                                BEGIN
+                                    SET @Email_EmailBody = @Email_EmailBody + N'
+                                    <p class="indented-paragraph">
+                                        <span id="taskDescShort">' + LEFT(@Email_TaskDesc, @MaxDescLength) + N'</span>
+                                        <span id="taskDescFull" style="display:none;">' + @Email_TaskDesc + N'</span>
+                                        <button onclick="showFullDescription()">Read More</button>
+                                    </p>
+                                    <script>
+                                        function showFullDescription() {
+                                            document.getElementById("taskDescShort").style.display = "none";
+                                            document.getElementById("taskDescFull").style.display = "inline";
+                                        }
+                                    </script>
+                                    ';
+                                END
+
+                                SET @Email_EmailBody = @Email_EmailBody + N'
+                                <h4>Stakeholders:</h4>
+                                <p class="indented-paragraph"><strong>Assigner:</strong> ' + @Email_AssignerName + N' (' + @Email_AssigneeEmail + N')</p>
+                                <p class="indented-paragraph"><strong>Coordinator:</strong> ' + @Email_CoordinatorName + N' (' + @Email_CoordinatorEmail + N')</p>
+                                <p class="indented-paragraph"><strong>Collaborator:</strong> ' + @Email_CollaboratorName + N' (' + @Email_CollaboratorEmail + N')</p>
+                                <p class="indented-paragraph"><strong>New Assignee:</strong> ' + @Email_AssigneeName + N' (' + @Email_AssigneeEmail + N')</p>
+                            </body>
+                            </html>
+                        ';
+
+    -- Update the @Emails table variable with the generated email body
+    UPDATE @Emails
+    SET [EmailBody] = @Email_EmailBody,
+    [EmailSubject] = @Email_EmailSubject
+    WHERE [TaskId] = @Email_TaskId;
+
+    -- Fetch the next task
+    FETCH NEXT FROM emailCursor INTO
+    @Email_TaskId, 
+    @Email_TargetDate,
+    @Email_TaskSubject,
+    @Email_Priority,
+    @Email_AssignerName,
+    @Email_AssignerEmail,
+    @Email_CoordinatorName,
+    @Email_CoordinatorEmail,
+    @Email_CollaboratorName,
+    @Email_CollaboratorEmail,
+    @Email_AssigneeName,
+    @Email_AssigneeEmail,
+    @Email_TaskDesc,
+    @Email_EmailBody,
+    @Email_EmailSubject;
+
+    END;
+
+    CLOSE emailCursor;
+    DEALLOCATE emailCursor;
+
+    -- Now, the @Emails table variable contains the email bodies for each TaskId
+    -- You can retrieve the email bodies for each TaskId as needed
+    INSERT INTO [dbo].[Trn_TaskEmailNotification]
+    (
+        TaskId,
+        EmailSubject,
+        EmailBody,
+        ToRecipient,
+        FromRecipient,
+        CreatedOnIST,
+        CreatedOnUTC,
+        [Status],
+        TransactionId
+    )
+    SELECT 
+    T.[TaskId],
+    [EmailSubject],
+    [EmailBody],
+    STRING_AGG(CONCAT(T.AssignerEmail, ', ', T.CoordinatorEmail, ', ', T.CollaboratorEmail, ', ', T.AssigneeEmail), ', ') AS ToRecipient,
+    --STRING_AGG(CONCAT(T.CollaboratorEmail, ', '), ', ') AS ToRecipient,
+    T.AssignerEmail,
+    DATEADD(MINUTE, 330, GETUTCDATE()),
+    GETUTCDATE(),
+    'REASSIGN-TASK',
+    @TransactionId
+    FROM @Emails E
+    INNER JOIN [dbo].[Trn_TaskDetails] T WITH (NOLOCK) ON T.TaskId = E.[TaskId]
+    GROUP BY T.[TaskId], [EmailSubject], [EmailBody], T.AssignerEmail, T.TransactionId
+
+
+END
+ELSE
+BEGIN
+
+	    SELECT 
+		    'No task found'         AS [Message],
+		    ''					    AS ErrorMessage,
+		    0						AS [Status],
+		    0				        AS Id,
+		    ''						AS ReferenceNo
+	    RETURN
+
 END
 
     COMMIT TRANSACTION
@@ -10720,7 +13170,8 @@ END
         ''						     AS ErrorMessage,
         1					         AS [Status],
         @TaskId				         AS Id,
-        ''				             AS ReferenceNo
+        @JSONString				     AS ReferenceNo,
+        @TaskUnqId                   AS GuidId
 
 END]]></Value>
 			</Property>
@@ -10736,6 +13187,60 @@ END]]></Value>
 					<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
 				</Entry>
 				<Entry>
+					<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[bigint]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[Trn_TaskDetails]" />
 				</Entry>
 				<Entry>
@@ -10749,6 +13254,12 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[usp_Task_Reassign].[@AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskUnqId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskProgressDetails]" />
@@ -10892,9 +13403,6 @@ END]]></Value>
 					<References Name="[dbo].[Trn_TaskHistoryDetails].[TransactionId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
-				</Entry>
-				<Entry>
 					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
 				</Entry>
 				<Entry>
@@ -10905,9 +13413,6 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskDetails].[TaskRefNo]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Trn_TaskDetails].[TaskUnqId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskDetails].[ParentTaskId]" />
@@ -10973,6 +13478,15 @@ END]]></Value>
 					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorADID]" />
 				</Entry>
 				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeUPN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeADID]" />
+				</Entry>
+				<Entry>
 					<References Name="[dbo].[usp_Task_Reassign].[@AssigneeName]" />
 				</Entry>
 				<Entry>
@@ -11010,6 +13524,409 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskAssignmentDetails].[TransactionId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[TargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[Priority]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[AssignerName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[CoordinatorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[CoordinatorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[CollaboratorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[CollaboratorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[TaskDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[EmailBody]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[EmailSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[PriorityId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CurrentTargetDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Mst_TaskPriority].[PriorityName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskDesc]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[EmailSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[EmailBody]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[ToRecipient]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[FromRecipient]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[CreatedOnIST]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[CreatedOnUTC]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[Status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskEmailNotification].[TransactionId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[TaskId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[EmailSubject]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_Reassign].[@Emails].[EmailBody]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssignerEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CoordinatorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[CollaboratorEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[TransactionId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[usp_Task_Reassign].[@Emails]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[TaskId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[bigint]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[TargetDate]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[TaskSubject]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[Priority]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="50" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[AssignerName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[AssignerEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[CoordinatorName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[CoordinatorEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[CollaboratorName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[CollaboratorEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[AssigneeName]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[AssigneeEmail]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[TaskDesc]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[EmailBody]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_Reassign].[@Emails].[EmailSubject]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
 				</Entry>
 			</Relationship>
 			<Relationship Name="Parameters">
@@ -11077,7 +13994,7 @@ END]]></Value>
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -11153,7 +14070,7 @@ END]]></Value>
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -11227,10 +14144,10 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="6020" />
+				<Property Name="Length" Value="15280" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Reassign]&#xD;&#xA;(&#xD;&#xA;    @TaskId BIGINT = NULL,&#xD;&#xA;    @UpdatedByName NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @UpdatedByADID NVARCHAR(50) = NULL,&#xD;&#xA;    @AssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @AssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @RoleId INT = NULL,&#xD;&#xA;    @ProgressRemarks NVARCHAR(500) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Reassign]&#xD;&#xA;(&#xD;&#xA;    @TaskId BIGINT = NULL,&#xD;&#xA;    @UpdatedByName NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByUPN NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByADID NVARCHAR(50) = NULL,&#xD;&#xA;    @AssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeUPN NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @RoleId INT = NULL,&#xD;&#xA;    @ProgressRemarks NVARCHAR(500) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_ReassignAll]">
@@ -11267,7 +14184,8 @@ DECLARE @temp_table_return TABLE
   ErrorMessage NVARCHAR(50) NULL,
   [Status] INT DEFAULT 0,
   Id INT DEFAULT 0,
-  ReferenceNo NVARCHAR(50) NULL
+  ReferenceNo NVARCHAR(MAX) NULL,
+  GuidId UNIQUEIDENTIFIER NULL
 )
 
 
@@ -11286,6 +14204,7 @@ DECLARE @temp_table_return TABLE
     )
     AND T.IsActive = 1
     AND T.StatusId != 3
+    AND T.AssigneeEmail = @PrevAssigneeEmail
 
 	--SELECT * FROM @temp_table_task
 
@@ -11341,7 +14260,8 @@ DECLARE @temp_table_return TABLE
                 ErrorMessage,
                 [Status],
                 Id,
-                ReferenceNo
+                ReferenceNo,
+                GuidId
             FROM @temp_table_return
             
         END
@@ -11379,6 +14299,12 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Trn_TaskDetails].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Trn_TaskDetails].[AssigneeEmail]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_ReassignAll].[@PrevAssigneeEmail]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[usp_Task_ReassignAll].[@temp_table_task].[TaskId]" />
@@ -11481,6 +14407,9 @@ END]]></Value>
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[usp_Task_ReassignAll].[@temp_table_return].[ReferenceNo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[usp_Task_ReassignAll].[@temp_table_return].[GuidId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DynamicObjects">
@@ -11694,10 +14623,25 @@ END]]></Value>
 									<Relationship Name="TypeSpecifier">
 										<Entry>
 											<Element Type="SqlTypeSpecifier">
-												<Property Name="Length" Value="50" />
+												<Property Name="IsMax" Value="True" />
 												<Relationship Name="Type">
 													<Entry>
 														<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlSimpleColumn" Name="[dbo].[usp_Task_ReassignAll].[@temp_table_return].[GuidId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="SqlTypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[uniqueidentifier]" />
 													</Entry>
 												</Relationship>
 											</Element>
@@ -11756,7 +14700,7 @@ END]]></Value>
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
+									<Property Name="Length" Value="100" />
 									<Relationship Name="Type">
 										<Entry>
 											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
@@ -11863,6 +14807,82 @@ END]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_ReassignAll].[@PrevAssigneeName]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_ReassignAll].[@PrevAssigneeEmail]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_ReassignAll].[@PrevAssigneeUPN]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_ReassignAll].[@PrevAssigneeADID]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
 					<Element Type="SqlSubroutineParameter" Name="[dbo].[usp_Task_ReassignAll].[@ProgressRemarks]">
 						<Property Name="DefaultExpressionScript">
 							<Value><![CDATA[NULL]]></Value>
@@ -11888,10 +14908,10 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="3191" />
+				<Property Name="Length" Value="3476" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_ReassignAll]&#xD;&#xA;(&#xD;&#xA;    @UpdatedByName NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @UpdatedByADID NVARCHAR(50) = NULL,&#xD;&#xA;    @AssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @AssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @ProgressRemarks NVARCHAR(500) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_ReassignAll]&#xD;&#xA;(&#xD;&#xA;    @UpdatedByName NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByUPN NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByADID NVARCHAR(50) = NULL,&#xD;&#xA;    @AssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @AssigneeUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @AssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @PrevAssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    @PrevAssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @PrevAssigneeUPN NVARCHAR(100) = NULL,&#xD;&#xA;    @PrevAssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @ProgressRemarks NVARCHAR(500) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[usp_Task_Update]">
@@ -12337,7 +15357,8 @@ END
         1					       AS [Status],
         @TaskId				       AS Id,
         @IdList				       AS ReferenceNo,
-        @TaskUnqId                 AS GuidId
+        @TaskUnqId                 AS GuidId,
+        @TransactionId             AS TransactionId
 
 END]]></Value>
 			</Property>
@@ -13590,7 +16611,7 @@ END]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="15826" />
+				<Property Name="Length" Value="15880" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[usp_Task_Update]&#xD;&#xA;(&#xD;&#xA;    @TaskId BIGINT = NULL,&#xD;&#xA;    @StatusId INT = NULL,&#xD;&#xA;    @PriorityId INT = NULL,&#xD;&#xA;    @RoleId INT = NULL,&#xD;&#xA;    @ParentTaskId BIGINT = NULL,&#xD;&#xA;    @UpdatedByName NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @UpdatedByUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @UpdatedByADID NVARCHAR(50) = NULL,&#xD;&#xA;    @TaskSubject NVARCHAR(200) = NULL,&#xD;&#xA;    @TaskDesc NVARCHAR(500) = NULL,&#xD;&#xA;    @CurrentTargetDate DATETIME = NULL,&#xD;&#xA;    @AssignerName NVARCHAR(100) = NULL,&#xD;&#xA;    @AssignerEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @AssignerUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @AssignerADID NVARCHAR(50) = NULL,&#xD;&#xA;    --@AssigneeName NVARCHAR(100) = NULL,&#xD;&#xA;    --@AssigneeEmail NVARCHAR(100) = NULL,&#xD;&#xA;    --@AssigneeUPN NVARCHAR(50) = NULL,&#xD;&#xA;    --@AssigneeADID NVARCHAR(50) = NULL,&#xD;&#xA;    @CoordinatorName NVARCHAR(100) = NULL,&#xD;&#xA;    @CoordinatorEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CoordinatorUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CoordinatorADID NVARCHAR(50) = NULL,&#xD;&#xA;    @CollaboratorName NVARCHAR(100) = NULL,&#xD;&#xA;    @CollaboratorEmail NVARCHAR(100) = NULL,&#xD;&#xA;    @CollaboratorUPN NVARCHAR(50) = NULL,&#xD;&#xA;    @CollaboratorADID NVARCHAR(50) = NULL,&#xD;&#xA;    @ProgressRemarks NVARCHAR(500) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />

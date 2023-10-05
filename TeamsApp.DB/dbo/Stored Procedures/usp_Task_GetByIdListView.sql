@@ -130,6 +130,35 @@ BEGIN
         WHERE P.TaskId = @Id
         ORDER BY P.ProgressId DESC
 
+
+        SELECT
+            [FileId],
+            [TaskId],
+            [RoleId],
+            [FileName],
+            [UnqFileName],
+            [FileDesc],
+            [FileUrl],
+            [FileSize],
+            [ContentType],
+            [IsActive],
+            [CreatedOnIST],
+            [CreatedOnUTC],
+            [CreatedByName],
+            [CreatedByEmail],
+            [CreatedByUPN],
+            [CreatedByADID],
+            [UpdatedOnIST],
+            [UpdatedOnUTC],
+            [UpdatedByName],
+            [UpdatedByEmail],
+            [UpdatedByUPN],
+            [UpdatedByADID],
+            [TransactionId]
+    FROM [dbo].[Trn_TaskFileDetails] WITH(NOLOCK) 
+    WHERE TaskId = @Id AND IsActive = 1 
+    ORDER BY [FileId] DESC
+
 END
 
 END

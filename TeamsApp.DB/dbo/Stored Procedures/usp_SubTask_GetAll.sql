@@ -25,14 +25,14 @@ DECLARE @temp_table TABLE
 
     ;WITH UserTasks AS (
         SELECT TaskId, ParentTaskId
-        FROM [dbo].[Trn_TaskDetails]
+        FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
         WHERE [AssignerEmail] = @LoggedInUserEmail
             OR [AssigneeEmail] = @LoggedInUserEmail
             OR [CoordinatorEmail] = @LoggedInUserEmail
             OR [CollaboratorEmail] = @LoggedInUserEmail
         UNION ALL
         SELECT T.TaskId, T.ParentTaskId
-        FROM [dbo].[Trn_TaskDetails] T
+        FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
         INNER JOIN UserTasks UT ON T.ParentTaskId = UT.TaskId
     )
 

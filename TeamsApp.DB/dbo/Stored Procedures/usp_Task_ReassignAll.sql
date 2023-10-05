@@ -2,12 +2,16 @@
 (
     @UpdatedByName NVARCHAR(100) = NULL,
     @UpdatedByEmail NVARCHAR(100) = NULL,
-    @UpdatedByUPN NVARCHAR(50) = NULL,
+    @UpdatedByUPN NVARCHAR(100) = NULL,
     @UpdatedByADID NVARCHAR(50) = NULL,
     @AssigneeName NVARCHAR(100) = NULL,
     @AssigneeEmail NVARCHAR(100) = NULL,
     @AssigneeUPN NVARCHAR(50) = NULL,
     @AssigneeADID NVARCHAR(50) = NULL,
+    @PrevAssigneeName NVARCHAR(100) = NULL,
+    @PrevAssigneeEmail NVARCHAR(100) = NULL,
+    @PrevAssigneeUPN NVARCHAR(100) = NULL,
+    @PrevAssigneeADID NVARCHAR(50) = NULL,
     @ProgressRemarks NVARCHAR(500) = NULL
 )
 AS
@@ -42,7 +46,8 @@ DECLARE @temp_table_return TABLE
   ErrorMessage NVARCHAR(50) NULL,
   [Status] INT DEFAULT 0,
   Id INT DEFAULT 0,
-  ReferenceNo NVARCHAR(50) NULL
+  ReferenceNo NVARCHAR(MAX) NULL,
+  GuidId UNIQUEIDENTIFIER NULL
 )
 
 
@@ -61,6 +66,7 @@ DECLARE @temp_table_return TABLE
     )
     AND T.IsActive = 1
     AND T.StatusId != 3
+    AND T.AssigneeEmail = @PrevAssigneeEmail
 
 	--SELECT * FROM @temp_table_task
 
@@ -116,7 +122,8 @@ DECLARE @temp_table_return TABLE
                 ErrorMessage,
                 [Status],
                 Id,
-                ReferenceNo
+                ReferenceNo,
+                GuidId
             FROM @temp_table_return
             
         END

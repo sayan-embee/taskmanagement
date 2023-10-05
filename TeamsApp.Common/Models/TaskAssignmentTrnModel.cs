@@ -44,6 +44,8 @@ namespace TeamsApp.Common.Models
         [JsonProperty("progressId")]
         public long? ProgressId { get; set; }
 
+        // new
+
         [JsonProperty("assigneeName")]
         public string AssigneeName { get; set; }
 
@@ -55,6 +57,21 @@ namespace TeamsApp.Common.Models
 
         [JsonProperty("assigneeADID")]
         public string AssigneeADID { get; set; }
+
+        // prev
+
+        [JsonProperty("prevAssigneeName")]
+        public string PrevAssigneeName { get; set; }
+
+        [JsonProperty("prevAssigneeEmail")]
+        public string PrevAssigneeEmail { get; set; }
+
+        [JsonProperty("prevAssigneeUPN")]
+        public string PrevAssigneeUPN { get; set; }
+
+        [JsonProperty("prevAssigneeADID")]
+        public string PrevAssigneeADID { get; set; }
+
 
         [JsonProperty("assignmentType")]
         public string AssignmentType { get; set; }

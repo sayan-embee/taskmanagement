@@ -1,0 +1,222 @@
+
+
+Log Written Date: 04-10-2023 10:55:05
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 05:25:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 10:55:07
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 05:25:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 10:55:07
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 11:53:09
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 06:23:09
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 11:53:11
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 06:23:11
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 11:53:11
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 11:57:23
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 06:27:23
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 11:57:24
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 06:27:24
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 11:57:24
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:00:31
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 06:30:31
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:00:33
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 06:30:33
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:00:33
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:01:04
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 06:31:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:01:05
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 06:31:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:01:05
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:15:13
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 06:45:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:15:14
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 06:45:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 12:15:14
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 16:36:08
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 11:06:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 16:36:09
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 11:06:09
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 16:36:09
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 16:38:45
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 11:08:45
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 16:38:46
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 11:08:46
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 16:38:46
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 17:31:04
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 04-10-2023 12:01:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 19:05:30
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 04-10-2023 13:35:30
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 19:08:58
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 04-10-2023 13:38:58
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 19:31:47
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 04-10-2023 14:01:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 19:51:24
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 04-10-2023 14:21:24
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 19:51:27
+
+Message : TaskAPIController --> ReassignAllTask() execution ended: 04-10-2023 14:21:27
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 19:51:27
+
+Message : TaskAPIController --> ReassignAllTask() execution time: 00:00:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 20:03:04
+
+Message : TaskAPIController --> ReassignTask() execution started: 04-10-2023 14:33:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 20:03:05
+
+Message : TaskAPIController --> ReassignTask() execution ended: 04-10-2023 14:33:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 20:03:05
+
+Message : TaskAPIController --> ReassignTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 20:04:59
+
+Message : TaskAPIController --> ReassignAllTask() execution started: 04-10-2023 14:34:59
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 20:05:05
+
+Message : TaskAPIController --> ReassignAllTask() execution ended: 04-10-2023 14:35:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 04-10-2023 20:05:05
+
+Message : TaskAPIController --> ReassignAllTask() execution time: 00:00:06
+-------------------------------------------------------------------------

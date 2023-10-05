@@ -103,6 +103,10 @@
     <Build Include="dbo\Stored Procedures\usp_Emails_GetByTaskIdList.sql" />
     <Build Include="dbo\Types\udt_TaskEmailResponse.sql" />
     <Build Include="dbo\Stored Procedures\usp_Task_Insert_EmailResponse.sql" />
+    <Build Include="dbo\Tables\Trn_TaskFileDetails.sql" />
+    <Build Include="dbo\Types\udt_TaskFileResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Task_Insert_FileResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SubTask_GetByTaskId.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\PostDeployment\Script.PostDeployment1.sql" />
