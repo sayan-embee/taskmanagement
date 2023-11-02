@@ -36,6 +36,47 @@ BEGIN
 DECLARE @TaskUnqId AS UNIQUEIDENTIFIER = NEWID ();
 DECLARE @TransactionId AS UNIQUEIDENTIFIER = NEWID ();
 
+--IF EXISTS (
+--    SELECT 1
+--    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+--    WHERE TaskId = @TaskId
+--    AND (AssigneeEmail = @AssignerEmail OR CoordinatorEmail = @AssignerEmail OR CollaboratorEmail = @AssignerEmail)
+
+--    UNION
+
+--    SELECT 1
+--    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+--    WHERE TaskId = @TaskId
+--    AND (AssigneeEmail = @CoordinatorEmail OR AssignerEmail = @CoordinatorEmail OR CollaboratorEmail = @CoordinatorEmail)
+
+--    UNION
+
+--    SELECT 1
+--    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+--    WHERE TaskId = @TaskId
+--    AND (AssigneeEmail = @CollaboratorEmail OR AssignerEmail = @CollaboratorEmail OR CoordinatorEmail = @CollaboratorEmail)
+--)
+--BEGIN
+--    SELECT 
+--        'Update task failed, Duplicate persona detected'    AS [Message],
+--        ''					                                AS ErrorMessage,
+--        0						                            AS [Status],
+--        0				                                    AS Id,
+--        ''						                            AS ReferenceNo
+--    RETURN
+--END
+
+IF (@AssignerEmail = @CoordinatorEmail OR @AssignerEmail = @CollaboratorEmail OR @CoordinatorEmail = @CollaboratorEmail)
+BEGIN
+    SELECT 
+        'Create task failed, Assigner / Coordinator / Collaborator cannot be same'      AS [Message],
+        ''					                                                            AS ErrorMessage,
+        0						                                                        AS [Status],
+        0				                                                                AS Id,
+        ''						                                                        AS ReferenceNo
+    RETURN
+END
+
 BEGIN TRANSACTION
 
 IF NOT EXISTS (SELECT * FROM @udt_TaskAssignee)

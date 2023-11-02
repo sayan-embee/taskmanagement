@@ -21,6 +21,8 @@ using System.Collections.Generic;
 using TeamsApp.Bot.Services.AzureBlob;
 using TeamsApp.Bot.Helpers.FileHelper;
 using Microsoft.Graph;
+using Azure;
+using System.Text;
 
 namespace TeamsApp.Bot.Controllers.APIController
 {
@@ -314,8 +316,8 @@ namespace TeamsApp.Bot.Controllers.APIController
                     this._logger.LogInformation($"TaskAPIController --> CreateTask() execution time: {formattedTimeDifference}");
 
                     // INITIATE OTHER ACTIVITIES
-                    //_ = Task.Factory.StartNew(() => this.ProcessOtherActivities_CreateTask(response));
-                                      
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_CreateTask(response));
+
                 }
                 return this.Ok(response);                
             }
@@ -465,9 +467,16 @@ namespace TeamsApp.Bot.Controllers.APIController
                 var response = await this._taskData.UpdateTask(dataModel);
                 if (response != null)
                 {
+                    // UPLOAD FILES
+                    if (formdata.Files != null && formdata.Files.Count > 0)
+                    {
+                        //_ = Task.Run(() => this._fileHelper.ProcesssFile_UpdateTask_NonAsync(dataModel, formdata.Files, response.ReferenceNo, response.TransactionId)); // NOT WORKING
+                        await this._fileHelper.ProcesssFile_UpdateTask_NonAsync(dataModel, formdata.Files, response.ReferenceNo, response.TransactionId);
+                    }
+
                     DateTime endTime = DateTime.UtcNow;
-                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> UpdateTask() execution ended: {DateTime.UtcNow}");
-                    this._logger.LogInformation($"TaskAPIController --> UpdateTask() execution ended: {DateTime.UtcNow}");
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateTask() execution ended: {DateTime.UtcNow}");
+                    this._logger.LogInformation($"TaskAPIController --> CreateTask() execution ended: {DateTime.UtcNow}");
 
                     TimeSpan timeDifference = endTime - startTime;
                     string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
@@ -710,6 +719,208 @@ namespace TeamsApp.Bot.Controllers.APIController
                     await Task.WhenAll(reassignAllTaskList);
                 }
             }
+        }
+
+        #endregion
+
+        #region FILE
+
+        //[HttpPost]
+        //[Route("files/upload")]
+        //public async Task<IActionResult> UploadFiles(IFormCollection formdata)
+        //{
+        //    try
+        //    {
+        //        DateTime startTime = DateTime.UtcNow;
+        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution started: {DateTime.UtcNow}");
+        //        this._logger.LogInformation($"TaskAPIController --> AddComments() execution started: {DateTime.UtcNow}");
+
+        //        DateTime endTime = DateTime.UtcNow;
+        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution ended: {DateTime.UtcNow}");
+        //        this._logger.LogInformation($"TaskAPIController --> UploadFiles() execution ended: {DateTime.UtcNow}");
+
+        //        TimeSpan timeDifference = endTime - startTime;
+        //        string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+        //        //response.ExecutionTime = formattedTimeDifference;
+
+        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution time: {formattedTimeDifference}");
+        //        this._logger.LogInformation($"TaskAPIController --> UploadFiles() execution time: {formattedTimeDifference}");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        this.RecordEvent("TaskAPIController --> UploadFiles() - Failed to execute.", RequestType.Failed);
+        //        this._logger.LogError(ex, $"TaskAPIController --> UploadFiles() execution failed");
+        //        ExceptionLogging.SendErrorToText(ex);
+        //        return this.Ok();
+        //    }            
+        //}
+
+
+        //[HttpPost]
+        //[Route("files/remove")]
+        //public async Task<IActionResult> RemoveFiles(IFormCollection formdata)
+        //{
+        //    try
+        //    {
+        //        DateTime startTime = DateTime.UtcNow;
+        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution started: {DateTime.UtcNow}");
+        //        this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution started: {DateTime.UtcNow}");
+
+        //        DateTime endTime = DateTime.UtcNow;
+        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution ended: {DateTime.UtcNow}");
+        //        this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution ended: {DateTime.UtcNow}");
+
+        //        TimeSpan timeDifference = endTime - startTime;
+        //        string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+        //        //response.ExecutionTime = formattedTimeDifference;
+
+        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution time: {formattedTimeDifference}");
+        //        this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution time: {formattedTimeDifference}");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        this.RecordEvent("TaskAPIController --> RemoveFiles() - Failed to execute.", RequestType.Failed);
+        //        this._logger.LogError(ex, $"TaskAPIController --> RemoveFiles() execution failed");
+        //        ExceptionLogging.SendErrorToText(ex);
+        //        return this.Ok();
+        //    }            
+        //}
+
+        #endregion
+
+        #region NOTIFICATION
+
+        [HttpGet]
+        [Route("notification/priority")]
+        public async Task<IActionResult> SendPriorityNotification()
+        {
+            DateTime? fromDate = null;
+            DateTime? toDate = null;
+            var returnModel = new SchedularLogModel();
+            returnModel.RunId = 0;
+
+            try
+            {
+                var result = await this._taskData.GetSchedularLog(fromDate, toDate, "PRIORITY-NOTIFICATION", "CHECK");
+                if (result != null && result.Any() && result.FirstOrDefault().IsSuccess == true)
+                {
+                    returnModel.IsSuccess = false;
+                    returnModel.ExecutionTimeInSecs = 0;
+                    returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
+                    returnModel.Message = "SCHEDULAR APP HAS ALREADY RUN TODAY";
+
+                    return this.Ok(returnModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> InsertSchedularLog() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> InsertSchedularLog() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+            }
+
+            try
+            {
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> SendPriorityNotification() execution started: {DateTime.UtcNow}");
+                this._logger.LogInformation($"TaskAPIController --> SendPriorityNotification() execution started: {DateTime.UtcNow}");
+                
+
+                var resultList = await _taskData.GetTaskForPriorityNotification(fromDate, toDate);
+                if (resultList != null && resultList.Any())
+                {
+                    var result = await this._notificationHelper.ProcesssPriorityNotification(resultList);
+
+                    DateTime local_endTime = DateTime.UtcNow;
+                    TimeSpan local_timeDifference = local_endTime - startTime;
+                    double seconds = local_timeDifference.TotalSeconds;
+
+                    if (result)
+                    {
+                        string taskIdList = string.Empty;
+                        StringBuilder taskIds = new StringBuilder();
+
+                        foreach (var r in resultList)
+                        {
+                            taskIds.Append(r.TaskId);
+                            taskIds.Append(",");
+                        }
+
+                        if (taskIds.Length > 0)
+                        {
+                            taskIds.Length--; // Remove the last character, which is the trailing comma
+                        }
+
+                        taskIdList = taskIds.ToString();
+
+                        returnModel.IsSuccess = true;
+                        returnModel.ExecutionTimeInSecs = seconds;
+                        returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
+                        returnModel.ReferenceInfo = taskIdList;
+                        returnModel.Message = "SUCCESS";
+                    }
+                    else
+                    {
+                        returnModel.IsSuccess = true;
+                        returnModel.ExecutionTimeInSecs = seconds;
+                        returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
+                        returnModel.Message = "INTERRUPTED";
+                    }
+                }
+                else
+                {
+                    returnModel.IsSuccess = true;
+                    returnModel.ExecutionTimeInSecs = 0;
+                    returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
+                    returnModel.Message = "NOT-FOUND";
+                }
+
+
+                DateTime endTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> SendPriorityNotification() execution ended: {DateTime.UtcNow}");
+                this._logger.LogInformation($"TaskAPIController --> SendPriorityNotification() execution ended: {DateTime.UtcNow}");
+
+                TimeSpan timeDifference = endTime - startTime;
+                string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> SendPriorityNotification() execution time: {formattedTimeDifference}");
+                this._logger.LogInformation($"TaskAPIController --> SendPriorityNotification() execution time: {formattedTimeDifference}");
+
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> SendPriorityNotification() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> SendPriorityNotification() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+
+                returnModel.IsSuccess = false;
+                returnModel.ExecutionTimeInSecs = 0;
+                returnModel.TriggerCode = "PRIORITY-NOTIFICATION";                
+                returnModel.ReferenceInfo = "ERROR: "+ex.ToString();
+                returnModel.Message = "FAILED";
+            }
+
+            try
+            {
+                var result = await this._taskData.InsertSchedularLog(returnModel);
+                if (result != null && result.Status == 1)
+                {
+                    if (!string.IsNullOrEmpty(result.Id))
+                    {
+                        returnModel.RunId = int.Parse(result.Id);
+                    }                   
+                }
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> InsertSchedularLog() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> InsertSchedularLog() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+            }
+
+            return this.Ok(returnModel);
         }
 
         #endregion

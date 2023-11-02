@@ -22,5 +22,8 @@ namespace TeamsApp.DataAccess.Data
         Task<ReturnMessageModel> InsertTaskNotificationResponse_Multiple(List<NotificationResponseTrnModel> data, string Status);
         Task<ReturnMessageModel> InsertEmailResponse_Multiple(List<TaskEmailNotificationModel> data);
         Task<ReturnMessageModel> InsertFileResponse_Multiple(List<TaskFileDetailsTrnModel> data);
+        Task<List<TaskDetailsCardModel>> GetTaskForPriorityNotification(DateTime? FromDate, DateTime? ToDate);
+        Task<ReturnMessageModel> InsertSchedularLog(SchedularLogModel data);
+        Task<List<SchedularLogModel>> GetSchedularLog(DateTime? FromDate, DateTime? ToDate, string TriggerCode, string Type);
     }
 }

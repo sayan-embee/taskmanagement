@@ -45,7 +45,8 @@ BEGIN
         [CollaboratorUPN],
         [CollaboratorADID],
         PR.[UpdatedOnIST],
-        PR.[UpdatedByName]
+        PR.[UpdatedByName],
+        CASE WHEN CONVERT(DATE,DATEADD(MINUTE, 330, GETUTCDATE()),103) > (CONVERT(DATE, T.CurrentTargetDate, 103)) AND T.StatusId != 3 THEN 1 ELSE 0 END AS 'IsOverdue'
     FROM [dbo].[Trn_TaskDetails] T WITH(NOLOCK)
     INNER JOIN [dbo].[Mst_TaskStatus] S ON S.StatusId = T.StatusId
     INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId

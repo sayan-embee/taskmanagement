@@ -34,5 +34,12 @@
     [CollaboratorEmail] NVARCHAR(100) NULL,
     [CollaboratorUPN] NVARCHAR(50) NULL,
     [CollaboratorADID] NVARCHAR(100) NULL,
-    [TransactionId] UNIQUEIDENTIFIER NULL
+    [TransactionId] UNIQUEIDENTIFIER NULL,
+    [OverdueDays] INT NULL,
+    [OverdueDaysUpdatedOn] DATETIME NULL,
+    [NoOfExtensionRequested] INT NULL,
+	[NoOfTargetDateMissed] INT NULL,
+    [LastMissedTargetDate] DATETIME NULL,
+    [MissedTargetDateUpdatedOn] DATETIME NULL,
+    [AddtionalInfoUpdatedOn] DATETIME NULL
 )

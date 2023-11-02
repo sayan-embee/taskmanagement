@@ -9,5 +9,6 @@ namespace TeamsApp.Bot.Helpers.FileHelper
     {
         Task<bool> ProcesssFile_CreateTask(TaskDetailsTrnModel data, IFormFileCollection files, string TaskIdList, Guid TransactionId);
         Task<bool> ProcesssFile_CreateTask_NonAsync(TaskDetailsTrnModel data, IFormFileCollection files, string TaskIdList, Guid TransactionId);
+        Task<bool> ProcesssFile_UpdateTask_NonAsync(TaskHistoryTrnModel data, IFormFileCollection files, string TaskIdList, Guid TransactionId);
     }
 }

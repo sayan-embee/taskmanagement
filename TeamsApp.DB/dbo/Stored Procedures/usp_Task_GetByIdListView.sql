@@ -60,7 +60,8 @@ BEGIN
         [CollaboratorName],
         [CollaboratorEmail],
         [CollaboratorUPN],
-        [CollaboratorADID]
+        [CollaboratorADID],
+        CASE WHEN CONVERT(DATE,DATEADD(MINUTE, 330, GETUTCDATE()),103) > (CONVERT(DATE, CurrentTargetDate, 103)) AND StatusId != 3 THEN 1 ELSE 0 END AS 'IsOverdue'
     FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @Id
 
 

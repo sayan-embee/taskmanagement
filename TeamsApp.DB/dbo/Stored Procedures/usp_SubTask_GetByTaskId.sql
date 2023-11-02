@@ -51,12 +51,12 @@ DECLARE @temp_table TABLE
                 CASE
                     WHEN T.[StatusId] <> 3 THEN
                     CASE
-                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) > GETUTCDATE() THEN
-                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' days remaining'
-                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) = GETUTCDATE() THEN
-                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' due today'
+                        WHEN CONVERT(DATE, (DATEADD(MINUTE ,300, T.[CurrentTargetDate])), 103) > CONVERT(DATE, GETUTCDATE(), 103) THEN
+                        CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE ,300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' day(s) remaining'
+                        WHEN CONVERT(DATE, (DATEADD(MINUTE ,300, T.[CurrentTargetDate])), 103) = CONVERT(DATE, GETUTCDATE(), 103) THEN
+                        CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE ,300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' day(s) remaining / due today'
                         ELSE
-                            CAST(DATEDIFF(DAY, DATEADD(MINUTE, 300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' days overdue'
+                        CAST(DATEDIFF(DAY, DATEADD(MINUTE ,300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' day(s) overdue'
                     END
                     ELSE '-'
                 END AS 'ElapsedDays'
@@ -95,12 +95,12 @@ DECLARE @temp_table TABLE
                 CASE
                     WHEN T.[StatusId] <> 3 THEN
                     CASE
-                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) > GETUTCDATE() THEN
-                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' days remaining'
-                        WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) = GETUTCDATE() THEN
-                            CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' due today'
+                        WHEN CONVERT(DATE, (DATEADD(MINUTE ,300, T.[CurrentTargetDate])), 103) > CONVERT(DATE, GETUTCDATE(), 103) THEN
+                        CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE ,300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' day(s) remaining'
+                        WHEN CONVERT(DATE, (DATEADD(MINUTE ,300, T.[CurrentTargetDate])), 103) = CONVERT(DATE, GETUTCDATE(), 103) THEN
+                        CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE ,300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' day(s) remaining / due today'
                         ELSE
-                            CAST(DATEDIFF(DAY, DATEADD(MINUTE, 300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' days overdue'
+                        CAST(DATEDIFF(DAY, DATEADD(MINUTE ,300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' day(s) overdue'
                     END
                     ELSE '-'
                 END AS 'ElapsedDays'

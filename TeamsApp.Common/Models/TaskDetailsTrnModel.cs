@@ -114,6 +114,9 @@ namespace TeamsApp.Common.Models
 
         //Additional Details
 
+        [JsonProperty("isOverdue")]
+        public bool IsOverdue { get; set; }
+
         [JsonProperty("executionTime")]
         public string ExecutionTime { get; set; }
     }
@@ -249,8 +252,13 @@ namespace TeamsApp.Common.Models
         [JsonProperty("assigneeEmail")]
         public string AssigneeEmail { get; set; }
 
+
+
         [JsonProperty("elapsedDays")]
         public string ElapsedDays { get; set; }
+
+        [JsonProperty("isOverdue")]
+        public bool IsOverdue { get; set; }
     }
 
 
@@ -438,6 +446,16 @@ namespace TeamsApp.Common.Models
 
         [JsonProperty("updatedByADID")]
         public string UpdatedByADID { get; set; }
+
+
+        [JsonProperty("customMessage")]
+        public string CustomMessage { get; set; }
+
+        [JsonProperty("elapsedDays")]
+        public string ElapsedDays { get; set; }
+
+        [JsonProperty("isOverdue")]
+        public bool IsOverdue { get; set; }
     }
 
 
@@ -478,5 +496,9 @@ namespace TeamsApp.Common.Models
 
         [JsonProperty("createdOnUTC")]
         public DateTime? CreatedOnUTC { get; set; }
+
+
+        [JsonProperty("isOverdue")]
+        public bool IsOverdue { get; set; }
     }
 }

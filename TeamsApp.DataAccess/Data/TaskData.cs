@@ -142,7 +142,7 @@ namespace TeamsApp.DataAccess.Data
                 this._logger.LogError(ex, $"TaskData --> GetTaskByUnqId() --> SQL(usp_Task_GetByUnqId) execution failed");
                 return null;
             }
-        }
+        }        
 
 
         public async Task<List<TaskEmailNotificationModel>> GetEmailsByTaskIdList(string TaskIdList)
@@ -588,6 +588,77 @@ namespace TeamsApp.DataAccess.Data
                 }
             }
             return output;
+        }
+
+
+        public async Task<List<TaskDetailsCardModel>> GetTaskForPriorityNotification(DateTime? FromDate, DateTime? ToDate)
+        {
+            var returnObject = new List<TaskDetailsCardModel>();
+            try
+            {
+                var results = await _db.LoadData<TaskDetailsCardModel, dynamic>("dbo.usp_PriorityNotification_Process",
+                new
+                {
+                    FromDate = FromDate,
+                    ToDate = ToDate
+                });
+
+                if (results != null && results.Any()) { returnObject = results.ToList(); }
+
+                return returnObject;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetTaskForPriorityNotification() --> SQL(usp_PriorityNotification_Process) execution failed");
+                return null;
+            }
+        }
+
+        public async Task<ReturnMessageModel> InsertSchedularLog(SchedularLogModel data)
+        {
+            try
+            {
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Insert_SchedularLog",
+                new
+                {
+                    data.IsSuccess,
+                    data.TriggerCode,
+                    data.ExecutionTimeInSecs,
+                    data.ReferenceInfo,
+                    data.Message
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> InsertSchedularLog() --> SQL(usp_Insert_SchedularLog) execution failed");
+                return null;
+            }
+        }
+
+        public async Task<List<SchedularLogModel>> GetSchedularLog(DateTime? FromDate, DateTime? ToDate, string TriggerCode, string Type)
+        {
+            var returnObject = new List<SchedularLogModel>();
+            try
+            {
+                var results = await _db.LoadData<SchedularLogModel, dynamic>("dbo.usp_Get_SchedularLog",
+                new
+                {
+                    FromDate,
+                    ToDate,
+                    TriggerCode,
+                    Type
+                });
+
+                if (results != null && results.Any()) { returnObject = results.ToList(); }
+
+                return returnObject;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetSchedularLog() --> SQL(usp_Get_SchedularLog) execution failed");
+                return null;
+            }
         }
 
         #endregion

@@ -1,0 +1,72 @@
+
+
+Log Written Date: 02-11-2023 17:49:08
+
+Message : TaskAPIController --> SendPriorityNotification() execution started: 02-11-2023 12:19:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 17:50:02
+
+Message : TaskAPIController --> SendPriorityNotification() execution ended: 02-11-2023 12:20:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 17:50:05
+
+Message : TaskAPIController --> SendPriorityNotification() execution time: 00:00:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:02:47
+
+Message : TaskAPIController --> SendPriorityNotification() execution started: 02-11-2023 12:32:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:03:08
+
+Message : TaskAPIController --> SendPriorityNotification() execution ended: 02-11-2023 12:33:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:03:08
+
+Message : TaskAPIController --> SendPriorityNotification() execution time: 00:00:21
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:42:07
+
+Message : TaskAPIController --> SendPriorityNotification() execution started: 02-11-2023 13:12:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:42:28
+
+Message : TaskAPIController --> SendPriorityNotification() execution ended: 02-11-2023 13:12:28
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:42:28
+
+Message : TaskAPIController --> SendPriorityNotification() execution time: 00:00:20
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:43:47
+
+Message : TaskAPIController --> SendPriorityNotification() execution started: 02-11-2023 13:13:47
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:44:07
+
+Message : TaskAPIController --> SendPriorityNotification() execution ended: 02-11-2023 13:14:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 02-11-2023 18:44:07
+
+Message : TaskAPIController --> SendPriorityNotification() execution time: 00:00:20
+-------------------------------------------------------------------------

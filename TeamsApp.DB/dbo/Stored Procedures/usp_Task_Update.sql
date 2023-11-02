@@ -42,6 +42,63 @@ DECLARE @TransactionId AS UNIQUEIDENTIFIER = NEWID ();
 IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId)
 BEGIN
 
+    --IF EXISTS (
+    --    SELECT 1
+    --    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+    --    WHERE TaskId = @TaskId
+    --    AND (AssigneeEmail = @AssignerEmail OR CoordinatorEmail = @AssignerEmail OR CollaboratorEmail = @AssignerEmail)
+
+    --    UNION
+
+    --    SELECT 1
+    --    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+    --    WHERE TaskId = @TaskId
+    --    AND (AssigneeEmail = @CoordinatorEmail OR AssignerEmail = @CoordinatorEmail OR CollaboratorEmail = @CoordinatorEmail)
+
+    --    UNION
+
+    --    SELECT 1
+    --    FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+    --    WHERE TaskId = @TaskId
+    --    AND (AssigneeEmail = @CollaboratorEmail OR AssignerEmail = @CollaboratorEmail OR CoordinatorEmail = @CollaboratorEmail)
+    --)
+    --BEGIN
+    --    SELECT 
+    --        'Update task failed, Duplicate persona detected'    AS [Message],
+    --        ''					                                AS ErrorMessage,
+    --        0						                            AS [Status],
+    --        0				                                    AS Id,
+    --        ''						                            AS ReferenceNo
+    --    RETURN
+    --END
+
+    IF (@AssignerEmail = @CoordinatorEmail OR @AssignerEmail = @CollaboratorEmail OR @CoordinatorEmail = @CollaboratorEmail) 
+    BEGIN
+        SELECT 
+            'Update task failed, Assigner / Coordinator / Collaborator cannot be same'      AS [Message],
+            ''					                                                            AS ErrorMessage,
+            0						                                                        AS [Status],
+            0				                                                                AS Id,
+            ''						                                                        AS ReferenceNo
+        RETURN
+    END
+
+    IF EXISTS (
+        SELECT 1
+        FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+        WHERE TaskId = @TaskId
+        AND (AssigneeEmail = @AssignerEmail OR AssigneeEmail = @CollaboratorEmail OR AssigneeEmail = @CoordinatorEmail)
+    ) 
+    BEGIN
+        SELECT 
+            'Update task failed, Assignee cannot be part of Assigner / Coordinator / Collaborator'      AS [Message],
+            ''					                                                                        AS ErrorMessage,
+            0						                                                                    AS [Status],
+            0				                                                                            AS Id,
+            ''						                                                                    AS ReferenceNo
+        RETURN
+    END
+
     BEGIN TRANSACTION
 
     SELECT @TaskUnqId = TaskUnqId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId
@@ -178,6 +235,7 @@ BEGIN
             [ParentTaskId] = ISNULL(@ParentTaskId,ParentTaskId),
             [TaskSubject] = ISNULL(@TaskSubject,TaskSubject),
             [TaskDesc] = ISNULL(@TaskDesc,TaskDesc),
+            [InitialTargetDate] = CASE WHEN CONVERT(DATE, CurrentTargetDate, 103) != CONVERT(DATE, @CurrentTargetDate, 103) THEN CurrentTargetDate ELSE InitialTargetDate END,
             [CurrentTargetDate] = ISNULL(@CurrentTargetDate,CurrentTargetDate),
             [AssignerName] = ISNULL(@AssignerName,AssignerName),
             [AssignerEmail] = ISNULL(@AssignerEmail,AssignerEmail),

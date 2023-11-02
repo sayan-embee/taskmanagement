@@ -35,6 +35,22 @@ END
 IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId)
 BEGIN
 
+    IF EXISTS (
+        SELECT 1
+        FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK)
+        WHERE TaskId = @TaskId
+        AND (AssignerEmail = @AssigneeEmail OR CoordinatorEmail = @AssigneeEmail OR CollaboratorEmail = @AssigneeEmail)
+    ) 
+    BEGIN
+        SELECT 
+            'Reassign task failed, Assignee cannot be part of Assigner / Coordinator / Collaborator'    AS [Message],
+            ''					                                                                        AS ErrorMessage,
+            0						                                                                    AS [Status],
+            0				                                                                            AS Id,
+            ''						                                                                    AS ReferenceNo
+        RETURN
+    END
+
     BEGIN TRANSACTION
 
     SELECT @TaskUnqId = TaskUnqId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId

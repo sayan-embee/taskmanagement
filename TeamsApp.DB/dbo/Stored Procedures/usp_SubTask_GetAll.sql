@@ -62,15 +62,16 @@ DECLARE @temp_table TABLE
         CASE
             WHEN T.[StatusId] <> 3 THEN
             CASE
-                WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) > GETUTCDATE() THEN
-                    CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' days remaining'
-                WHEN DATEADD(MINUTE, 300, T.[CurrentTargetDate]) = GETUTCDATE() THEN
-                    CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE, 300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' due today'
+                WHEN CONVERT(DATE, (DATEADD(MINUTE ,300, T.[CurrentTargetDate])), 103) > CONVERT(DATE, GETUTCDATE(), 103) THEN
+                CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE ,300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' day(s) remaining'
+                WHEN CONVERT(DATE, (DATEADD(MINUTE ,300, T.[CurrentTargetDate])), 103) = CONVERT(DATE, GETUTCDATE(), 103) THEN
+                CAST(DATEDIFF(DAY, GETUTCDATE(), DATEADD(MINUTE ,300, T.[CurrentTargetDate])) AS NVARCHAR(50)) + ' day(s) remaining / due today'
                 ELSE
-                    CAST(DATEDIFF(DAY, DATEADD(MINUTE, 300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' days overdue'
+                CAST(DATEDIFF(DAY, DATEADD(MINUTE ,300, T.[CurrentTargetDate]), GETUTCDATE()) AS NVARCHAR(50)) + ' day(s) overdue'
             END
             ELSE '-'
-        END AS 'ElapsedDays'
+        END AS 'ElapsedDays',
+        CASE WHEN CONVERT(DATE,DATEADD(MINUTE, 330, GETUTCDATE()),103) > (CONVERT(DATE, T.CurrentTargetDate, 103)) AND T.StatusId != 3 THEN 1 ELSE 0 END AS 'IsOverdue'
     FROM [dbo].[Trn_TaskDetails] T
     INNER JOIN [dbo].[Mst_TaskStatus] S ON S.StatusId = T.StatusId
     INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId

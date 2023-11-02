@@ -201,5 +201,79 @@ namespace TeamsApp.Bot.Helpers.FileHelper
                 return false;
             }
         }
+
+
+        public async Task<bool> ProcesssFile_UpdateTask_NonAsync(TaskHistoryTrnModel data, IFormFileCollection files, string TaskIdList, Guid TransactionId)
+        {
+            try
+            {
+                if (data != null
+                    && (!string.IsNullOrEmpty(TaskIdList))
+                    && files != null
+                    && files.Count > 0
+                    )
+                {
+                    var idList = TaskIdList.Split(",");
+
+                    if (idList != null && idList.Any())
+                    {
+                        var fileResponseList = new List<TaskFileDetailsTrnModel>();
+
+                        foreach (var id in idList)
+                        {
+                            if (!string.IsNullOrEmpty(id) && id != " ")
+                            {
+                                foreach (var file in files)
+                                {
+                                    long long_id = long.Parse(id);
+
+                                    var response = new FileUploadResponseTrnModel();
+
+                                    using (var fileStream = file.OpenReadStream())
+                                    {
+                                        response = await this._azureBlobService.UploadTaskFile_Single(file, fileStream, long_id);
+                                    }
+
+                                    if (response != null && (!string.IsNullOrEmpty(response.FileUrl)))
+                                    {
+                                        var fileResponse = new TaskFileDetailsTrnModel();
+                                        fileResponse.TaskId = response.TaskId;
+                                        fileResponse.TransactionId = TransactionId;
+                                        fileResponse.RoleId = data.RoleId;
+                                        fileResponse.FileName = response.FileName;
+                                        fileResponse.UnqFileName = response.UnqFileName;
+                                        fileResponse.FileUrl = response.FileUrl;
+                                        fileResponse.FileSize = response.FileSize;
+                                        fileResponse.ContentType = response.ContentType;
+                                        fileResponse.IsActive = true;
+                                        fileResponse.CreatedByName = data.TaskProgressDetails.UpdatedByName;
+                                        fileResponse.CreatedByEmail = data.TaskProgressDetails.UpdatedByEmail;
+                                        fileResponse.CreatedByUPN = data.TaskProgressDetails.UpdatedByUPN;
+                                        fileResponse.CreatedByADID = data.TaskProgressDetails.UpdatedByADID;
+
+                                        fileResponseList.Add(fileResponse);
+                                    }
+                                }
+                            }
+                        }
+
+                        // SAVE IN DB
+                        var dbInsert_Response = await this._taskData.InsertFileResponse_Multiple(fileResponseList);
+
+                        if (dbInsert_Response != null && dbInsert_Response.Status == 1)
+                        {
+                            return true;
+                        }
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"FileHelper --> ProcesssFile_CreateTask() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return false;
+            }
+        }
     }
 }

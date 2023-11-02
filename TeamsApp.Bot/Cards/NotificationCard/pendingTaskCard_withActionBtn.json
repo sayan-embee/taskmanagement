@@ -105,7 +105,7 @@
                   "size": "Default",
                   "color": "Attention",
                   "fontType": "Default",
-                  "text": "Target date exceeded, immediate action needed"
+                  "text": "${customMessage}"
                 }
               ],
               "width": "stretch",

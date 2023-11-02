@@ -30,6 +30,9 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
         private const string UpdateTask_ActionButton_CacheKey = "_updateTask-ActionButton";
         private const string UpdateTask_CacheKey = "_updateTask";
 
+        private const string PriorityNotification_ActionButton_CacheKey = "_updateTask-ActionButton";
+        private const string PriorityNotification_CacheKey = "_updateTask";
+
         private const string ReassignTask_ActionButton_CacheKey = "_updateTask-ActionButton";
         private const string ReassignTask_CacheKey = "_updateTask-ActionButton";
         private const string ReassignTask_NoAction_CacheKey = "_updateTask-NoActionButton";
@@ -242,6 +245,44 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
         public Attachment GetCard_ReassignTask_NoAction_PersonalScope(TaskDetailsCardModel data)
         {
             var cardPayload = this.GetCardPayload(ReassignTask_NoAction_CacheKey, "\\NotificationCard\\reassignTaskCard_NoAction.json");
+            var template = new AdaptiveCardTemplate(cardPayload);
+
+            //data.CollaboratorName = data.CollaboratorName + $" ({data.CollaboratorEmail})";
+
+            var cardJson = template.Expand(data);
+            AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
+
+            var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = AdaptiveCard.ContentType,
+                Content = card,
+            };
+            return adaptiveCardAttachment;
+        }
+
+        public Attachment GetCard_PriorityNotification_ActionButton_PersonalScope(TaskDetailsCardModel data)
+        {
+            var cardPayload = this.GetCardPayload(PriorityNotification_ActionButton_CacheKey, "\\NotificationCard\\pendingTaskCard_withActionBtn.json");
+            var template = new AdaptiveCardTemplate(cardPayload);
+
+            //data.AssignerName = data.AssignerName + $" ({data.AssignerEmail})";
+            //data.CoordinatorName = data.CoordinatorName + $" ({data.CoordinatorEmail})";
+            //data.AssigneeName = data.AssigneeName + $" ({data.AssigneeEmail})";
+
+            var cardJson = template.Expand(data);
+            AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
+
+            var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = AdaptiveCard.ContentType,
+                Content = card,
+            };
+            return adaptiveCardAttachment;
+        }
+
+        public Attachment GetCard_PriorityNotification_PersonalScope(TaskDetailsCardModel data)
+        {
+            var cardPayload = this.GetCardPayload(PriorityNotification_CacheKey, "\\NotificationCard\\pendingTaskCard.json");
             var template = new AdaptiveCardTemplate(cardPayload);
 
             //data.CollaboratorName = data.CollaboratorName + $" ({data.CollaboratorEmail})";
