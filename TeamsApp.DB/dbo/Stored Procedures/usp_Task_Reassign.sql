@@ -21,19 +21,21 @@ DECLARE @TaskUnqId AS UNIQUEIDENTIFIER = NULL;
 DECLARE @TransactionId AS UNIQUEIDENTIFIER = NEWID ();
 DECLARE @JSONString NVARCHAR(MAX) = NULL;
 
-IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND AssigneeEmail = @AssigneeEmail)
-BEGIN
-    SELECT 
-        'Cannot assign to same person'      AS [Message],
-        ''						            AS ErrorMessage,
-        0					                AS [Status],
-        @TaskId				                AS Id,
-        ''				                    AS ReferenceNo
-    RETURN
-END
 
 IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId)
 BEGIN
+
+    IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND AssigneeEmail = @AssigneeEmail)
+    BEGIN
+        SELECT 
+            'Cannot assign to same person'      AS [Message],
+            ''						            AS ErrorMessage,
+            0					                AS [Status],
+            @TaskId				                AS Id,
+            ''				                    AS ReferenceNo
+        RETURN
+    END
+
 
     IF EXISTS (
         SELECT 1
@@ -44,6 +46,17 @@ BEGIN
     BEGIN
         SELECT 
             'Reassign task failed, Assignee cannot be part of Assigner / Coordinator / Collaborator'    AS [Message],
+            ''					                                                                        AS ErrorMessage,
+            0						                                                                    AS [Status],
+            0				                                                                            AS Id,
+            ''						                                                                    AS ReferenceNo
+        RETURN
+    END
+
+    IF EXISTS(SELECT 1 FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND IsActive = 1 AND ISNULL(IsCancelled,0) = 0)
+    BEGIN
+        SELECT 
+            'Reassign task failed, Pending request exists'                                              AS [Message],
             ''					                                                                        AS ErrorMessage,
             0						                                                                    AS [Status],
             0				                                                                            AS Id,

@@ -30,8 +30,11 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
         private const string UpdateTask_ActionButton_CacheKey = "_updateTask-ActionButton";
         private const string UpdateTask_CacheKey = "_updateTask";
 
-        private const string PriorityNotification_ActionButton_CacheKey = "_updateTask-ActionButton";
-        private const string PriorityNotification_CacheKey = "_updateTask";
+        private const string PriorityNotification_ActionButton_CacheKey = "_priorityNotification-ActionButton";
+        private const string PriorityNotification_CacheKey = "_priorityNotification"; 
+        
+        private const string CreateRequest_ActionButton_CacheKey = "_createRequest-ActionButton";
+        private const string CreateRequest_CacheKey = "_createRequest";
 
         private const string ReassignTask_ActionButton_CacheKey = "_updateTask-ActionButton";
         private const string ReassignTask_CacheKey = "_updateTask-ActionButton";
@@ -286,6 +289,46 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
             var template = new AdaptiveCardTemplate(cardPayload);
 
             //data.CollaboratorName = data.CollaboratorName + $" ({data.CollaboratorEmail})";
+
+            var cardJson = template.Expand(data);
+            AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
+
+            var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = AdaptiveCard.ContentType,
+                Content = card,
+            };
+            return adaptiveCardAttachment;
+        }
+
+        public Attachment GetCard_CreateRequest_ActionButton_PersonalScope(TaskDetailsCardModel data)
+        {
+            var cardPayload = this.GetCardPayload(CreateRequest_ActionButton_CacheKey, "\\NotificationCard\\newRequestTaskCard_withActionBtn.json");
+            var template = new AdaptiveCardTemplate(cardPayload);
+
+            //data.AssignerName = data.AssignerName + $" ({data.AssignerEmail})";
+            //data.CoordinatorName = data.CoordinatorName + $" ({data.CoordinatorEmail})";
+            //data.AssigneeName = data.AssigneeName + $" ({data.AssigneeEmail})";
+
+            var cardJson = template.Expand(data);
+            AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;
+
+            var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = AdaptiveCard.ContentType,
+                Content = card,
+            };
+            return adaptiveCardAttachment;
+        }
+
+        public Attachment GetCard_CreateRequest_PersonalScope(TaskDetailsCardModel data)
+        {
+            var cardPayload = this.GetCardPayload(CreateRequest_CacheKey, "\\NotificationCard\\newRequestTaskCard.json");
+            var template = new AdaptiveCardTemplate(cardPayload);
+
+            //data.AssignerName = data.AssignerName + $" ({data.AssignerEmail})";
+            //data.CoordinatorName = data.CoordinatorName + $" ({data.CoordinatorEmail})";
+            //data.AssigneeName = data.AssigneeName + $" ({data.AssigneeEmail})";
 
             var cardJson = template.Expand(data);
             AdaptiveCard card = AdaptiveCard.FromJson(cardJson).Card;

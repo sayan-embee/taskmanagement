@@ -559,5 +559,171 @@ namespace TeamsApp.Bot.Helpers.NotificationHelper
                 return false;
             }
         }
+
+        public async Task<bool> ProcesssNotification_CreateRequest(List<TaskDetailsCardModel> data)
+        {
+            try
+            {
+                if (data != null && data.Any())
+                {
+                    var sendCardTaskList = new List<Task<NotificationResponseTrnModel>>();
+
+                    foreach (var item in data)
+                    {
+                        try
+                        {
+                            var cardAttachment_ActionButton = this._adaptiveCardService.GetCard_CreateRequest_ActionButton_PersonalScope(item);
+                            if (cardAttachment_ActionButton != null)
+                            {
+                                sendCardTaskList.Add(_notificationService.SendCard_PersonalScope(item.AssignerADID, cardAttachment_ActionButton, item.TaskId));
+
+                                if (!string.IsNullOrEmpty(item.CoordinatorADID))
+                                {
+                                    sendCardTaskList.Add(_notificationService.SendCard_PersonalScope(item.CoordinatorADID, cardAttachment_ActionButton, item.TaskId));
+                                }
+
+                                if (!string.IsNullOrEmpty(item.AssigneeADID))
+                                {
+                                    sendCardTaskList.Add(_notificationService.SendCard_PersonalScope(item.AssigneeADID, cardAttachment_ActionButton, item.TaskId));
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            this._logger.LogError(ex, $"NotificationHelper --> ProcesssNotification_CreateRequest() execution failed: {JsonConvert.SerializeObject(item, Formatting.Indented)}");
+                            ExceptionLogging.SendErrorToText(ex);
+                        }
+
+                        try
+                        {
+
+                            var cardAttachment = this._adaptiveCardService.GetCard_CreateRequest_PersonalScope(item);
+                            if (cardAttachment != null)
+                            {
+                                if (!string.IsNullOrEmpty(item.CollaboratorADID))
+                                {
+                                    sendCardTaskList.Add(_notificationService.SendCard_PersonalScope(item.CollaboratorADID, cardAttachment, item.TaskId));
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            this._logger.LogError(ex, $"NotificationHelper --> ProcesssNotification_CreateRequest() execution failed: {JsonConvert.SerializeObject(item, Formatting.Indented)}");
+                            ExceptionLogging.SendErrorToText(ex);
+                        }
+                    }
+
+                    if (sendCardTaskList != null && sendCardTaskList.Any())
+                    {
+                        var sendCardTaskList_Response = await Task.WhenAll(sendCardTaskList);
+
+                        if (sendCardTaskList_Response != null && sendCardTaskList_Response.Any())
+                        {
+                            var dbInsert_Response = await this._taskData.InsertRequestedTaskNotificationResponse_Multiple(sendCardTaskList_Response.ToList(), "CREATE-REQUEST-TASK");
+
+                            if (dbInsert_Response != null && dbInsert_Response.Status == 1)
+                            {
+                                // DELETE PREVIOUS CARDS
+
+                                if (!string.IsNullOrEmpty(dbInsert_Response.ReferenceNo))
+                                {
+                                    try
+                                    {
+                                        var notificationList = JsonConvert.DeserializeObject<List<NotificationResponseTrnModel>>(dbInsert_Response.ReferenceNo);
+                                        if (notificationList != null && notificationList.Any())
+                                        {
+                                            var deleteCardTaskList = new List<Task<bool>>();
+                                            foreach (var notification in notificationList)
+                                            {
+                                                deleteCardTaskList.Add(_notificationService.DeleteCard_PersonalScope(notification));
+                                            }
+
+                                            if (deleteCardTaskList != null && deleteCardTaskList.Any())
+                                            {
+                                                var deleteCardTaskList_Response = await Task.WhenAll(deleteCardTaskList);
+                                                if (deleteCardTaskList_Response != null && deleteCardTaskList_Response.Any())
+                                                {
+                                                    return true;
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                            return true;
+                                        }
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        this._logger.LogError(ex, $"NotificationHelper --> ProcesssNotification_CreateRequest() execution failed: {JsonConvert.SerializeObject(dbInsert_Response.ReferenceNo, Formatting.Indented)}");
+                                        ExceptionLogging.SendErrorToText(ex);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"NotificationHelper --> ProcesssNotification_CreateRequest() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return false;
+            }
+        }
+
+
+        public async Task<bool> ProcesssNotification_CancelRequest(List<TaskDetailsCardModel> data)
+        {
+            try
+            {
+                if (data != null && data.Any())
+                {
+                    var dbInsert_Response = await this._taskData.GetRequestedTaskNotificationResponse(data.FirstOrDefault().TaskId, "UPDATE-REQUEST-TASK");
+
+                    if (dbInsert_Response != null && dbInsert_Response.Status == 1)
+                    {
+                        // DELETE PREVIOUS CARDS
+
+                        if (!string.IsNullOrEmpty(dbInsert_Response.ReferenceNo))
+                        {
+                            try
+                            {
+                                var notificationList = JsonConvert.DeserializeObject<List<NotificationResponseTrnModel>>(dbInsert_Response.ReferenceNo);
+                                if (notificationList != null && notificationList.Any())
+                                {
+                                    var deleteCardTaskList = new List<Task<bool>>();
+                                    foreach (var notification in notificationList)
+                                    {
+                                        deleteCardTaskList.Add(_notificationService.DeleteCard_PersonalScope(notification));
+                                    }
+
+                                    if (deleteCardTaskList != null && deleteCardTaskList.Any())
+                                    {
+                                        var deleteCardTaskList_Response = await Task.WhenAll(deleteCardTaskList);
+                                        if (deleteCardTaskList_Response != null && deleteCardTaskList_Response.Any())
+                                        {
+                                            return true;
+                                        }
+                                    }
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                this._logger.LogError(ex, $"NotificationHelper --> ProcesssNotification_CancelRequest() execution failed: {JsonConvert.SerializeObject(dbInsert_Response.ReferenceNo, Formatting.Indented)}");
+                                ExceptionLogging.SendErrorToText(ex);
+                            }
+                        }
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"NotificationHelper --> ProcesssNotification_CancelRequest() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return false;
+            }
+        }
     }
 }

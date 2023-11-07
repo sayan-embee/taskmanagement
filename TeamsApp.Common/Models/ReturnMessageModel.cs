@@ -15,5 +15,6 @@ namespace TeamsApp.Common.Models
         public Guid GuidId { get; set; }
         public Guid TransactionId { get; set; }
         public string ExecutionTime { get; set; }
+        public string ReferenceInfo { get; set; }
     }
 }

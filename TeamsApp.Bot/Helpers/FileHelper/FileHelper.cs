@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Transactions;
 using TeamsApp.Bot.Services.AzureBlob;
 using TeamsApp.Bot.Services.MicrosoftGraph;
 using TeamsApp.Bot.Services.Notification;
@@ -128,6 +129,65 @@ namespace TeamsApp.Bot.Helpers.FileHelper
             }
         }
 
+        public async Task<bool> ProcesssFile_UploadSingleFile_NonAsync(TaskFileDetailsTrnModel data, IFormFileCollection files)
+        {
+            try
+            {
+                if (data != null
+                    && files != null
+                    && files.Count > 0
+                    )
+                {
+                    var fileResponseList = new List<TaskFileDetailsTrnModel>();
+                    var guid = Guid.NewGuid();
+
+                    foreach (var file in files)
+                    {
+                        var response = new FileUploadResponseTrnModel();
+
+                        using (var fileStream = file.OpenReadStream())
+                        {
+                            response = await this._azureBlobService.UploadTaskFile_Single(file, fileStream, data.TaskId);
+                        }
+
+                        if (response != null && (!string.IsNullOrEmpty(response.FileUrl)))
+                        {
+                            var fileResponse = new TaskFileDetailsTrnModel();
+                            fileResponse.TaskId = response.TaskId;
+                            fileResponse.TransactionId = guid;
+                            fileResponse.RoleId = data.RoleId;
+                            fileResponse.FileName = response.FileName;
+                            fileResponse.UnqFileName = response.UnqFileName;
+                            fileResponse.FileUrl = response.FileUrl;
+                            fileResponse.FileSize = response.FileSize;
+                            fileResponse.ContentType = response.ContentType;
+                            fileResponse.IsActive = true;
+                            fileResponse.CreatedByName = data.CreatedByName;
+                            fileResponse.CreatedByEmail = data.CreatedByEmail;
+                            fileResponse.CreatedByUPN = data.CreatedByUPN;
+                            fileResponse.CreatedByADID = data.CreatedByADID;
+
+                            fileResponseList.Add(fileResponse);
+                        }
+                    }
+
+                    // SAVE IN DB
+                    var dbInsert_Response = await this._taskData.InsertFileResponse_Multiple(fileResponseList);
+
+                    if (dbInsert_Response != null && dbInsert_Response.Status == 1)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }                
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"FileHelper --> ProcesssFile_UploadSingleFile_NonAsync() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return false;
+            }
+        }
 
         public async Task<bool> ProcesssFile_CreateTask_NonAsync(TaskDetailsTrnModel data, IFormFileCollection files, string TaskIdList, Guid TransactionId)
         {

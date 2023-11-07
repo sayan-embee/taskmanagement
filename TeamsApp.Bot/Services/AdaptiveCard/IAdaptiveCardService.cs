@@ -15,5 +15,7 @@ namespace TeamsApp.Bot.Services.MicrosoftGraph
         Attachment GetCard_ReassignTask_NoAction_PersonalScope(TaskDetailsCardModel data);
         Attachment GetCard_PriorityNotification_ActionButton_PersonalScope(TaskDetailsCardModel data);
         Attachment GetCard_PriorityNotification_PersonalScope(TaskDetailsCardModel data);
+        Attachment GetCard_CreateRequest_ActionButton_PersonalScope(TaskDetailsCardModel data);
+        Attachment GetCard_CreateRequest_PersonalScope(TaskDetailsCardModel data);
     }
 }

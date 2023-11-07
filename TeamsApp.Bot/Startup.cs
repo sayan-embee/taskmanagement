@@ -249,14 +249,10 @@ namespace TeamsApp.Bot
 
         //public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         //{
-
-
-
         //    if (env.IsDevelopment())
         //    {
         //        app.UseDeveloperExceptionPage();
         //    }
-
 
         //    app.UseExceptionHandler(applicationBuilder => this.HandleGlobalException(applicationBuilder));
         //    app.UseDefaultFiles();

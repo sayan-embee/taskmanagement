@@ -16,6 +16,7 @@ BEGIN
     DECLARE @ProgressId BIGINT = 0;
     DECLARE @HistoryId BIGINT = 0;
     DECLARE @CurrentTargetDate DATETIME;
+    DECLARE @PrevTargetDate DATETIME;
     DECLARE @TransactionId AS UNIQUEIDENTIFIER = NEWID ();
     DECLARE @TaskUnqId AS UNIQUEIDENTIFIER = NULL;
     DECLARE @JSONString NVARCHAR(MAX) = NULL;
@@ -39,7 +40,7 @@ BEGIN
 
         BEGIN TRANSACTION
 
-            SELECT @TaskUnqId = TaskUnqId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId
+            SELECT @TaskUnqId = TaskUnqId, @PrevTargetDate = CurrentTargetDate FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId
             SELECT @TransactionId = TransactionId, @CurrentTargetDate = CurrentTargetDate FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE RequestId = @RequestId
 
             UPDATE [dbo].[Trn_Request_TaskDetails]
@@ -49,7 +50,7 @@ BEGIN
             ApprovalRemarks = ISNULL(@ApprovalRemarks, ApprovalRemarks),
             UpdatedOnIST = DATEADD(MINUTE, 330, GETUTCDATE()),
             UpdatedOnUTC = GETUTCDATE(),
-            @UpdatedByName = @UpdatedByName,
+            UpdatedByName = @UpdatedByName,
             UpdatedByEmail = @UpdatedByEmail,
             UpdatedByUPN = @UpdatedByUPN,
             UpdatedByADID = @UpdatedByADID
@@ -219,9 +220,16 @@ BEGIN
                 BEGIN
                     UPDATE [dbo].[Trn_TaskDetails]
                     SET [CurrentTargetDate] = ISNULL(@CurrentTargetDate,CurrentTargetDate),
-                        [TransactionId] = @TransactionId,
-                        [NoOfExtensionRequested] = ISNULL([NoOfExtensionRequested], 0) + 1
+                        [TransactionId] = @TransactionId
+                        --[NoOfExtensionRequested] = ISNULL([NoOfExtensionRequested], 0) + 1
                     WHERE [TaskId] = @TaskId
+
+                    IF (CONVERT(DATE, @CurrentTargetDate, 103) > CONVERT(DATE, @PrevTargetDate, 103))
+                    BEGIN
+                        UPDATE [dbo].[Trn_TaskDetails]
+                        SET [NoOfExtensionRequested] = ISNULL([NoOfExtensionRequested], 0) + 1
+                        WHERE [TaskId] = @TaskId
+                    END 
 
                     IF @@ERROR<>0
                     BEGIN
@@ -266,12 +274,12 @@ BEGIN
                 R.[RoleName],
                 T.[ParentTaskId],
                 T.[IsActive],
-                T.[CreatedOnIST],
-                T.[CreatedOnUTC],
-                T.[CreatedByName],
-                T.[CreatedByEmail],
-                T.[CreatedByUPN],
-                T.[CreatedByADID],
+                 RQ.[CreatedOnIST],
+                --RQ.[CreatedOnUTC],
+                RQ.[CreatedByName],
+                --RQ.[CreatedByEmail],
+                --RQ.[CreatedByUPN],
+                --RQ.[CreatedByADID],
                 T.[TaskSubject],
                 T.[TaskDesc],
                 T.[InitialTargetDate] AS 'InitialTargetDate',
@@ -301,7 +309,8 @@ BEGIN
             INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId
             INNER JOIN [dbo].[Mst_Role] R ON R.RoleId = T.RoleId
             WHERE RQ.RequestId = @RequestId
-            FOR JSON AUTO
+            --FOR JSON AUTO
+            FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
             );
 
 

@@ -20,6 +20,8 @@ namespace TeamsApp.DataAccess.Data
         Task<ReturnMessageModel> ReassignTask(TaskReassignmentTrnModel data);
         Task<List<ReturnMessageModel>> ReassignAllTask(TaskReassignmentTrnModel data);
         Task<ReturnMessageModel> InsertTaskNotificationResponse_Multiple(List<NotificationResponseTrnModel> data, string Status);
+        Task<ReturnMessageModel> InsertRequestedTaskNotificationResponse_Multiple(List<NotificationResponseTrnModel> data, string Status);
+        Task<ReturnMessageModel> GetRequestedTaskNotificationResponse(long TaskId, string Status);
         Task<ReturnMessageModel> InsertEmailResponse_Multiple(List<TaskEmailNotificationModel> data);
         Task<ReturnMessageModel> InsertFileResponse_Multiple(List<TaskFileDetailsTrnModel> data);
         Task<List<TaskDetailsCardModel>> GetTaskForPriorityNotification(DateTime? FromDate, DateTime? ToDate);
@@ -29,5 +31,6 @@ namespace TeamsApp.DataAccess.Data
         Task<ReturnMessageModel> UpdateTaskRequest(TaskRequestDetailsModel data);
         Task<ReturnMessageModel> ActionOnTaskRequest(TaskRequestDetailsModel data);
         Task<TaskRequestDetailsViewModel> GetRequestedTask(TaskRequestFilterModel data);
+        Task<List<TaskFileDetailsTrnModel>> RemoveFileResponse(long Id);
     }
 }

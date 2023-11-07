@@ -10,6 +10,9 @@ namespace TeamsApp.Common.Models
         [JsonProperty("notificationId")]
         public long NotificationId { get; set; }
 
+        [JsonProperty("reqNotificationId")]
+        public long ReqNotificationId { get; set; }
+
         [JsonProperty("taskId")]
         public long TaskId { get; set; }
 

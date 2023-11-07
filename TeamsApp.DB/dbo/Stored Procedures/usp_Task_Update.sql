@@ -33,10 +33,12 @@
 AS
 BEGIN
 
+DECLARE @PrevTargetDate DATETIME;
 DECLARE @ProgressId BIGINT = 0;
 DECLARE @HistoryId BIGINT = 0;
 DECLARE @TaskUnqId AS UNIQUEIDENTIFIER = NULL;
 DECLARE @TransactionId AS UNIQUEIDENTIFIER = NEWID ();
+DECLARE @RequestId BIGINT = 0;
 
 
 IF EXISTS (SELECT TaskId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId)
@@ -101,7 +103,7 @@ BEGIN
 
     BEGIN TRANSACTION
 
-    SELECT @TaskUnqId = TaskUnqId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId
+    SELECT @TaskUnqId = TaskUnqId, @PrevTargetDate = CurrentTargetDate FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId
 
     INSERT INTO [dbo].[Trn_TaskProgressDetails] 
     (
@@ -272,12 +274,11 @@ BEGIN
         IF EXISTS(SELECT 1 FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND IsActive = 1 AND ISNULL(IsCancelled,0) = 0)
         BEGIN
 
-            DECLARE @RequestId BIGINT = 0;
-            DECLARE @RequestedTargetDate DATETIME = NULL;
+            --DECLARE @RequestedTargetDate DATETIME = NULL;
 
             SET @RequestId = (SELECT TOP 1 RequestId FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND IsActive = 1 AND ISNULL(IsCancelled,0) = 0 ORDER BY RequestId DESC)
 
-            SET @RequestedTargetDate = (SELECT CurrentTargetDate FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE RequestId = @RequestId)
+            --SET @RequestedTargetDate = (SELECT CurrentTargetDate FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE RequestId = @RequestId)
 
             UPDATE [dbo].[Trn_Request_TaskDetails]
             SET ProgressId = @ProgressId,
@@ -285,7 +286,7 @@ BEGIN
             IsActive = 0
             WHERE RequestId = @RequestId AND TaskId = @TaskId
 
-            IF (CONVERT(DATE, @CurrentTargetDate, 103) >= CONVERT(DATE, @RequestedTargetDate, 103))
+            IF (CONVERT(DATE, @CurrentTargetDate, 103) > CONVERT(DATE, @PrevTargetDate, 103))
             BEGIN
                 UPDATE [dbo].[Trn_TaskDetails]
                 SET [NoOfExtensionRequested] = ISNULL([NoOfExtensionRequested], 0) + 1
@@ -561,6 +562,7 @@ END
         @TaskId				       AS Id,
         @IdList				       AS ReferenceNo,
         @TaskUnqId                 AS GuidId,
-        @TransactionId             AS TransactionId
+        @TransactionId             AS TransactionId,
+        @RequestId                 AS ReferenceInfo
 
 END

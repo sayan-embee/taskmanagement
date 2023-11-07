@@ -556,6 +556,52 @@ namespace TeamsApp.DataAccess.Data
             }
         }
 
+        public async Task<ReturnMessageModel> GetRequestedTaskNotificationResponse(long TaskId, string Status)
+        {
+            try
+            {
+                var results = await _db.LoadData<ReturnMessageModel, dynamic>("dbo.usp_Task_GetRequestedTaskNotificationResponse",
+                new
+                {
+                    TaskId,
+                    Status
+                });
+
+                if (results != null && results.Any())
+                {
+                    return results.FirstOrDefault();
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetRequestedTaskNotificationResponse() --> SQL(usp_Task_GetAll) execution failed");
+                return null;
+            }
+        }
+
+        public async Task<ReturnMessageModel> InsertRequestedTaskNotificationResponse_Multiple(List<NotificationResponseTrnModel> data, string Status)
+        {
+            try
+            {
+                var udt = GetTaskNotificationResponse_UDT(data);
+
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_RequestedTask_Insert_NotificationResponse",
+                new
+                {
+                    Status,
+                    udt_NotificationResponse = udt.AsTableValuedParameter("udt_TaskNotificationResponse")
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> InsertRequestedTaskNotificationResponse_Multiple() --> SQL(usp_RequestedTask_Insert_NotificationResponse) execution failed");
+                return null;
+            }
+        }
+
         private DataTable GetTaskNotificationResponse_UDT(List<NotificationResponseTrnModel> udt)
         {
             var output = new DataTable();
@@ -589,7 +635,6 @@ namespace TeamsApp.DataAccess.Data
             }
             return output;
         }
-
 
         public async Task<List<TaskDetailsCardModel>> GetTaskForPriorityNotification(DateTime? FromDate, DateTime? ToDate)
         {
@@ -785,6 +830,38 @@ namespace TeamsApp.DataAccess.Data
                 }
             }
             return output;
+        }
+
+        public async Task<List<TaskFileDetailsTrnModel>> RemoveFileResponse(long Id)
+        {
+            try
+            {
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_Remove_FileResponse",
+                new
+                {
+                    Id
+                });
+
+                if (results != null && results.Any())
+                {
+                    var response = results.FirstOrDefault();
+
+                    if (response.Status == 1 && (!string.IsNullOrEmpty(response.ReferenceNo)))
+                    {
+                        var fileDetails = JsonConvert.DeserializeObject<List<TaskFileDetailsTrnModel>>(response.ReferenceNo);
+                        if (fileDetails != null)
+                        {
+                            return fileDetails;
+                        }
+                    }
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> RemoveFileResponse() --> SQL(usp_Task_Remove_FileResponse) execution failed");
+                return null;
+            }
         }
 
         #endregion

@@ -125,15 +125,15 @@ BEGIN
             R.[RoleName],
             T.[ParentTaskId],
             T.[IsActive],
-            T.[CreatedOnIST],
-            T.[CreatedOnUTC],
-            T.[CreatedByName],
-            T.[CreatedByEmail],
-            T.[CreatedByUPN],
-            T.[CreatedByADID],
+            RQ.[CreatedOnIST],
+            --RQ.[CreatedOnUTC],
+            RQ.[CreatedByName],
+            --RQ.[CreatedByEmail],
+            --RQ.[CreatedByUPN],
+            --RQ.[CreatedByADID],
             T.[TaskSubject],
             T.[TaskDesc],
-            [InitialTargetDate],
+            --[InitialTargetDate],
             T.[CurrentTargetDate] AS 'InitialTargetDate',
             T.[AssignerName],
             T.[AssignerEmail],
@@ -160,7 +160,8 @@ BEGIN
         INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId
         INNER JOIN [dbo].[Mst_Role] R ON R.RoleId = T.RoleId
         WHERE RQ.RequestId = @@IDENTITY
-        FOR JSON AUTO
+        --FOR JSON AUTO
+        FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
         );
 
 

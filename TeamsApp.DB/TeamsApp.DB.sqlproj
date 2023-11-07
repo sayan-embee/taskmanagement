@@ -116,6 +116,10 @@
     <Build Include="dbo\Stored Procedures\usp_Task_UpdateRequest.sql" />
     <Build Include="dbo\Stored Procedures\usp_Task_ActionOnRequest.sql" />
     <Build Include="dbo\Stored Procedures\usp_RequestedTask_GetAll.sql" />
+    <Build Include="dbo\Tables\Trn_RequestedTaskNotificationResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_RequestedTask_Insert_NotificationResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Task_GetRequestedTaskNotificationResponse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Task_Remove_FileResponse.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\PostDeployment\Script.PostDeployment1.sql" />

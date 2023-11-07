@@ -23,12 +23,13 @@ using TeamsApp.Bot.Helpers.FileHelper;
 using Microsoft.Graph;
 using Azure;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TeamsApp.Bot.Controllers.APIController
 {
     [Route("api/v1.0/task")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class TaskAPIController : BaseController
     {
         private readonly ILogger _logger;
@@ -512,6 +513,11 @@ namespace TeamsApp.Bot.Controllers.APIController
                 {
                     await this._notificationHelper.ProcesssNotification_UpdateTask(taskListResponse);
                 }
+
+                if (!string.IsNullOrEmpty(response.ReferenceInfo) && (int.Parse(response.ReferenceInfo) > 0))
+                {
+                    await this._notificationHelper.ProcesssNotification_CancelRequest(taskListResponse);
+                }
             }
 
             if (!string.IsNullOrEmpty(response.ReferenceNo))
@@ -725,68 +731,110 @@ namespace TeamsApp.Bot.Controllers.APIController
 
         #region FILE
 
-        //[HttpPost]
-        //[Route("files/upload")]
-        //public async Task<IActionResult> UploadFiles(IFormCollection formdata)
-        //{
-        //    try
-        //    {
-        //        DateTime startTime = DateTime.UtcNow;
-        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution started: {DateTime.UtcNow}");
-        //        this._logger.LogInformation($"TaskAPIController --> AddComments() execution started: {DateTime.UtcNow}");
+        [HttpPost]
+        [Route("files/upload")]
+        public async Task<IActionResult> UploadFiles(IFormCollection formdata)
+        {
+            try
+            {
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution started: {DateTime.UtcNow}");
+                this._logger.LogInformation($"TaskAPIController --> AddComments() execution started: {DateTime.UtcNow}");
 
-        //        DateTime endTime = DateTime.UtcNow;
-        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution ended: {DateTime.UtcNow}");
-        //        this._logger.LogInformation($"TaskAPIController --> UploadFiles() execution ended: {DateTime.UtcNow}");
+                TaskFileDetailsTrnModel dataModel = null;
+                var strKey = formdata.Keys.Where(x => x == "taskData").FirstOrDefault();
+                if (strKey != null)
+                {
+                    var data = formdata[strKey];
+                    dataModel = JsonConvert.DeserializeObject<TaskFileDetailsTrnModel>(JObject.Parse(data).ToString());
+                }
 
-        //        TimeSpan timeDifference = endTime - startTime;
-        //        string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
-
-        //        //response.ExecutionTime = formattedTimeDifference;
-
-        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution time: {formattedTimeDifference}");
-        //        this._logger.LogInformation($"TaskAPIController --> UploadFiles() execution time: {formattedTimeDifference}");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        this.RecordEvent("TaskAPIController --> UploadFiles() - Failed to execute.", RequestType.Failed);
-        //        this._logger.LogError(ex, $"TaskAPIController --> UploadFiles() execution failed");
-        //        ExceptionLogging.SendErrorToText(ex);
-        //        return this.Ok();
-        //    }            
-        //}
+                // CHECK MANDATORY FIELDS IN BACKEND (ALREADY CHECKED IN FRONTEND)
+                if (string.IsNullOrEmpty(dataModel.CreatedByName)
+                    || string.IsNullOrEmpty(dataModel.CreatedByEmail)
+                    || string.IsNullOrEmpty(dataModel.CreatedByUPN)
+                    || string.IsNullOrEmpty(dataModel.CreatedByADID)
+                    || string.IsNullOrEmpty(dataModel.CreatedByADID)
+                    )
+                {
+                    return this.Ok("Mandatory fields are required");
+                }
 
 
-        //[HttpPost]
-        //[Route("files/remove")]
-        //public async Task<IActionResult> RemoveFiles(IFormCollection formdata)
-        //{
-        //    try
-        //    {
-        //        DateTime startTime = DateTime.UtcNow;
-        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution started: {DateTime.UtcNow}");
-        //        this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution started: {DateTime.UtcNow}");
+                if (dataModel.TaskId == 0 || dataModel.RoleId == 0)
+                {
+                    return this.Ok("Mandatory fields are required");
+                }
 
-        //        DateTime endTime = DateTime.UtcNow;
-        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution ended: {DateTime.UtcNow}");
-        //        this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution ended: {DateTime.UtcNow}");
+                // UPLOAD FILES
+                if (formdata.Files != null && formdata.Files.Count > 0)
+                {
+                    //_ = Task.Run(() => this._fileHelper.ProcesssFile_CreateTask_NonAsync(dataModel, formdata.Files, response.ReferenceNo, response.TransactionId)); // NOT WORKING
+                    await this._fileHelper.ProcesssFile_UploadSingleFile_NonAsync(dataModel, formdata.Files);
 
-        //        TimeSpan timeDifference = endTime - startTime;
-        //        string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution ended: {DateTime.UtcNow}");
+                    this._logger.LogInformation($"TaskAPIController --> UploadFiles() execution ended: {DateTime.UtcNow}");
 
-        //        //response.ExecutionTime = formattedTimeDifference;
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
 
-        //        ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution time: {formattedTimeDifference}");
-        //        this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution time: {formattedTimeDifference}");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        this.RecordEvent("TaskAPIController --> RemoveFiles() - Failed to execute.", RequestType.Failed);
-        //        this._logger.LogError(ex, $"TaskAPIController --> RemoveFiles() execution failed");
-        //        ExceptionLogging.SendErrorToText(ex);
-        //        return this.Ok();
-        //    }            
-        //}
+                    //response.ExecutionTime = formattedTimeDifference;
+
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> UploadFiles() execution time: {formattedTimeDifference}");
+                    this._logger.LogInformation($"TaskAPIController --> UploadFiles() execution time: {formattedTimeDifference}");
+
+                    return this.Ok(true);
+                }
+
+                return this.Ok(false);
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> UploadFiles() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> UploadFiles() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return this.Ok();
+            }
+        }
+
+
+        [HttpPost]
+        [Route("files/remove")]
+        public async Task<IActionResult> RemoveFiles(long Id)
+        {
+            try
+            {
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution started: {DateTime.UtcNow}");
+                this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution started: {DateTime.UtcNow}");
+
+                var result = await this._taskData.RemoveFileResponse(Id);
+                if (result != null)
+                {
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution ended: {DateTime.UtcNow}");
+                    this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution ended: {DateTime.UtcNow}");
+
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+                    //response.ExecutionTime = formattedTimeDifference;
+
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> RemoveFiles() execution time: {formattedTimeDifference}");
+                    this._logger.LogInformation($"TaskAPIController --> RemoveFiles() execution time: {formattedTimeDifference}");
+                }
+
+                return this.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> RemoveFiles() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> RemoveFiles() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return this.Ok();
+            }
+        }
 
         #endregion
 
@@ -874,6 +922,9 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateRequest() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> CreateRequest() execution time: {formattedTimeDifference}");
+
+                    // INITIATE OTHER ACTIVITIES
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_CreateRequest(response));
                 }
                 return this.Ok(response);
             }
@@ -883,6 +934,30 @@ namespace TeamsApp.Bot.Controllers.APIController
                 this._logger.LogError(ex, $"TaskAPIController --> CreateRequest() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
                 return this.Ok();
+            }
+        }
+
+        private async Task ProcessOtherActivities_CreateRequest(ReturnMessageModel response)
+        {
+
+            if (!string.IsNullOrEmpty(response.ReferenceNo))
+            {
+                try
+                {
+                    var taskDetailsList = new List<TaskDetailsCardModel>();
+
+                    var taskDetails = JsonConvert.DeserializeObject<TaskDetailsCardModel>(response.ReferenceNo);
+                    if (taskDetails != null)
+                    {                        
+                        taskDetailsList.Add(taskDetails);
+                        await this._notificationHelper.ProcesssNotification_CreateRequest(taskDetailsList);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this._logger.LogError(ex, $"TaskAPIController --> ProcessOtherActivities_CreateRequest() execution failed: {JsonConvert.SerializeObject(response.ReferenceNo, Formatting.Indented)}");
+                    ExceptionLogging.SendErrorToText(ex);
+                }
             }
         }
 
@@ -901,7 +976,7 @@ namespace TeamsApp.Bot.Controllers.APIController
                 if (
                     //string.IsNullOrEmpty(dataModel.TaskSubject)
                     //|| string.IsNullOrEmpty(dataModel.TaskDesc)
-                    dataModel.CurrentTargetDate == null
+                    dataModel.IsCancelled == false && dataModel.CurrentTargetDate == null
                     //|| (dataModel.StatusId == null || dataModel.StatusId == 0)
                     //|| (dataModel.PriorityId == null || dataModel.PriorityId == 0)
                     )
@@ -933,6 +1008,14 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> UpdateRequest() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> UpdateRequest() execution time: {formattedTimeDifference}");
+
+                    // INITIATE OTHER ACTIVITIES
+                    var IsCancelled = false;
+                    if (dataModel.IsCancelled != null && dataModel.IsCancelled == true)
+                    {
+                        IsCancelled = true;
+                    }
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_UpdateRequest(response, IsCancelled));
                 }
                 return this.Ok(response);
             }
@@ -944,6 +1027,38 @@ namespace TeamsApp.Bot.Controllers.APIController
                 return this.Ok();
             }
         }
+
+        private async Task ProcessOtherActivities_UpdateRequest(ReturnMessageModel response, bool IsCancelled)
+        {
+
+            if (!string.IsNullOrEmpty(response.ReferenceNo))
+            {
+                try
+                {
+                    var taskDetailsList = new List<TaskDetailsCardModel>();
+
+                    var taskDetails = JsonConvert.DeserializeObject<TaskDetailsCardModel>(response.ReferenceNo);
+                    if (taskDetails != null)
+                    {
+                        taskDetailsList.Add(taskDetails);
+                        if (IsCancelled)
+                        {
+                            await this._notificationHelper.ProcesssNotification_CancelRequest(taskDetailsList);
+                        }
+                        else
+                        {
+                            await this._notificationHelper.ProcesssNotification_CreateRequest(taskDetailsList);
+                        }                        
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this._logger.LogError(ex, $"TaskAPIController --> ProcessOtherActivities_UpdateRequest() execution failed: {JsonConvert.SerializeObject(response.ReferenceNo, Formatting.Indented)}");
+                    ExceptionLogging.SendErrorToText(ex);
+                }
+            }
+        }
+
 
         [HttpPost]
         [Route("request/action")]
@@ -991,6 +1106,13 @@ namespace TeamsApp.Bot.Controllers.APIController
 
                     ExceptionLogging.WriteMessageToText($"TaskAPIController --> ActionOnTaskRequest() execution time: {formattedTimeDifference}");
                     this._logger.LogInformation($"TaskAPIController --> ActionOnTaskRequest() execution time: {formattedTimeDifference}");
+
+                    var IsApproved = false;
+                    if (dataModel.IsApproved != null && dataModel.IsApproved == true)
+                    {
+                        IsApproved = true;
+                    }
+                    _ = Task.Factory.StartNew(() => this.ProcessOtherActivities_ActionOnRequest(response, IsApproved));
                 }
                 return this.Ok(response);
             }
@@ -1000,6 +1122,36 @@ namespace TeamsApp.Bot.Controllers.APIController
                 this._logger.LogError(ex, $"TaskAPIController --> ActionOnTaskRequest() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
                 return this.Ok();
+            }
+        }
+
+        private async Task ProcessOtherActivities_ActionOnRequest(ReturnMessageModel response, bool IsApproved)
+        {
+
+            if (!string.IsNullOrEmpty(response.ReferenceNo))
+            {
+                try
+                {
+                    var taskDetailsList = new List<TaskDetailsCardModel>();
+
+                    var taskDetails = JsonConvert.DeserializeObject<TaskDetailsCardModel>(response.ReferenceNo);
+                    if (taskDetails != null)
+                    {
+                        taskDetailsList.Add(taskDetails);
+
+                        await this._notificationHelper.ProcesssNotification_CancelRequest(taskDetailsList);
+
+                        if (IsApproved)
+                        {
+                            await this._notificationHelper.ProcesssNotification_UpdateTask(taskDetailsList);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this._logger.LogError(ex, $"TaskAPIController --> ProcessOtherActivities_UpdateRequest() execution failed: {JsonConvert.SerializeObject(response.ReferenceNo, Formatting.Indented)}");
+                    ExceptionLogging.SendErrorToText(ex);
+                }
             }
         }
 

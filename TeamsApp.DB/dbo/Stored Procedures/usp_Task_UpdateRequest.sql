@@ -45,34 +45,66 @@ BEGIN
             SELECT @TaskUnqId = TaskUnqId FROM [dbo].[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId
             SELECT @TransactionId = TransactionId FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE RequestId = @RequestId
 
-            UPDATE [dbo].[Trn_Request_TaskDetails]
-            SET TaskSubject = ISNULL(@TaskSubject, TaskSubject),
-            TaskDesc = ISNULL(@TaskDesc, TaskDesc),
-            CurrentTargetDate = ISNULL(@CurrentTargetDate, CurrentTargetDate),
-            RequestRemarks = ISNULL(@RequestRemarks, RequestRemarks),
-            StatusId = ISNULL(@StatusId, StatusId),
-            PriorityId = ISNULL(@PriorityId, PriorityId),
-            ParentTaskId = ISNULL(@ParentTaskId, ParentTaskId),
-            IsCancelled = ISNULL(@IsCancelled, IsCancelled),
-            UpdatedOnIST = DATEADD(MINUTE, 330, GETUTCDATE()),
-            UpdatedOnUTC = GETUTCDATE(),
-            UpdatedByName = @UpdatedByName,
-            UpdatedByEmail = @UpdatedByEmail,
-            UpdatedByUPN = @UpdatedByUPN,
-            UpdatedByADID = @UpdatedByADID
-            WHERE RequestId = @RequestId
-
-            IF @@ERROR<>0
+            IF(@IsCancelled IS NOT NULL AND @IsCancelled = 1)
             BEGIN
-	            ROLLBACK TRANSACTION
-	            SELECT 
-		            'Request task failed'   AS [Message],
-		            ''					    AS ErrorMessage,
-		            0						AS [Status],
-		            0				        AS Id,
-		            ''						AS ReferenceNo
-	            RETURN
+
+                UPDATE [dbo].[Trn_Request_TaskDetails]
+                SET RequestRemarks = ISNULL(@RequestRemarks, RequestRemarks),
+                IsCancelled = ISNULL(@IsCancelled, IsCancelled),
+                UpdatedOnIST = DATEADD(MINUTE, 330, GETUTCDATE()),
+                UpdatedOnUTC = GETUTCDATE(),
+                UpdatedByName = @UpdatedByName,
+                UpdatedByEmail = @UpdatedByEmail,
+                UpdatedByUPN = @UpdatedByUPN,
+                UpdatedByADID = @UpdatedByADID
+                WHERE RequestId = @RequestId
+
+                IF @@ERROR<>0
+                BEGIN
+	                ROLLBACK TRANSACTION
+	                SELECT 
+		                'Request task failed'   AS [Message],
+		                ''					    AS ErrorMessage,
+		                0						AS [Status],
+		                0				        AS Id,
+		                ''						AS ReferenceNo
+	                RETURN
+                END
+
             END
+            ELSE
+            BEGIN
+
+                UPDATE [dbo].[Trn_Request_TaskDetails]
+                SET TaskSubject = ISNULL(@TaskSubject, TaskSubject),
+                TaskDesc = ISNULL(@TaskDesc, TaskDesc),
+                CurrentTargetDate = ISNULL(@CurrentTargetDate, CurrentTargetDate),
+                RequestRemarks = ISNULL(@RequestRemarks, RequestRemarks),
+                StatusId = ISNULL(@StatusId, StatusId),
+                PriorityId = ISNULL(@PriorityId, PriorityId),
+                ParentTaskId = ISNULL(@ParentTaskId, ParentTaskId),
+                IsCancelled = ISNULL(@IsCancelled, IsCancelled),
+                UpdatedOnIST = DATEADD(MINUTE, 330, GETUTCDATE()),
+                UpdatedOnUTC = GETUTCDATE(),
+                UpdatedByName = @UpdatedByName,
+                UpdatedByEmail = @UpdatedByEmail,
+                UpdatedByUPN = @UpdatedByUPN,
+                UpdatedByADID = @UpdatedByADID
+                WHERE RequestId = @RequestId
+
+                IF @@ERROR<>0
+                BEGIN
+	                ROLLBACK TRANSACTION
+	                SELECT 
+		                'Request task failed'   AS [Message],
+		                ''					    AS ErrorMessage,
+		                0						AS [Status],
+		                0				        AS Id,
+		                ''						AS ReferenceNo
+	                RETURN
+                END
+
+            END        
 
 
             -- ADD ALL TASK ID IN A LIST
@@ -101,12 +133,12 @@ BEGIN
                 R.[RoleName],
                 T.[ParentTaskId],
                 T.[IsActive],
-                T.[CreatedOnIST],
-                T.[CreatedOnUTC],
-                T.[CreatedByName],
-                T.[CreatedByEmail],
-                T.[CreatedByUPN],
-                T.[CreatedByADID],
+                RQ.[CreatedOnIST],
+                --RQ.[CreatedOnUTC],
+                RQ.[CreatedByName],
+                --RQ.[CreatedByEmail],
+                --RQ.[CreatedByUPN],
+                --RQ.[CreatedByADID],
                 T.[TaskSubject],
                 T.[TaskDesc],
                 T.[CurrentTargetDate] AS 'InitialTargetDate',
@@ -135,7 +167,8 @@ BEGIN
             INNER JOIN [dbo].[Mst_TaskPriority] P ON P.PriorityId = T.PriorityId
             INNER JOIN [dbo].[Mst_Role] R ON R.RoleId = T.RoleId
             WHERE RQ.RequestId = @RequestId
-            FOR JSON AUTO
+            --FOR JSON AUTO
+            FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
             );
 
 

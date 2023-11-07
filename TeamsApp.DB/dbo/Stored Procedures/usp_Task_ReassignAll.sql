@@ -72,6 +72,18 @@ DECLARE @temp_table_return TABLE
 
     IF EXISTS (SELECT TaskId FROM @temp_table_task)
     BEGIN
+
+        IF EXISTS(SELECT 1 FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE TaskId IN (SELECT TaskId FROM @temp_table_task) AND IsActive = 1 AND ISNULL(IsCancelled,0) = 0)
+        BEGIN
+            SELECT 
+                'Reassign task failed, Pending request exists'                                              AS [Message],
+                ''					                                                                        AS ErrorMessage,
+                0						                                                                    AS [Status],
+                0				                                                                            AS Id,
+                ''						                                                                    AS ReferenceNo
+            RETURN
+        END
+
         INSERT INTO @temp_table_role EXEC usp_Task_CheckRole_ByTaskId @Id = 0, @Email = @UpdatedByEmail
 
         IF EXISTS (SELECT RoleId FROM @temp_table_role)

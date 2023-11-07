@@ -1,0 +1,660 @@
+
+
+Log Written Date: 07-11-2023 09:56:01
+
+Message : TaskAPIController --> GetRequestedTask() execution started: 07-11-2023 04:26:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 09:56:03
+
+Message : TaskAPIController --> GetRequestedTask() execution ended: 07-11-2023 04:26:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 09:56:03
+
+Message : TaskAPIController --> GetRequestedTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 09:59:17
+
+Message : TaskAPIController --> GetRequestedTask() execution started: 07-11-2023 04:29:17
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 09:59:18
+
+Message : TaskAPIController --> GetRequestedTask() execution ended: 07-11-2023 04:29:18
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 09:59:18
+
+Message : TaskAPIController --> GetRequestedTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 10:04:54
+
+Message : TaskAPIController --> GetRequestedTask() execution started: 07-11-2023 04:34:54
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 10:04:55
+
+Message : TaskAPIController --> GetRequestedTask() execution ended: 07-11-2023 04:34:55
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 10:04:55
+
+Message : TaskAPIController --> GetRequestedTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 10:22:37
+
+Message : TaskAPIController --> GetRequestedTask() execution started: 07-11-2023 04:52:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 10:22:38
+
+Message : TaskAPIController --> GetRequestedTask() execution ended: 07-11-2023 04:52:38
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 10:22:38
+
+Message : TaskAPIController --> GetRequestedTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:04:02
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 05:34:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:04:04
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 05:34:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:04:04
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:06:19
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 05:36:19
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:06:20
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 05:36:20
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:06:20
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:07:13
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 05:37:13
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:07:14
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 05:37:14
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:07:14
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:10:05
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 05:40:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:10:07
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 05:40:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:10:07
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:25:36
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 05:55:36
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:25:37
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 05:55:37
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:25:37
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:27:09
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 05:57:09
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:27:10
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 05:57:10
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:27:10
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:51:55
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 06:21:55
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:53:03
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 06:23:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:53:05
+
+Message : TaskAPIController --> UpdateRequest() execution ended: 07-11-2023 06:23:05
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:53:05
+
+Message : TaskAPIController --> UpdateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:54:30
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 06:24:30
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:54:31
+
+Message : TaskAPIController --> UpdateRequest() execution ended: 07-11-2023 06:24:31
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:54:31
+
+Message : TaskAPIController --> UpdateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:56:01
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 06:26:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:56:02
+
+Message : TaskAPIController --> UpdateRequest() execution ended: 07-11-2023 06:26:02
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:56:02
+
+Message : TaskAPIController --> UpdateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:57:07
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 06:27:07
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:57:08
+
+Message : TaskAPIController --> UpdateRequest() execution ended: 07-11-2023 06:27:08
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 11:57:08
+
+Message : TaskAPIController --> UpdateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:37:53
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 07:07:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:38:44
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 07:08:44
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:38:46
+
+Message : TaskAPIController --> UpdateRequest() execution ended: 07-11-2023 07:08:46
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:38:46
+
+Message : TaskAPIController --> UpdateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:43:58
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 07:13:58
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:43:59
+
+Message : TaskAPIController --> UpdateRequest() execution ended: 07-11-2023 07:13:59
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:43:59
+
+Message : TaskAPIController --> UpdateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:53:52
+
+Message : TaskAPIController --> UpdateRequest() execution started: 07-11-2023 07:23:52
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:53:53
+
+Message : TaskAPIController --> UpdateRequest() execution ended: 07-11-2023 07:23:53
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 12:53:53
+
+Message : TaskAPIController --> UpdateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:54
+
+Message : TaskAPIController --> CreateTask() execution started: 07-11-2023 08:27:54
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:57
+
+Message : "Uploading file --> 529e8886-3e6d-4fd2-8315-76e6cd26fae8_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:57
+
+Message : Configuring metadata for file --> 529e8886-3e6d-4fd2-8315-76e6cd26fae8_businessman.png || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:57
+
+Message : Generating SAS token successfully for file --> 529e8886-3e6d-4fd2-8315-76e6cd26fae8_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:57
+
+Message : Generated SAS token successfully for file --> 529e8886-3e6d-4fd2-8315-76e6cd26fae8_businessman.png || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/529e8886-3e6d-4fd2-8315-76e6cd26fae8_businessman.png?sv=2023-01-03&se=2123-10-14T08%3A27%3A57Z&sr=b&sp=r&sig=wuozZthaw43kRZN5I2v8yizpDRMhXo%2Fhjy2IVmdeBps%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:58
+
+Message : "Uploading file --> d10f0fda-5ed1-409a-b6c9-fbfd0287eec5_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:58
+
+Message : Configuring metadata for file --> d10f0fda-5ed1-409a-b6c9-fbfd0287eec5_businessman.png || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:58
+
+Message : Generating SAS token successfully for file --> d10f0fda-5ed1-409a-b6c9-fbfd0287eec5_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:58
+
+Message : Generated SAS token successfully for file --> d10f0fda-5ed1-409a-b6c9-fbfd0287eec5_businessman.png || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/d10f0fda-5ed1-409a-b6c9-fbfd0287eec5_businessman.png?sv=2023-01-03&se=2123-10-14T08%3A27%3A58Z&sr=b&sp=r&sig=9G0x39qf%2BU9DHvISQaOlyJa9xdqwqn9x4%2BDwnB%2FvLQU%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:59
+
+Message : TaskAPIController --> CreateTask() execution ended: 07-11-2023 08:27:59
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 13:57:59
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:02:11
+
+Message : TaskAPIController --> UpdateTask() execution started: 07-11-2023 08:32:11
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:02:12
+
+Message : TaskAPIController --> CreateTask() execution ended: 07-11-2023 08:32:12
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:02:12
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:04:51
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 08:34:51
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:04:52
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 08:34:52
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:04:52
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:06:11
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 08:36:11
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:06:12
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 08:36:12
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:06:12
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:16
+
+Message : TaskAPIController --> CreateTask() execution started: 07-11-2023 08:51:16
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:23
+
+Message : "Uploading file --> e7748c92-7205-49f4-8c4f-48e4febbd075_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:24
+
+Message : Configuring metadata for file --> e7748c92-7205-49f4-8c4f-48e4febbd075_businessman.png || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:24
+
+Message : Generating SAS token successfully for file --> e7748c92-7205-49f4-8c4f-48e4febbd075_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:24
+
+Message : Generated SAS token successfully for file --> e7748c92-7205-49f4-8c4f-48e4febbd075_businessman.png || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/e7748c92-7205-49f4-8c4f-48e4febbd075_businessman.png?sv=2023-01-03&se=2123-10-14T08%3A51%3A24Z&sr=b&sp=r&sig=hSCw3a313obdv56ejcUcG6i2pLVj%2Ft8SnfljTmaPWMA%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:24
+
+Message : "Uploading file --> 0c888a65-06da-442b-b62e-33d7fa122079_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:24
+
+Message : Configuring metadata for file --> 0c888a65-06da-442b-b62e-33d7fa122079_businessman.png || TaskId --> 2
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:24
+
+Message : Generating SAS token successfully for file --> 0c888a65-06da-442b-b62e-33d7fa122079_businessman.png
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:24
+
+Message : Generated SAS token successfully for file --> 0c888a65-06da-442b-b62e-33d7fa122079_businessman.png || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/0c888a65-06da-442b-b62e-33d7fa122079_businessman.png?sv=2023-01-03&se=2123-10-14T08%3A51%3A24Z&sr=b&sp=r&sig=jtJjIsaJpyROkq3BFryX8%2Figuayw0r9NAC9KX4qzAbg%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:26
+
+Message : TaskAPIController --> CreateTask() execution ended: 07-11-2023 08:51:26
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:26
+
+Message : TaskAPIController --> CreateTask() execution time: 00:00:09
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:35
+
+Message : TaskAPIController --> UpdateTask() execution started: 07-11-2023 08:51:35
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:36
+
+Message : TaskAPIController --> CreateTask() execution ended: 07-11-2023 08:51:36
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:21:36
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:22:32
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 08:52:32
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:22:33
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 08:52:33
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:22:33
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:23:03
+
+Message : TaskAPIController --> CreateRequest() execution started: 07-11-2023 08:53:03
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:23:04
+
+Message : TaskAPIController --> CreateRequest() execution ended: 07-11-2023 08:53:04
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:23:04
+
+Message : TaskAPIController --> CreateRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:24:25
+
+Message : TaskAPIController --> ActionOnTaskRequest() execution started: 07-11-2023 08:54:25
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:24:26
+
+Message : TaskAPIController --> ActionOnTaskRequest() execution ended: 07-11-2023 08:54:26
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:24:26
+
+Message : TaskAPIController --> ActionOnTaskRequest() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:29:49
+
+Message : TaskAPIController --> UpdateTask() execution started: 07-11-2023 08:59:49
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:29:51
+
+Message : TaskAPIController --> CreateTask() execution ended: 07-11-2023 08:59:51
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 14:29:51
+
+Message : TaskAPIController --> UpdateTask() execution time: 00:00:01
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:15
+
+Message : TaskAPIController --> UploadFiles() execution started: 07-11-2023 11:39:15
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:16
+
+Message : "Uploading file --> 3c477dc7-aa95-4248-842c-4f274d5c0c1c_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:16
+
+Message : Configuring metadata for file --> 3c477dc7-aa95-4248-842c-4f274d5c0c1c_bell.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:16
+
+Message : Generating SAS token successfully for file --> 3c477dc7-aa95-4248-842c-4f274d5c0c1c_bell.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:16
+
+Message : Generated SAS token successfully for file --> 3c477dc7-aa95-4248-842c-4f274d5c0c1c_bell.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/3c477dc7-aa95-4248-842c-4f274d5c0c1c_bell.gif?sv=2023-01-03&se=2123-10-14T11%3A39%3A16Z&sr=b&sp=r&sig=A5ou51H4K0V4eCwAKTQ36wsuq8MpyAOXh6vxbrXYIuQ%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:16
+
+Message : "Uploading file --> 4f27cd8d-c594-433e-81d5-9ac5d506343d_check-circle.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:17
+
+Message : Configuring metadata for file --> 4f27cd8d-c594-433e-81d5-9ac5d506343d_check-circle.gif || TaskId --> 1
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:17
+
+Message : Generating SAS token successfully for file --> 4f27cd8d-c594-433e-81d5-9ac5d506343d_check-circle.gif
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:17
+
+Message : Generated SAS token successfully for file --> 4f27cd8d-c594-433e-81d5-9ac5d506343d_check-circle.gif || SAS --> https://teststorageesplspd.blob.core.windows.net/meetingsfiles/4f27cd8d-c594-433e-81d5-9ac5d506343d_check-circle.gif?sv=2023-01-03&se=2123-10-14T11%3A39%3A17Z&sr=b&sp=r&sig=Uy9o%2Bv98pAPDfew23OrBGbXClA0ek7ay5t70I0VcKm0%3D
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:18
+
+Message : TaskAPIController --> UploadFiles() execution ended: 07-11-2023 11:39:18
+-------------------------------------------------------------------------
+
+
+Log Written Date: 07-11-2023 17:09:18
+
+Message : TaskAPIController --> UploadFiles() execution time: 00:00:03
+-------------------------------------------------------------------------
