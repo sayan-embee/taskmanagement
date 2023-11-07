@@ -448,6 +448,10 @@ namespace TeamsApp.Common.Models
         public string UpdatedByADID { get; set; }
 
 
+        [JsonProperty("requestId")]
+        public int? RequestId { get; set; }
+
+
         [JsonProperty("customMessage")]
         public string CustomMessage { get; set; }
 

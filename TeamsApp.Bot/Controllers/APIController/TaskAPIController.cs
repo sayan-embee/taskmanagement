@@ -790,139 +790,220 @@ namespace TeamsApp.Bot.Controllers.APIController
 
         #endregion
 
-        #region NOTIFICATION
+        #region REQUEST
 
-        [HttpGet]
-        [Route("notification/priority")]
-        public async Task<IActionResult> SendPriorityNotification()
+        [HttpPost]
+        [Route("request/get")]
+        public async Task<IActionResult> GetRequestedTask(TaskRequestFilterModel data)
         {
-            DateTime? fromDate = null;
-            DateTime? toDate = null;
-            var returnModel = new SchedularLogModel();
-            returnModel.RunId = 0;
-
-            try
-            {
-                var result = await this._taskData.GetSchedularLog(fromDate, toDate, "PRIORITY-NOTIFICATION", "CHECK");
-                if (result != null && result.Any() && result.FirstOrDefault().IsSuccess == true)
-                {
-                    returnModel.IsSuccess = false;
-                    returnModel.ExecutionTimeInSecs = 0;
-                    returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
-                    returnModel.Message = "SCHEDULAR APP HAS ALREADY RUN TODAY";
-
-                    return this.Ok(returnModel);
-                }
-            }
-            catch (Exception ex)
-            {
-                this.RecordEvent("TaskAPIController --> InsertSchedularLog() - Failed to execute.", RequestType.Failed);
-                this._logger.LogError(ex, $"TaskAPIController --> InsertSchedularLog() execution failed");
-                ExceptionLogging.SendErrorToText(ex);
-            }
-
             try
             {
                 DateTime startTime = DateTime.UtcNow;
-                ExceptionLogging.WriteMessageToText($"TaskAPIController --> SendPriorityNotification() execution started: {DateTime.UtcNow}");
-                this._logger.LogInformation($"TaskAPIController --> SendPriorityNotification() execution started: {DateTime.UtcNow}");
-                
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetRequestedTask() execution started: {DateTime.UtcNow}");
+                //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution started: {DateTime.UtcNow}");
 
-                var resultList = await _taskData.GetTaskForPriorityNotification(fromDate, toDate);
-                if (resultList != null && resultList.Any())
+                var response = await this._taskData.GetRequestedTask(data);
+                if (response != null)
                 {
-                    var result = await this._notificationHelper.ProcesssPriorityNotification(resultList);
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetRequestedTask() execution ended: {DateTime.UtcNow}");
+                    //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution ended: {DateTime.UtcNow}");
 
-                    DateTime local_endTime = DateTime.UtcNow;
-                    TimeSpan local_timeDifference = local_endTime - startTime;
-                    double seconds = local_timeDifference.TotalSeconds;
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
 
-                    if (result)
-                    {
-                        string taskIdList = string.Empty;
-                        StringBuilder taskIds = new StringBuilder();
+                    response.ExecutionTime = formattedTimeDifference;
 
-                        foreach (var r in resultList)
-                        {
-                            taskIds.Append(r.TaskId);
-                            taskIds.Append(",");
-                        }
-
-                        if (taskIds.Length > 0)
-                        {
-                            taskIds.Length--; // Remove the last character, which is the trailing comma
-                        }
-
-                        taskIdList = taskIds.ToString();
-
-                        returnModel.IsSuccess = true;
-                        returnModel.ExecutionTimeInSecs = seconds;
-                        returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
-                        returnModel.ReferenceInfo = taskIdList;
-                        returnModel.Message = "SUCCESS";
-                    }
-                    else
-                    {
-                        returnModel.IsSuccess = true;
-                        returnModel.ExecutionTimeInSecs = seconds;
-                        returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
-                        returnModel.Message = "INTERRUPTED";
-                    }
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> GetRequestedTask() execution time: {formattedTimeDifference}");
+                    //this._logger.LogInformation($"TaskAPIController --> GetTaskById() execution time: {formattedTimeDifference}");
                 }
-                else
-                {
-                    returnModel.IsSuccess = true;
-                    returnModel.ExecutionTimeInSecs = 0;
-                    returnModel.TriggerCode = "PRIORITY-NOTIFICATION";
-                    returnModel.Message = "NOT-FOUND";
-                }
-
-
-                DateTime endTime = DateTime.UtcNow;
-                ExceptionLogging.WriteMessageToText($"TaskAPIController --> SendPriorityNotification() execution ended: {DateTime.UtcNow}");
-                this._logger.LogInformation($"TaskAPIController --> SendPriorityNotification() execution ended: {DateTime.UtcNow}");
-
-                TimeSpan timeDifference = endTime - startTime;
-                string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
-
-                ExceptionLogging.WriteMessageToText($"TaskAPIController --> SendPriorityNotification() execution time: {formattedTimeDifference}");
-                this._logger.LogInformation($"TaskAPIController --> SendPriorityNotification() execution time: {formattedTimeDifference}");
-
+                return this.Ok(response);
             }
             catch (Exception ex)
             {
-                this.RecordEvent("TaskAPIController --> SendPriorityNotification() - Failed to execute.", RequestType.Failed);
-                this._logger.LogError(ex, $"TaskAPIController --> SendPriorityNotification() execution failed");
+                this.RecordEvent("TaskAPIController --> GetRequestedTask() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> GetRequestedTask() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
-
-                returnModel.IsSuccess = false;
-                returnModel.ExecutionTimeInSecs = 0;
-                returnModel.TriggerCode = "PRIORITY-NOTIFICATION";                
-                returnModel.ReferenceInfo = "ERROR: "+ex.ToString();
-                returnModel.Message = "FAILED";
+                return this.Ok();
             }
+        }
 
+        [HttpPost]
+        [Route("request")]
+        public async Task<IActionResult> CreateRequest(TaskRequestDetailsModel dataModel)
+        {
             try
             {
-                var result = await this._taskData.InsertSchedularLog(returnModel);
-                if (result != null && result.Status == 1)
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateRequest() execution started: {DateTime.UtcNow}");
+                this._logger.LogInformation($"TaskAPIController --> CreateRequest() execution started: {DateTime.UtcNow}");
+
+                // CHECK MANDATORY FIELDS IN BACKEND (ALREADY CHECKED IN FRONTEND)
+                if (
+                   //string.IsNullOrEmpty(dataModel.TaskSubject)
+                   //|| string.IsNullOrEmpty(dataModel.TaskDesc)
+                   dataModel.CurrentTargetDate == null
+                   //|| (dataModel.StatusId == null || dataModel.StatusId == 0)
+                   //|| (dataModel.PriorityId == null || dataModel.PriorityId == 0)
+                   )
                 {
-                    if (!string.IsNullOrEmpty(result.Id))
-                    {
-                        returnModel.RunId = int.Parse(result.Id);
-                    }                   
+                    return this.Ok("Mandatory fields are required");
                 }
+
+                if ((dataModel.TaskId == null || dataModel.TaskId == 0) || (dataModel.RequestorRoleId == null || dataModel.RequestorRoleId == 0))
+                {
+                    return this.Ok("Mandatory fields are required");
+                }
+
+                if (dataModel.ParentTaskId == null)
+                {
+                    dataModel.ParentTaskId = 0;
+                }
+
+                var response = await this._taskData.InsertTaskRequest(dataModel);
+                if (response != null)
+                {
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateRequest() execution ended: {DateTime.UtcNow}");
+                    this._logger.LogInformation($"TaskAPIController --> CreateRequest() execution ended: {DateTime.UtcNow}");
+
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+                    response.ExecutionTime = formattedTimeDifference;
+
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> CreateRequest() execution time: {formattedTimeDifference}");
+                    this._logger.LogInformation($"TaskAPIController --> CreateRequest() execution time: {formattedTimeDifference}");
+                }
+                return this.Ok(response);
             }
             catch (Exception ex)
             {
-                this.RecordEvent("TaskAPIController --> InsertSchedularLog() - Failed to execute.", RequestType.Failed);
-                this._logger.LogError(ex, $"TaskAPIController --> InsertSchedularLog() execution failed");
+                this.RecordEvent("TaskAPIController --> CreateRequest() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> CreateRequest() execution failed");
                 ExceptionLogging.SendErrorToText(ex);
+                return this.Ok();
             }
+        }
 
-            return this.Ok(returnModel);
+
+        [HttpPost]
+        [Route("request/update")]
+        public async Task<IActionResult> UpdateRequest(TaskRequestDetailsModel dataModel)
+        {
+            try
+            {
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> UpdateRequest() execution started: {DateTime.UtcNow}");
+                this._logger.LogInformation($"TaskAPIController --> UpdateRequest() execution started: {DateTime.UtcNow}");
+
+                // CHECK MANDATORY FIELDS IN BACKEND (ALREADY CHECKED IN FRONTEND)
+                if (
+                    //string.IsNullOrEmpty(dataModel.TaskSubject)
+                    //|| string.IsNullOrEmpty(dataModel.TaskDesc)
+                    dataModel.CurrentTargetDate == null
+                    //|| (dataModel.StatusId == null || dataModel.StatusId == 0)
+                    //|| (dataModel.PriorityId == null || dataModel.PriorityId == 0)
+                    )
+                {
+                    return this.Ok("Mandatory fields are required");
+                }
+
+                if ((dataModel.TaskId == null || dataModel.TaskId == 0) || (dataModel.RequestorRoleId == null || dataModel.RequestorRoleId == 0) || (dataModel.RequestId == 0))
+                {
+                    return this.Ok("Mandatory fields are required");
+                }
+
+                if (dataModel.ParentTaskId == null)
+                {
+                    dataModel.ParentTaskId = 0;
+                }
+
+                var response = await this._taskData.UpdateTaskRequest(dataModel);
+                if (response != null)
+                {
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> UpdateRequest() execution ended: {DateTime.UtcNow}");
+                    this._logger.LogInformation($"TaskAPIController --> UpdateRequest() execution ended: {DateTime.UtcNow}");
+
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+                    response.ExecutionTime = formattedTimeDifference;
+
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> UpdateRequest() execution time: {formattedTimeDifference}");
+                    this._logger.LogInformation($"TaskAPIController --> UpdateRequest() execution time: {formattedTimeDifference}");
+                }
+                return this.Ok(response);
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> UpdateRequest() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> UpdateRequest() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return this.Ok();
+            }
+        }
+
+        [HttpPost]
+        [Route("request/action")]
+        public async Task<IActionResult> ActionOnTaskRequest(TaskRequestDetailsModel dataModel)
+        {
+            try
+            {
+                DateTime startTime = DateTime.UtcNow;
+                ExceptionLogging.WriteMessageToText($"TaskAPIController --> ActionOnTaskRequest() execution started: {DateTime.UtcNow}");
+                this._logger.LogInformation($"TaskAPIController --> ActionOnTaskRequest() execution started: {DateTime.UtcNow}");
+
+                // CHECK MANDATORY FIELDS IN BACKEND (ALREADY CHECKED IN FRONTEND)
+                //if (
+                //    //string.IsNullOrEmpty(dataModel.TaskSubject)
+                //    //|| string.IsNullOrEmpty(dataModel.TaskDesc)
+                //    dataModel.CurrentTargetDate == null
+                //    //|| (dataModel.StatusId == null || dataModel.StatusId == 0)
+                //    //|| (dataModel.PriorityId == null || dataModel.PriorityId == 0)
+                //    )
+                //{
+                //    return this.Ok("Mandatory fields are required");
+                //}
+
+                if ((dataModel.TaskId == null || dataModel.TaskId == 0) || (dataModel.ApproverRoleId == null || dataModel.ApproverRoleId == 0) || (dataModel.RequestId == 0))
+                {
+                    return this.Ok("Mandatory fields are required");
+                }
+
+                if (dataModel.ParentTaskId == null)
+                {
+                    dataModel.ParentTaskId = 0;
+                }
+
+                var response = await this._taskData.ActionOnTaskRequest(dataModel);
+                if (response != null)
+                {
+                    DateTime endTime = DateTime.UtcNow;
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> ActionOnTaskRequest() execution ended: {DateTime.UtcNow}");
+                    this._logger.LogInformation($"TaskAPIController --> ActionOnTaskRequest() execution ended: {DateTime.UtcNow}");
+
+                    TimeSpan timeDifference = endTime - startTime;
+                    string formattedTimeDifference = timeDifference.ToString(@"hh\:mm\:ss");
+
+                    response.ExecutionTime = formattedTimeDifference;
+
+                    ExceptionLogging.WriteMessageToText($"TaskAPIController --> ActionOnTaskRequest() execution time: {formattedTimeDifference}");
+                    this._logger.LogInformation($"TaskAPIController --> ActionOnTaskRequest() execution time: {formattedTimeDifference}");
+                }
+                return this.Ok(response);
+            }
+            catch (Exception ex)
+            {
+                this.RecordEvent("TaskAPIController --> ActionOnTaskRequest() - Failed to execute.", RequestType.Failed);
+                this._logger.LogError(ex, $"TaskAPIController --> ActionOnTaskRequest() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return this.Ok();
+            }
         }
 
         #endregion
+
     }
 }

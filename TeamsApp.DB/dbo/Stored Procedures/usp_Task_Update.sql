@@ -209,21 +209,21 @@ BEGIN
             [CollaboratorADID],
             @TransactionId
         FROM [dbo].[Trn_TaskDetails] WITH (NOLOCK) WHERE [TaskId] = @TaskId
-    END
 
-    IF @@ERROR<>0
-    BEGIN
-	    ROLLBACK TRANSACTION
-	    SELECT 
-		    'Update task failed'        AS [Message],
-		    ''					        AS ErrorMessage,
-		    0						    AS [Status],
-		    0				            AS Id,
-		    ''						    AS ReferenceNo
-	    RETURN
-    END
+        IF @@ERROR<>0
+        BEGIN
+	        ROLLBACK TRANSACTION
+	        SELECT 
+		        'Update task failed'        AS [Message],
+		        ''					        AS ErrorMessage,
+		        0						    AS [Status],
+		        0				            AS Id,
+		        ''						    AS ReferenceNo
+	        RETURN
+        END
 
-    SET @HistoryId = @@IDENTITY;
+        SET @HistoryId = @@IDENTITY;
+    END    
     
     IF(@HistoryId > 0)
     BEGIN
@@ -251,20 +251,51 @@ BEGIN
             [CollaboratorADID] = ISNULL(@CollaboratorADID,CollaboratorADID),
             [TransactionId] = @TransactionId
         WHERE [TaskId] = @TaskId
+
+        IF @@ERROR<>0
+        BEGIN
+	        ROLLBACK TRANSACTION
+	        SELECT 
+		        'Update task failed'    AS [Message],
+		        ''					    AS ErrorMessage,
+		        0						AS [Status],
+		        0				        AS Id,
+		        ''						AS ReferenceNo
+	        RETURN
+        END
     END
 
 
-    IF @@ERROR<>0
+    IF(@ProgressId > 0 AND @HistoryId > 0)
     BEGIN
-	    ROLLBACK TRANSACTION
-	    SELECT 
-		    'Update task failed'    AS [Message],
-		    ''					    AS ErrorMessage,
-		    0						AS [Status],
-		    0				        AS Id,
-		    ''						AS ReferenceNo
-	    RETURN
+        
+        IF EXISTS(SELECT 1 FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND IsActive = 1 AND ISNULL(IsCancelled,0) = 0)
+        BEGIN
+
+            DECLARE @RequestId BIGINT = 0;
+            DECLARE @RequestedTargetDate DATETIME = NULL;
+
+            SET @RequestId = (SELECT TOP 1 RequestId FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE TaskId = @TaskId AND IsActive = 1 AND ISNULL(IsCancelled,0) = 0 ORDER BY RequestId DESC)
+
+            SET @RequestedTargetDate = (SELECT CurrentTargetDate FROM [dbo].[Trn_Request_TaskDetails] WITH(NOLOCK) WHERE RequestId = @RequestId)
+
+            UPDATE [dbo].[Trn_Request_TaskDetails]
+            SET ProgressId = @ProgressId,
+            TransactionId = @TransactionId,
+            IsActive = 0
+            WHERE RequestId = @RequestId AND TaskId = @TaskId
+
+            IF (CONVERT(DATE, @CurrentTargetDate, 103) >= CONVERT(DATE, @RequestedTargetDate, 103))
+            BEGIN
+                UPDATE [dbo].[Trn_TaskDetails]
+                SET [NoOfExtensionRequested] = ISNULL([NoOfExtensionRequested], 0) + 1
+                WHERE [TaskId] = @TaskId
+            END           
+
+        END
+
     END
+    
 
     -- ADD ALL TASK ID IN A LIST
     DECLARE @IdList VARCHAR(MAX) = NULL;

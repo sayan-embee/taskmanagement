@@ -224,4 +224,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="FileName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="82f5d933-88c5-4858-bc80-7bb163bc98ad" ChangeDateTime="11/02/2023 06:57:52" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_SchedularLog].[ExecutionTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_SchedularLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExecutionTimeInSecs" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ae649bdf-8ed3-41e1-9d79-287b9f741e93" ChangeDateTime="11/02/2023 06:59:09" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Trn_SchedularLog].[ReferenceId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trn_SchedularLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReferenceInfo" />
+  </Operation>
 </Operations>

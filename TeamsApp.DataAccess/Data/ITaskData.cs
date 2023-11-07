@@ -25,5 +25,9 @@ namespace TeamsApp.DataAccess.Data
         Task<List<TaskDetailsCardModel>> GetTaskForPriorityNotification(DateTime? FromDate, DateTime? ToDate);
         Task<ReturnMessageModel> InsertSchedularLog(SchedularLogModel data);
         Task<List<SchedularLogModel>> GetSchedularLog(DateTime? FromDate, DateTime? ToDate, string TriggerCode, string Type);
+        Task<ReturnMessageModel> InsertTaskRequest(TaskRequestDetailsModel data);
+        Task<ReturnMessageModel> UpdateTaskRequest(TaskRequestDetailsModel data);
+        Task<ReturnMessageModel> ActionOnTaskRequest(TaskRequestDetailsModel data);
+        Task<TaskRequestDetailsViewModel> GetRequestedTask(TaskRequestFilterModel data);
     }
 }

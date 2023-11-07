@@ -119,3 +119,5 @@ D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\No
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\reassignTaskCard.json
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\reassignTaskCard_NoAction.json
 D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\reassignTaskCard_withActionBtn.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\newRequestTaskCard.json
+D:\TeamsProject\Task Management2\Task_App\TeamsApp.Bot\bin\Debug\net6.0\Cards\NotificationCard\newRequestTaskCard_withActionBtn.json

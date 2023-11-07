@@ -260,7 +260,7 @@ END
 
     -- UPDATE REF NO
     UPDATE [dbo].[Trn_TaskDetails]
-    SET TaskRefNo = FORMAT(TaskId,'000000')
+    SET TaskRefNo = 'TSK-' + CAST(FORMAT(TaskId,'000000') AS NVARCHAR(100))
     WHERE TaskUnqId = @TaskUnqId
 
     DECLARE @ProgressId BIGINT = 0;

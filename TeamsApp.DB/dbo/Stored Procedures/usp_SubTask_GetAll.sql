@@ -82,9 +82,9 @@ DECLARE @temp_table TABLE
     AND (@StatusId IS NULL OR T.[StatusId] = @StatusId)
     AND (@PriorityId IS NULL OR T.[PriorityId] = @PriorityId)
     AND (@RoleId IS NULL OR T.[RoleId] = @RoleId)
-    AND (@TaskSubject IS NULL OR T.[TaskSubject] = @TaskSubject)
-    AND (@FromDate IS NULL OR T.[CurrentTargetDate] >= @FromDate)
-    AND (@ToDate IS NULL OR T.[CurrentTargetDate] <= @ToDate)
+    AND (@TaskSubject IS NULL OR T.[TaskSubject] LIKE @TaskSubject + '%')
+    AND (@FromDate IS NULL OR CONVERT(DATE, T.[CurrentTargetDate], 103) >= @FromDate)
+    AND (@ToDate IS NULL OR CONVERT(DATE, T.[CurrentTargetDate], 103) <= @ToDate)
 
     ORDER BY T.[CurrentTargetDate]
 END

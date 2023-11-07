@@ -788,5 +788,129 @@ namespace TeamsApp.DataAccess.Data
         }
 
         #endregion
+
+        #region REQUEST
+
+        public async Task<TaskRequestDetailsViewModel> GetRequestedTask(TaskRequestFilterModel data)
+        {
+            var returnObject = new TaskRequestDetailsViewModel();
+            try
+            {
+                var results = await _db.LoadData<TaskRequestDetailsModel, dynamic>("dbo.usp_RequestedTask_GetAll",
+                new
+                {
+                    data.RequestedUserName,
+                    data.RequestedUserEmail,
+                    data.LoggedInUserEmail,
+                    data.StatusId,
+                    data.PriorityId,
+                    data.ParentTaskId,
+                    //data.TaskSubject,
+                    data.FromDate,
+                    data.ToDate
+                });
+
+                if (results != null && results.Any()) { returnObject.RequestedTaskDetailsList = results.ToList(); }
+
+                return returnObject;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetAllRequestedTask() --> SQL(usp_RequestedTask_GetAll) execution failed");
+                return null;
+            }
+        }
+
+        public async Task<ReturnMessageModel> InsertTaskRequest(TaskRequestDetailsModel data)
+        {
+            try
+            {
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_InsertRequest",
+                new
+                {
+                    data.TaskId,
+                    data.StatusId,
+                    data.PriorityId,
+                    RoleId = data.RequestorRoleId,
+                    data.ParentTaskId,
+                    data.CreatedByName,
+                    data.CreatedByEmail,
+                    data.CreatedByUPN,
+                    data.CreatedByADID,
+                    data.TaskSubject,
+                    data.TaskDesc,
+                    data.CurrentTargetDate,
+                    data.RequestRemarks
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> InsertTaskRequest() --> SQL(usp_Task_InsertRequest) execution failed");
+                return null;
+            }
+        }
+
+
+        public async Task<ReturnMessageModel> UpdateTaskRequest(TaskRequestDetailsModel data)
+        {
+            try
+            {
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_UpdateRequest",
+                new
+                {
+                    data.RequestId,
+                    data.TaskId,
+                    data.StatusId,
+                    data.PriorityId,
+                    RoleId = data.RequestorRoleId,
+                    data.ParentTaskId,
+                    data.UpdatedByName,
+                    data.UpdatedByEmail,
+                    data.UpdatedByUPN,
+                    data.UpdatedByADID,
+                    data.TaskSubject,
+                    data.TaskDesc,
+                    data.CurrentTargetDate,
+                    data.RequestRemarks,
+                    data.IsCancelled
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> UpdateTaskRequest() --> SQL(usp_Task_UpdateRequest) execution failed");
+                return null;
+            }
+        }
+
+
+        public async Task<ReturnMessageModel> ActionOnTaskRequest(TaskRequestDetailsModel data)
+        {
+            try
+            {
+                var results = await _db.SaveData<ReturnMessageModel, dynamic>(storedProcedure: "usp_Task_ActionOnRequest",
+                new
+                {
+                    data.RequestId,
+                    data.TaskId,
+                    RoleId = data.ApproverRoleId,
+                    data.UpdatedByName,
+                    data.UpdatedByEmail,
+                    data.UpdatedByUPN,
+                    data.UpdatedByADID,
+                    data.ApprovalRemarks,
+                    data.IsApproved
+                });
+                return results.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> ActionOnTaskRequest() --> SQL(usp_Task_ActionOnRequest) execution failed");
+                return null;
+            }
+        }
+
+        #endregion
     }
 }

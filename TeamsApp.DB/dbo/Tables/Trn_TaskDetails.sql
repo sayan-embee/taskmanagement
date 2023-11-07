@@ -35,8 +35,6 @@
     [CollaboratorUPN] NVARCHAR(50) NULL,
     [CollaboratorADID] NVARCHAR(100) NULL,
     [TransactionId] UNIQUEIDENTIFIER NULL,
-    [OverdueDays] INT NULL,
-    [OverdueDaysUpdatedOn] DATETIME NULL,
     [NoOfExtensionRequested] INT NULL,
 	[NoOfTargetDateMissed] INT NULL,
     [LastMissedTargetDate] DATETIME NULL,

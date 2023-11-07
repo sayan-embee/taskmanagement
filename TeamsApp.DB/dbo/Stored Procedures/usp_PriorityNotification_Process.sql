@@ -134,15 +134,15 @@ BEGIN
 
 	IF EXISTS (SELECT * FROM @temp_table)
 	BEGIN
-		
-		UPDATE TD
-		SET TD.OverdueDays = ISNULL(TD.OverdueDays,0) + 1,
-		TD.OverdueDaysUpdatedOn = @TodayDate
-		FROM dbo.[Trn_TaskDetails] TD
-		INNER JOIN @temp_table temp ON temp.TaskId = TD.TaskId
-		WHERE ISNULL(temp.IsOverdue, 0) = 1
-		AND (TD.OverdueDays IS NULL OR
-		NOT EXISTS (SELECT 1 FROM dbo.[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = TD.TaskId AND CONVERT(DATE, OverdueDaysUpdatedOn, 103) = @TodayDate))
+
+		--UPDATE TD
+		--SET TD.OverdueDays = CASE WHEN (ISNULL(temp.IsOverdue, 0) = 1) THEN (DATEDIFF(DAY, DATEADD(MINUTE ,300, TD.[CurrentTargetDate]), GETUTCDATE())) ELSE 0 END,
+		--TD.OverdueDaysUpdatedOn = @TodayDate
+		--FROM dbo.[Trn_TaskDetails] TD
+		--INNER JOIN @temp_table temp ON temp.TaskId = TD.TaskId
+		--WHERE ISNULL(temp.IsOverdue, 0) = 1
+		--AND (TD.OverdueDays IS NULL OR
+		--NOT EXISTS (SELECT 1 FROM dbo.[Trn_TaskDetails] WITH(NOLOCK) WHERE TaskId = TD.TaskId AND CONVERT(DATE, OverdueDaysUpdatedOn, 103) = @TodayDate))
 
 
 		UPDATE TD
@@ -155,6 +155,11 @@ BEGIN
 										WHEN TD.NoOfTargetDateMissed IS NOT NULL THEN
 											CASE WHEN @TodayDate > CONVERT(DATE, TD.CurrentTargetDate, 103) AND CONVERT(DATE, TD.CurrentTargetDate, 103) > TD.LastMissedTargetDate THEN TD.CurrentTargetDate END
 											ELSE TD.LastMissedTargetDate
+										END,
+		TD.MissedTargetDateUpdatedOn = CASE WHEN TD.NoOfTargetDateMissed IS NULL THEN DATEADD(MINUTE, 330, GETUTCDATE())
+										WHEN TD.NoOfTargetDateMissed IS NOT NULL THEN
+											CASE WHEN @TodayDate > CONVERT(DATE, TD.CurrentTargetDate, 103) AND CONVERT(DATE, TD.CurrentTargetDate, 103) > TD.LastMissedTargetDate THEN DATEADD(MINUTE, 330, GETUTCDATE()) END
+											ELSE TD.MissedTargetDateUpdatedOn
 										END
 		FROM dbo.[Trn_TaskDetails] TD
 		INNER JOIN @temp_table temp ON temp.TaskId = TD.TaskId
