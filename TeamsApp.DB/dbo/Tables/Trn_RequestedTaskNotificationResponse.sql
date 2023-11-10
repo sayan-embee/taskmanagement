@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Trn_RequestedTaskNotificationResponse]
 (
 	[ReqNotificationId] INT NOT NULL PRIMARY KEY IDENTITY,
+	[RequestId] INT NULL,
 	TaskId BIGINT NULL,
 	[TransactionId] UNIQUEIDENTIFIER NULL,
 	ReplyToId NVARCHAR(100) NULL,

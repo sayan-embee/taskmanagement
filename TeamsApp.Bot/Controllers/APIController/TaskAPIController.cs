@@ -958,6 +958,30 @@ namespace TeamsApp.Bot.Controllers.APIController
                     this._logger.LogError(ex, $"TaskAPIController --> ProcessOtherActivities_CreateRequest() execution failed: {JsonConvert.SerializeObject(response.ReferenceNo, Formatting.Indented)}");
                     ExceptionLogging.SendErrorToText(ex);
                 }
+
+                try
+                {
+                    string requestIdList = string.Empty;
+                    StringBuilder requestIds = new StringBuilder();
+
+                    requestIds.Append(response.Id);
+                    requestIdList = requestIds.ToString();
+
+                    if (requestIdList != null && requestIdList.Any())
+                    {
+                        // SEND EMAIL NOTIFICATIONS TO STAKEHOLDERS
+                        var requestEmailDetails = await this._taskData.GetEmailsByRequestIdList(requestIdList);
+                        if (requestEmailDetails != null && requestEmailDetails.Any())
+                        {
+                            await this._emailHelper.ProcesssEmail_RequestTask(requestEmailDetails);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this._logger.LogError(ex, $"TaskAPIController --> ProcesssEmail_RequestTask() execution failed");
+                    ExceptionLogging.SendErrorToText(ex);
+                }
             }
         }
 
@@ -1151,7 +1175,7 @@ namespace TeamsApp.Bot.Controllers.APIController
                 {
                     this._logger.LogError(ex, $"TaskAPIController --> ProcessOtherActivities_UpdateRequest() execution failed: {JsonConvert.SerializeObject(response.ReferenceNo, Formatting.Indented)}");
                     ExceptionLogging.SendErrorToText(ex);
-                }
+                }                
             }
         }
 

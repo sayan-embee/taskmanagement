@@ -468,8 +468,14 @@ namespace TeamsApp.Common.Models
         [JsonProperty("emailNotificationId")]
         public int EmailNotificationId { get; set; }
 
+        [JsonProperty("reqEmailNotificationId")]
+        public int ReqEmailNotificationId { get; set; }
+
         [JsonProperty("taskId")]
         public long? TaskId { get; set; }
+
+        [JsonProperty("requestId")]
+        public int? RequestId { get; set; }
 
         [JsonProperty("transactionId")]
         public Guid TransactionId { get; set; }

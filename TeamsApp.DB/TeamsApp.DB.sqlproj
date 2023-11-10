@@ -120,6 +120,8 @@
     <Build Include="dbo\Stored Procedures\usp_RequestedTask_Insert_NotificationResponse.sql" />
     <Build Include="dbo\Stored Procedures\usp_Task_GetRequestedTaskNotificationResponse.sql" />
     <Build Include="dbo\Stored Procedures\usp_Task_Remove_FileResponse.sql" />
+    <Build Include="dbo\Tables\Trn_RequestedTaskEmailNotification.sql" />
+    <Build Include="dbo\Stored Procedures\usp_Emails_GetByRequestIdList.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\PostDeployment\Script.PostDeployment1.sql" />

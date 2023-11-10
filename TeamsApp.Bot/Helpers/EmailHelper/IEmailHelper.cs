@@ -8,5 +8,6 @@ namespace TeamsApp.Bot.Helpers.EmailHelper
     {
         Task<bool> ProcesssEmail_CreateTask(List<TaskEmailNotificationModel> data);
         Task<bool> ProcesssEmail_UpdateTask(List<TaskEmailNotificationModel> data);
+        Task<bool> ProcesssEmail_RequestTask(List<TaskEmailNotificationModel> data);
     }
 }

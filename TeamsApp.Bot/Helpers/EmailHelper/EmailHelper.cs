@@ -140,5 +140,55 @@ namespace TeamsApp.Bot.Helpers.EmailHelper
                 return false;
             }
         }
+
+        public async Task<bool> ProcesssEmail_RequestTask(List<TaskEmailNotificationModel> data)
+        {
+            try
+            {
+                if (data != null && data.Any())
+                {
+                    var emailTaskList = new List<Task<TaskEmailNotificationModel>>();
+
+                    foreach (var item in data)
+                    {
+                        try
+                        {
+                            if (!string.IsNullOrEmpty(item.EmailSubject)
+                                && !string.IsNullOrEmpty(item.EmailBody)
+                                && !string.IsNullOrEmpty(item.ToRecipient)
+                                )
+                            {
+                                emailTaskList.Add(this._emailService.SendEmail_WithoutMessageId(item));
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            this._logger.LogError(ex, $"EmailHelper --> SendEmail_WithoutMessageId() execution failed: {JsonConvert.SerializeObject(item, Formatting.Indented)}");
+                            ExceptionLogging.SendErrorToText(ex);
+                        }
+                    }
+
+                    if (emailTaskList != null && emailTaskList.Any())
+                    {
+                        var emailTaskList_Response = await Task.WhenAll(emailTaskList);
+
+                        if (emailTaskList_Response != null && emailTaskList_Response.Any())
+                        {
+                            var dbInsert_Response = await this._taskData.InsertEmailResponse_Multiple(emailTaskList_Response.ToList());
+
+                            if (dbInsert_Response != null && dbInsert_Response.Status == 1) return true;
+                        }
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"EmailHelper --> ProcesssEmail_RequestTask() execution failed");
+                ExceptionLogging.SendErrorToText(ex);
+                return false;
+            }
+        }
+
     }
 }

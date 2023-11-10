@@ -734,6 +734,7 @@ namespace TeamsApp.DataAccess.Data
         {
             var output = new DataTable();            
             output.Columns.Add("TaskId", typeof(long));
+            output.Columns.Add("RequestId", typeof(long));
             output.Columns.Add("TransactionId", typeof(Guid));
             output.Columns.Add("IsSent", typeof(bool));
 
@@ -743,8 +744,15 @@ namespace TeamsApp.DataAccess.Data
                 {
                     if (row != null)
                     {
+                        var RequestId = 0;
+                        if (row.RequestId != null && row.RequestId > 0)
+                        {
+                            RequestId = (int)row.RequestId;
+                        }
+
                         output.Rows.Add(
                         row.TaskId,
+                        RequestId,
                         row.TransactionId,
                         row.IsSent
                         );
@@ -898,6 +906,7 @@ namespace TeamsApp.DataAccess.Data
             }
         }
 
+
         public async Task<ReturnMessageModel> InsertTaskRequest(TaskRequestDetailsModel data)
         {
             try
@@ -984,6 +993,29 @@ namespace TeamsApp.DataAccess.Data
             catch (Exception ex)
             {
                 this._logger.LogError(ex, $"TaskData --> ActionOnTaskRequest() --> SQL(usp_Task_ActionOnRequest) execution failed");
+                return null;
+            }
+        }
+
+
+        public async Task<List<TaskEmailNotificationModel>> GetEmailsByRequestIdList(string RequestIdList)
+        {
+            var returnObject = new List<TaskEmailNotificationModel>();
+            try
+            {
+                var results = await _db.LoadData<TaskEmailNotificationModel, dynamic>("dbo.usp_Emails_GetByRequestIdList",
+                new
+                {
+                    RequestIdList
+                });
+
+                if (results != null && results.Any()) { returnObject = results.ToList(); }
+
+                return returnObject;
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"TaskData --> GetEmailsByRequestIdList() --> SQL(usp_Emails_GetByRequestIdList) execution failed");
                 return null;
             }
         }

@@ -32,5 +32,6 @@ namespace TeamsApp.DataAccess.Data
         Task<ReturnMessageModel> ActionOnTaskRequest(TaskRequestDetailsModel data);
         Task<TaskRequestDetailsViewModel> GetRequestedTask(TaskRequestFilterModel data);
         Task<List<TaskFileDetailsTrnModel>> RemoveFileResponse(long Id);
+        Task<List<TaskEmailNotificationModel>> GetEmailsByRequestIdList(string RequestIdList);
     }
 }
